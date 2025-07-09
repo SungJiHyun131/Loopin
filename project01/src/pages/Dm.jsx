@@ -1,11 +1,27 @@
 import React from 'react'
+import DmHeader from '../components/DmHeader'
+import {Routes, Route } from 'react-router-dom';
 
 const Dm = () => {
   return (
     <div>
-      <h1>fdddddfgd</h1>
+       <div className="DmHeader">
+        <DmHeader/>
+      </div>
+      <h1>DM페이지 입니다</h1>
     </div>
   )
 }
+
+
+
+
+
+
+
+
+
+
+<Route path="DmHeader" element={<DmHeader/>} />
 
 export default Dm

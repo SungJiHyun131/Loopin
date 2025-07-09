@@ -25,7 +25,6 @@ import LiveDetail from './pages/artist/live/LiveDetail';
 import ArtistProfile from './pages/artist/illit/ArtistProfile';
 import MoreHeader from './components/MoreHeader';
 
-
 function App() {
   return (
     <Routes>
