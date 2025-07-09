@@ -5,7 +5,7 @@ const DmHeader = () => {
     const navigate = useNavigate();
     return (
       <header className='header-container'>
-          <button className="back-button" onClick={()=> navigate(-1)}>«</button>
+          <button className="back-button" onClick={()=> navigate('/')}>«</button>
           <h2 className="title">DM</h2>
       </header>
     )

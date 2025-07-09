@@ -1,11 +1,14 @@
 import React from 'react'
-import {Link, useLocation} from 'react-router-dom'
-
+import {Link, useLocation, Route} from 'react-router-dom'
+import IllitHeader from '../../components/IllitHeader';
 
 const ArtistHome = () => {
     const location =useLocation();
   return (
     <div>
+      <div className="IllitHeader">
+        <IllitHeader/>
+      </div>
       <h1>Illit</h1>
       <nav>
                 <ul>
@@ -20,5 +23,5 @@ const ArtistHome = () => {
     </div>
   )
 }
-
+<Route path="IllitHeader" element={<IllitHeader/>} />
 export default ArtistHome

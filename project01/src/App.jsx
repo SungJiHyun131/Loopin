@@ -34,7 +34,7 @@ function App() {
   <Route path="Dm" element={<Dm/>} />
   <Route path="Alarm" element={<Alarm/>} />
   <Route path="MoreHome" element={<MoreHome/>} />
-  <Route path="MoreHeader" element={<MoreHeader/>} />
+ 
   <Route path="MyArchive" element={<MyArchive/>} />
   <Route path="Subscribe" element={<Subscribe/>} />
   <Route path="AboutLoopin" element={<AboutLoopin/>} />

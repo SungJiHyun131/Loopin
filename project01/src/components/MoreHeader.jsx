@@ -5,7 +5,7 @@ const MoreHeader = () => {
     const navigate = useNavigate();
   return (
     <header className='header-container'>
-        <button className="back-button" onClick={()=> navigate(-1)}>«</button>
+        <button className="back-button" onClick={()=> navigate('/')}>«</button>
         <h2 className="title">더보기</h2>
     </header>
   )

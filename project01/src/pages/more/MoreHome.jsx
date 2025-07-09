@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link, useLocation} from 'react-router-dom'
+import {Link, useLocation, Route} from 'react-router-dom'
 import MoreHeader from '../../components/MoreHeader';
 
 const MoreHome = () => {
@@ -22,5 +22,5 @@ const MoreHome = () => {
     </div>
   )
 }
-
+<Route path="MoreHeader" element={<MoreHeader/>} />
 export default MoreHome
