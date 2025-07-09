@@ -14,7 +14,8 @@ import NoticeDetail from './pages/artist/notice/NoticeDetail';
 import StoreHome from './pages/artist/store/StoreHome';
 import StoreDetail from './pages/artist/store/StoreDetail';
 import MediaHome from './pages/artist/media/MediaHome';
-import MediaDetail from './pages/artist/media/MediaDetail';
+import MediaA from './pages/artist/media/MediaA';
+import MediaB from './pages/artist/media/MediaB';
 import IllitHome from './pages/artist/illit/IllitHome';
 import FanHome from './pages/artist/fan/FanHome';
 import FanPostDetail from './pages/artist/fan/FanPostDetail';
@@ -23,6 +24,8 @@ import LiveHome from './pages/artist/live/LiveHome';
 import LiveDetail from './pages/artist/live/LiveDetail';
 import ArtistProfile from './pages/artist/illit/ArtistProfile';
 import MoreHeader from './components/MoreHeader';
+
+
 function App() {
   return (
     <Routes>
@@ -40,8 +43,13 @@ function App() {
   <Route path="NoticeDetail" element={<NoticeDetail/>} />
   <Route path="StoreHome" element={<StoreHome/>} />
   <Route path="StoreDetail" element={<StoreDetail/>} />
-  <Route path="MediaHome" element={<MediaHome/>} />
-  <Route path="MediaDetail" element={<MediaDetail/>} />
+
+  <Route path="MediaHome" element={<MediaHome/>} >
+  <Route index element={<MediaA/>} />
+  <Route path="MediaA" element={<MediaA/>} />
+  <Route path="MediaB" element={<MediaB/>} />
+  </Route>
+
   <Route path="IllitHome" element={<IllitHome/>} />
   <Route path="FanHome" element={<FanHome/>} />
   <Route path="LiveHome" element={<LiveHome/>} />
