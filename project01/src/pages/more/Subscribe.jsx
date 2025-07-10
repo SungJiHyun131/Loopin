@@ -22,6 +22,7 @@ const Subscribe = () => {
         <li className='btn'>해지 · 환불 안내<a href=""><img src={down} alt="" /></a></li>
       </ul>
     </div>
+    </div>
   )
 }
 <Route path="SubscribeHeader" element={<SubscribeHeader/>}/>
