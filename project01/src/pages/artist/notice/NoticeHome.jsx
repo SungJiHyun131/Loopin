@@ -8,7 +8,9 @@ const Notice = () => {
        <div className="NoticeHeader">
         <NoticeHeader/>
       </div>
+      <div className="container NoticeHome">
       <Link to='/NoticeDetail'>공지사항입니다.</Link>
+      </div>
     </div>
   )
 }

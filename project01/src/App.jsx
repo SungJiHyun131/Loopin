@@ -7,6 +7,8 @@ import Alarm from './pages/Alarm';
 import MoreHome from './pages/more/MoreHome';
 import MyArchive from './pages/more/MyArchive';
 import Subscribe from './pages/more/Subscribe';
+import SubscribeSelect from './pages/more/SubscribeSelect';
+import SubscribeSelectDetail from './pages/more/SubscribeSelectDetail';
 import AboutLoopin from './pages/more/AboutLoopin';
 import Layout from './components/Layout';
 import NoticeHome from './pages/artist/notice/NoticeHome';
@@ -36,7 +38,13 @@ function App() {
   <Route path="MoreHome" element={<MoreHome/>} />
  
   <Route path="MyArchive" element={<MyArchive/>} />
+
+
+
   <Route path="Subscribe" element={<Subscribe/>} />
+  <Route path="SubscribeSelect" element={<SubscribeSelect/>}/>
+  <Route path="SubscribeSelectDetail" element={<SubscribeSelectDetail/>}/>
+
   <Route path="AboutLoopin" element={<AboutLoopin/>} />
   <Route path="NoticeHome" element={<NoticeHome/>} />
   <Route path="NoticeDetail" element={<NoticeDetail/>} />

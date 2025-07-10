@@ -9,11 +9,13 @@ const MediaHome = () => {
       <div className="MediaHeader">
         <MediaHeader/>
       </div>
+      <div className="container MediaHome">
       <div className="cate">
       <Link to ='MediaA' className='home'>홈</Link>
       <Link to ='MediaB' className='all'>전체</Link>
       </div>
       <Outlet/>
+      </div>
       </div>
 
     

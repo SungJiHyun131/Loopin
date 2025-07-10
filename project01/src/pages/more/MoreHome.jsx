@@ -6,7 +6,7 @@ import icon1 from '../../assets/img/icon_bookmark.png'
 
 
 const MoreHome = () => {
-    const location =useLocation();
+    const location = useLocation();
   return (
     <div>
     <div className="MoreHeader">

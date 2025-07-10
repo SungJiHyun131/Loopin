@@ -1,14 +1,17 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import back from '../assets/img/header_back.png'
+import more from '../assets/img/header_more.png'
 
 const MediaHeader = () => {
         const navigate = useNavigate();
   return (
     <div>
-          <header className='header-container'>
-        <button className="back-button" onClick={()=> navigate('/ArtistHome')}>«</button>
-        <h2 className="title">Media</h2>
-    </header>
+        <header>
+                  <button className="back-button" onClick={()=> navigate('/ArtistHome')}><img src={back} alt="" /></button>
+                  <h2 className="title">MEDIA</h2>
+                  <p className="more-button"><a href=""><img src={more} alt="" /></a></p> 
+        </header>
     </div>
   )
 }

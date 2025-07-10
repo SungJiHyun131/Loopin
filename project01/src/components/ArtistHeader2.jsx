@@ -5,8 +5,8 @@ const ArtistHeader = () => {
     const navigate = useNavigate();
   return (
     <div>
-       <header>
-        <button className="back-button" onClick={()=> navigate('/ArtistHome')}><img src={back} alt="" /></button>
+       <header className='header-container'>
+        <button className="back-button" onClick={()=> navigate('/IllitHome')}><img src={back} alt="" /></button>
         <h2 className="title">ARTIST</h2>
         <p className="more-button">mroe</p> 
     </header>

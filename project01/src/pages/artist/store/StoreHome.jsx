@@ -8,7 +8,9 @@ const StoreHome = () => {
        <div className="StoreHeader">
         <StoreHeader/>
       </div>
-      <Link to='/StoreDetail'>스토어상세 ㄱㄱ</Link>
+      <div className="container StoreHome">
+        <Link to='/StoreDetail'>스토어상세 ㄱㄱ</Link>
+      </div>
     </div>
   )
 }
