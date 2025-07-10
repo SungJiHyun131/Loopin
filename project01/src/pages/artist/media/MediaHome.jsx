@@ -14,9 +14,8 @@ const MediaHome = () => {
   return (
     <div>
       <div className="MediaHeader">
-        <MediaHeader />
+        <MediaHeader/>
       </div>
-
       <div className="toggle-container">
       <div className="toggle-bg" style={{   left: getIndex() === 1 ? `calc(50% + 1px)` : undefined,
   right: getIndex() === 0 ? `calc(0% - 1px)` : undefined,}} />

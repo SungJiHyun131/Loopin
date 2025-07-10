@@ -13,7 +13,7 @@ import icon7 from '../../assets/img/moreImg/icon_setting.png'
 
 
 const MoreHome = () => {
-    const location =useLocation();
+    const location = useLocation();
   return (
     <div>
     <div className="MoreHeader">

@@ -1,15 +1,18 @@
 import React from 'react'
 import {Route} from 'react-router-dom'
-import ArtistHeader from '../../../components/ArtistHeader';
+import ArtistHeader2 from '../../../components/ArtistHeader2';
 const ArtistProfile = () => {
   return (
     <div>
       <div className="ArtistHeader">
-        <ArtistHeader/>
+        <ArtistHeader2/>
       </div>
-      dddd
+      <div className="container artistprofile">
+        dddd
+      </div>
     </div>
   )
 }
-<Route path="ArtistHeader" element={<ArtistHeader/>} />
+<Route path="ArtistHeader2" element={<ArtistHeader2/>} />
+
 export default ArtistProfile

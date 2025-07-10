@@ -8,7 +8,9 @@ const IllitHome = () => {
       <div className="ArtistHeader">
         <ArtistHeader/>
       </div>
+      <div className="container IllitHome">
       <Link to='/ArtistProfile'>원희</Link>
+      </div>
     </div>
   )
 }

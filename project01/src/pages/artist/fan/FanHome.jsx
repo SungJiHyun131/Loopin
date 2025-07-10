@@ -8,8 +8,10 @@ const FanHome = () => {
         <div className="FanHeader">
         <FanHeader/>
       </div>
-      <p><Link to='/FanPostDetail'>성지현</Link></p>
-      <Link to='/FanPostWrite'>염혜리</Link>
+      <div className="container FanHome">
+      <p><Link to='/FanPostDetail'>팬레터</Link></p>
+      <Link to='/FanPostWrite'>비밀레터</Link>
+      </div>
     </div>
   )
 }

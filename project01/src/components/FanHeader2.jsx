@@ -7,7 +7,7 @@ const navigate = useNavigate();
   return (
     <div>
     <header className='header'>
-          <button className="back-button" onClick={()=> navigate('/ArtistHome')}><img src={back} alt="" /></button>
+          <button className="back-button" onClick={()=> navigate('/FanHome')}><img src={back} alt="" /></button>
           <h2 className="title">FAN</h2>
           <p className="more-button">more</p> 
         </header>
