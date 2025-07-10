@@ -2,7 +2,14 @@ import React from 'react'
 import {Link, useLocation, Route} from 'react-router-dom'
 import MoreHeader from '../../components/MoreHeader';
 import './MoreHome.css';
-import icon1 from '../../assets/img/icon_bookmark.png'
+import icon from '../../assets/img/moreImg/profile.png'
+import icon1 from '../../assets/img/moreImg/icon_profile.png'
+import icon2 from '../../assets/img/moreImg/icon_bookmark.png'
+import icon3 from '../../assets/img/moreImg/icon_bubble.png'
+import icon4 from '../../assets/img/moreImg/icon_alert.png'
+import icon5 from '../../assets/img/moreImg/icon_rotate.png'
+import icon6 from '../../assets/img/moreImg/icon_like.png'
+import icon7 from '../../assets/img/moreImg/icon_setting.png'
 
 
 const MoreHome = () => {
@@ -12,16 +19,16 @@ const MoreHome = () => {
     <div className="MoreHeader">
       <MoreHeader/>
     </div>
-    <div className='container'>
+    <div className='container-morehome'>
+      <div className="profile"><img src={icon} alt="" />닉네임</div>
         <ul>
-          <li>내 계정</li>
-          <li><Link to='/MyArchive'> <img src={icon1} alt="" />내 아카이브</Link></li>
-          <li><Link to='/Subscribe'>구독권 관리</Link></li>
-          <li>도움말</li>
-          <li>언어변경</li>
-          <li><Link to='/AboutLoopin'>루핀에 관하여</Link></li>
-          <li>로그아웃</li>
-          <li>푸터</li>
+          <li><p className="img"><img src={icon1} alt="" /></p>내 계정</li>
+          <li><Link to='/MyArchive'><p className="img"><img src={icon2} alt="" /></p>내 아카이브</Link></li>
+          <li><Link to='/Subscribe'><p className="img"><img src={icon3} alt="" /></p>구독권 관리</Link></li>
+          <li><p className="img"><img src={icon4} alt="" /></p>도움말</li>
+          <li><p className="img"><img src={icon5} alt="" /></p>언어변경</li>
+          <li><Link to='/AboutLoopin'><p className="img"><img src={icon6} alt="" /></p>루핀에 관하여</Link></li>
+          <li><p className="img"><img src={icon7} alt="" /></p>로그아웃</li>
         </ul>
     </div>
     </div>

@@ -1,0 +1,9 @@
+li{list-style: none;}
+a {color: inherit; text-decoration: inherit;}
+* {margin: 0;padding: 0; box-sizing: border-box;}
+
+.container.sub{background: url(../../assets/img/SubscribeImg/Subscription_bg.png);}
+.container.sub ul{width: 90%; margin: 0 auto;}
+.container.sub ul li{margin: 10px auto; width: 100%; display: flex; justify-content: space-between;}
+.container.sub ul li img{width: 100%;}
+.container.sub ul li.btn{background: #D0E1FF; width: 100%; height: 50px ;border: 1px solid #000; border-radius: 5px;padding:0 10px; display: flex; align-items: center;}

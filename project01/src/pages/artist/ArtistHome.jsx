@@ -5,12 +5,13 @@ import './ArtistHome.css'
 import folder from '../../assets/img/IllitHomeimg/folder.png'
 import illit from '../../assets/img/IllitHomeimg/illit.png'
 import ProfileCard from '../../components/ProfileCard'
+import ScheduleCalendar from '../../components/ScheduleCalendar'
 
 const ArtistHome = () => {
   const location = useLocation()
 
   return (
-    <div className='container'>
+    <div className='container-Artist'>
       <div className="IllitHeader">
         <IllitHeader />
       </div>
@@ -32,6 +33,9 @@ const ArtistHome = () => {
       <div className="ProfileCard">
         <ProfileCard />
       </div>
+      <div className="ScheduleCalendar">
+  <ScheduleCalendar />
+</div>
     </div>
   )
 }
