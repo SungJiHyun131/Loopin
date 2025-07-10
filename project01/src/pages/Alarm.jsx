@@ -4,11 +4,15 @@ import AlarmHeader from '../components/AlarmHeader';
 const Alarm = () => {
   return (
     <div>
-      <div className="AlarmHeader">
-        <AlarmHeader/>
-      </div>
-      <h1>알림페이지입니다.</h1>
+    <div className="AlarmHeader">
+      <AlarmHeader/>
     </div>
+    <div className='container'>
+      <div className="inner">
+        <h1>알림페이지입니다.</h1>
+      </div>
+    </div>
+  </div>
   )
 }
 
