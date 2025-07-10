@@ -1,24 +1,30 @@
 import React from 'react'
 import {Link, useLocation} from 'react-router-dom';
+import './Header.css';
+import logo from '../assets/img/Main_header_logo.png'
+import alarm from '../assets/img/Main_header_nav1.png'
+import dm from '../assets/img/Main_header_nav2.png'
+import more from '../assets/img/Main_header_nav3.png'
+
 const Header = () => {
     const location = useLocation();
   return (
     <div>
         <header>
-      <div className="header-top">
-        <h1 className="logo">
-          <Link to='/'>Home</Link>
-        </h1>
-        <div className="alarm">
-          <Link to='/Alarm'>알람</Link>
-        </div>
-        <div className="dm">
-          <Link to='/Dm'>디엠</Link>
-        </div>
-        <div className="more">
-          <Link to='/MoreHome'>더보기</Link>
-        </div>
-      </div>
+        <p className="logo">
+          <Link to='/'><img src={logo} alt="" /></Link>
+        </p>
+        <ul className="nav">
+        <li className="alarm">
+          <Link to='/Alarm'><img src={alarm} alt="" /></Link>
+        </li>
+        <li className="dm">
+          <Link to='/Dm'><img src={dm} alt="" /></Link>
+        </li>
+        <li className="more">
+          <Link to='/MoreHome'><img src={more} alt="" /></Link>
+        </li>
+        </ul>
       </header>
     </div>
   )

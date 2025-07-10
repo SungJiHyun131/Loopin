@@ -8,7 +8,9 @@ const Dm = () => {
        <div className="DmHeader">
         <DmHeader/>
       </div>
+      <div className="container">
       <h1>DM페이지 입니다</h1>
+      </div>
     </div>
   )
 }
