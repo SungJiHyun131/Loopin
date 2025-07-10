@@ -1,9 +1,15 @@
 import React from 'react'
+import AboutLoopinHeader from '../../components/AboutLoopinHeader'
 
 const AboutLoopin = () => {
   return (
     <div>
-      루핀입니당
+      <div className='AboutLoopinHeader'>
+        <AboutLoopinHeader/>
+      </div>
+      <div className="container">
+        <p>루핀에관하여..</p>
+      </div>
     </div>
   )
 }
