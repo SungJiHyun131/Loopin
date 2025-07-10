@@ -23,7 +23,7 @@ import FanPostWrite from './pages/artist/fan/FanPostWrite';
 import LiveHome from './pages/artist/live/LiveHome';
 import LiveDetail from './pages/artist/live/LiveDetail';
 import ArtistProfile from './pages/artist/illit/ArtistProfile';
-import MoreHeader from './components/MoreHeader';
+
 
 function App() {
   return (
