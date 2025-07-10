@@ -15,12 +15,13 @@ const Subscribe = () => {
       </div>
     <div className="container sub">
       <ul>
-        <li><p><img src={ticket1} alt="" /></p> <Link to='/SubscribeSelect'>구독권1</Link></li>
+        <li><p><Link to='/SubscribeSelect'><img src={ticket1} alt="" /></Link></p></li>
         <li><p><img src={ticket2} alt="" /></p></li>
         <li className='btn'>이용안내<a href=""><img src={down} alt="" /></a></li>
         <li className='btn'>결제 유의사항<a href=""><img src={down} alt="" /></a></li>
         <li className='btn'>해지 · 환불 안내<a href=""><img src={down} alt="" /></a></li>
       </ul>
+    </div>
     </div>
   )
 }

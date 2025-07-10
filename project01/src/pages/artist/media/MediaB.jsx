@@ -3,7 +3,9 @@ import React from 'react'
 const MediaB = () => {
   return (
     <div>
-      어쩌라공
+       <div className="container MediaB">
+      전체보기이
+      </div>
     </div>
   )
 }
