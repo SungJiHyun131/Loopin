@@ -2,10 +2,10 @@ li{list-style: none;}
 a {color: inherit; text-decoration: inherit;}
 * {margin: 0;padding: 0; box-sizing: border-box;}
 
-.container{background: url(../../assets/img/IllitHomeimg/bg.png);}
-.top{display: flex;justify-content: space-between;}
+.container-Artist{background: url(../../assets/img/IllitHomeimg/bg.png);padding: 16px;padding-bottom: 200px;}
+.top{display: flex;justify-content: space-between;padding-top: 40px;}
 .top .img img{border-radius: 10px;box-shadow: 0 0 13px rgba(0,0,0,0.25);}
-.top nav{display: flex;width: 43%;}
+.top nav{display: flex;width: 40%;}
 .top nav ul{text-align: center;}
 .top nav ul li{margin-bottom: 30px;}
 .top nav ul li img{display: block;}

@@ -7,3 +7,4 @@ html, body {height: 100vh; display: flex; flex-direction: column;margin:0;letter
 button {border: none;background: none;cursor: pointer;}
 /* flex:1 남은 공간을 모두 차지해서 footer가 화면 맨 아래로 고정돰 */
 .container {padding: 16px;}
+.subtitle{font-size: 18px;margin: 16px 0;}
