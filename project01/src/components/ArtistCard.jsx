@@ -1,21 +1,26 @@
 import React from 'react'
-import wish from '../assets/img/image 1112.png'
-import aespa from '../assets/img/image 1113.png'
-import illit from '../assets/img/image 1114.png'
-import riize from '../assets/img/image 1115.png'
-import enhypen from '../assets/img/image 1116.png'
+import wish from '../assets/img/nctwish.png'
+import aespa from '../assets/img/aespa.png'
+import illit from '../assets/img/illit.png'
+import blackpink from '../assets/img/blackpink.png'
+import seventeen from '../assets/img/seventeen.png'
+import promise9 from '../assets/img/promise9.png'
 import {Link, useLocation} from 'react-router-dom'
+import './ArtistCard.css'
 
 
 const ArtistCard = () => {
     const location =useLocation();
   return (
-    <div>
-       <img src={wish} alt="" />
-      <img src={aespa} alt="" />
-     <Link to='/ArtistHome'> <img src={illit} alt="" /></Link>
-      <img src={riize} alt="" />
-      <img src={enhypen} alt="" />
+    <div className='cardlist'>
+      <ul>
+     <li><Link to='/ArtistHome'> <img src={illit} alt="" /></Link></li>
+     <li><a href=""><img src={wish} alt="" /></a></li>
+     <li><a href=""><img src={aespa} alt="" /></a></li>
+     <li><a href=""><img src={blackpink} alt="" /></a></li>
+     <li><a href=""><img src={seventeen} alt="" /></a></li>
+     <li><a href=""><img src={promise9} alt="" /></a></li>
+     </ul>
     </div>
   )
 }
