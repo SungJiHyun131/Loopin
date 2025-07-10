@@ -8,7 +8,9 @@ const LiveHome = () => {
       <div className="LiveHeader">
         <LiveHeader/>
       </div>
+      <div className="container LiveHome">
       <Link to="/LiveDetail">라이브 들어오세요</Link>
+      </div>
     </div>
   )
 }
