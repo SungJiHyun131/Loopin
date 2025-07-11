@@ -2,7 +2,7 @@ li{list-style: none;}
 a {color: inherit; text-decoration: inherit;}
 * {margin: 0;padding: 0; box-sizing: border-box;}
 
-.container.sub{background: url(../../assets/img/SubscribeImg/Subscription_bg.png);}
+.container.sub{background: url(../../assets/img/SubscribeImg/Subscription_bg.png);height: 100vh;width: 100%;}
 .container.sub ul{width: 90%; margin: 0 auto;}
 .container.sub ul li{margin: 10px auto; width: 100%; display: flex; justify-content: space-between;}
 .container.sub ul li img{width: 100%;}
