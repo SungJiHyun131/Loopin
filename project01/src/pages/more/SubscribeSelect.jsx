@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {Link,Route} from 'react-router-dom';
 import SubscribeHeader2 from '../../components/SubscribeHeader2';
 import SelectArtist from '../../components/SelectArtist';
@@ -12,7 +12,7 @@ import blackpink from '../../assets/img/Subscribeimg/blackpink.png';
 import ive from '../../assets/img/Subscribeimg/ive.png';
 import meovv from '../../assets/img/Subscribeimg/meovv.png';
 import riize from '../../assets/img/Subscribeimg/riize.png';
-
+import SearchBar from '../../components/SearchBar';
 
 const idols = [
   { name: 'ILLIT', image: illit },
@@ -27,27 +27,49 @@ const idols = [
 ];
 
 const SubscribeSelect = () => {
+  const [selected, setSelected] = useState([]);
+  const [query, setQuery] = useState('');
+  const toggleSelect = (name) => {
+    setSelected((prev) =>
+      prev.includes(name)
+        ? prev.filter((n) => n !== name)
+        : [...prev, name]
+    );
+  };
+
   return (
-    <div>
-    <div className="SubscribeHeader2">
-        <SubscribeHeader2/>
+    <div className='bgSub'>
+      <div className="SubscribeHeader2">
+        <SubscribeHeader2 />
       </div>
-     <div className="container SubscribeSelect">
+      <div className="container SubscribeSelect">
         <div className="top">
           <h3>관심있는 아티스트를 구독하세요</h3>
           <p>구독한 아티스트는 구독 갱신일 기준 3일 전까지 해지할 수 있어요</p>
         </div>
-        <div className="searchbtn">텍스트를입력하세요</div>
-        
+        <SearchBar onChange={(e) => setQuery(e.target.value)} />
         <div className="SelectArtist-grid">
-        {idols.map((idol, idx) => (
-            <SelectArtist key={idx} image={idol.image} name={idol.name} />
+          {idols.map((idol, idx) => (
+            <SelectArtist
+              key={idx}
+              image={idol.image}
+              name={idol.name}
+              isSelected={selected.includes(idol.name)}
+              onClick={() => toggleSelect(idol.name)}
+            />
           ))}
         </div>
-          <Link to='/SubscribeSelectDetail'>선택완료버튼임</Link>
-        </div>
+
+        {selected.length > 0 && (
+          <div className="complete-btn">
+            <Link to="/SubscribeSelectDetail">선택완료 ({selected.length})</Link>
+          </div>
+        )}
+      </div>
     </div>
-  )
-}
+  );
+};
+
 
 export default SubscribeSelect
+
