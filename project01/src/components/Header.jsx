@@ -10,7 +10,7 @@ const Header = () => {
     const location = useLocation();
   return (
     <div>
-        <header>
+        <header className='main'>
         <p className="logo">
           <Link to='/'><img src={logo} alt="" /></Link>
         </p>

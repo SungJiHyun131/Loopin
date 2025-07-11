@@ -1,0 +1,7 @@
+.container.main{background: linear-gradient(#fff,#fff,#5DABFF);min-height: 100vh;box-sizing: border-box;  padding: 20px 16px;}
+
+.txt1{text-align: center;align-items: center;justify-content: center;display: flex;margin-bottom: 20px;font-size: 18px;font-weight: 500;}
+.txt1 img{margin-left: 5px;}
+.filter{text-align: right;margin-bottom: 20px;}
+.filter img{cursor: pointer;}
+
