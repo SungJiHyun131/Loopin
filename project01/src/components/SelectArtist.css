@@ -1,0 +1,5 @@
+.idol-card  {text-align: center;}
+.idol-image-border-outer {width: 95px;height: 95px;border-radius: 50%;overflow: hidden;margin: 0 auto;border: 1px solid #000;display: flex;align-items: center;align-items: center;justify-content: center;}
+.idol-image-border-inner {width: 85px;height: 85px;border-radius: 50%;overflow: hidden;margin: 0 auto;border: 1px solid #000;}
+.idol-image {width: 100%;height: 100%;object-fit: cover;}
+.idol-name {margin-top: 12px;font-size: 14px;font-weight: 600;color:#111;}

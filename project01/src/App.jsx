@@ -45,6 +45,7 @@ function App() {
   <Route path="SubscribeSelect" element={<SubscribeSelect/>}/>
   <Route path="SubscribeSelectDetail" element={<SubscribeSelectDetail/>}/>
 
+
   <Route path="AboutLoopin" element={<AboutLoopin/>} />
   <Route path="NoticeHome" element={<NoticeHome/>} />
   <Route path="NoticeDetail" element={<NoticeDetail/>} />
