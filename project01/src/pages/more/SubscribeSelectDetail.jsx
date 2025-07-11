@@ -1,17 +1,79 @@
-import React from 'react'
-import SubscribeHeader3 from '../../components/SubscribeHeader3'
-import {Link,Route} from 'react-router-dom'
+import React,{ useState, useEffect } from 'react';
+import SubscribeHeader3 from '../../components/SubscribeHeader3';
+import {Link,Route} from 'react-router-dom';
+import './SubscribeSelectDetail.css';
+import card from '../../assets/img/Subscribeimg/membership_card.png';
+import card2 from '../../assets/img/Subscribeimg/payment_done_icon.png';
 const SubscribeSelectDetail = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
+  const handlePayment = () => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+      setShowModal(true);
+    }, 2000);
+  };
+
+
   return (
-    <div>
+    <div className='bgsub'>
          <div className="SubscribeHeader3">
         <SubscribeHeader3/>
       </div>
         <div className="container SubscribeSelectDetail">
-        <Link to='/PaymentLoading'>결제하기버튼임</Link>  
+            
+            <div className="topSection">
+              <img src={card} alt="" />
+              <h3 className="name">Illit</h3>
+              <p className="smalltext">지금 공식 멤버십에 가입하시고 <br /> 특별한 멤버십 계획들을 누려보세요!</p>
+            </div>
+         
+            <div className="bottomSection">
+              <p className="subtitle">
+                Membership Benefits
+              </p>
+              <ul className="smalltext">
+                <li>멤버십 전용 ILLIT 공식 상품 구매 기회</li>
+                <li>LOOPIN ILLIT 콘텐츠 구매 관련 혜택</li>
+                <li>ILLIT 공연 시 선예매, 추첨제 참여 기회</li>
+                <li>ILLIT LOOPIN 내 멤버십 전용 독점 콘텐츠</li>
+                <li>온라인 멤버십 카드</li>
+              </ul>
+            </div>
+             <div className="complete-btn">
+                    <button onClick={handlePayment}>₩ 9,900 결제하기</button>
+              </div>
         </div>
+
+
+
+      {/* 로딩 오버레이 */}
+      {isLoading && (
+        <div className="overlay">
+          <div className="spinner" />
+        </div>
+      )}
+
+      {/* 결제 완료 모달 */}
+      {showModal && (
+          <div className="overlay">
+        <div className="modal">
+          <img src={card2} alt="완료" />
+          <h3>찐팬 인증 완료! 🎉</h3>
+          <p>이제 너만을 위한 세상이야 ✨</p>
+          <Link to="/ArtistHome">
+            <button className="go-btn">ILLIT 홈으로 가기 💜</button>
+          </Link>
+        </div>
+        <Link to="/SubscribeSelect">
+            <button className="close">닫기</button>
+          </Link>
+        </div>
+      )}
     </div>
-  )
-}
+  );
+};
 
 export default SubscribeSelectDetail
