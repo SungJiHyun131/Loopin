@@ -12,3 +12,4 @@ header .logo {width: 50px;}
 header.more .more-button {opacity: 1;}
 
 header.illitheader{padding: 0;}
+header.main{background: linear-gradient(#5DABFF,#fff);}

@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <div>
     <Header/>
-    <div className='container' style={{display:'flex', flexDirection:'column', minHeight:'100vh'}}>
+    <div style={{display:'flex', flexDirection:'column', minHeight:'100vh'}}>
     <main style={{flex:1}}>
         <Outlet/>
     </main>
