@@ -1,39 +1,48 @@
 .toggle-container {
-    position: relative;
-    display: flex;
-    width: 160px;
-    height: 45px;
-    border: 1px solid #000;
-    border-radius: 999px;
-    background: #eee;
-    overflow: hidden;
-    margin: 20px auto;
-    box-sizing: border-box;
-  }
-  
-  .toggle-bg {
-    position: absolute;
-    top: 1px;  /* ✅ 상하 위치 살짝 조정 */
-    left: calc(0% + 1px);  /* ✅ 좌우 여백으로 겹침 방지 */
-    width: calc(50% - 1px);  /* ✅ 살짝 작게 만들어서 border 겹침 제거 */
-    height: calc(100% - px);
-    background: linear-gradient(to bottom, #FF8EBF, #FFC8DF, #fff);
-    border-radius: 999px;
-    z-index: 1;
-    transition: left 0.3s ease;
-    border: 1px solid #000; /* ✅ 보더 유지 */
-    box-sizing: border-box;
-  }
-  
-  .toggle-btn {
-    flex: 1;
-    z-index: 2;
-    text-align: center;
-    line-height: 45px;
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-    color: black;
-    position: relative;
-    cursor: pointer;
-  }
+  position: relative;
+  display: flex;
+  height: 45px;
+  border: 1px solid #000;
+  border-radius: 999px;
+  background: #eee;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.toggle-bg {
+  position: absolute;
+  top: 1px;
+  height: calc(100% - 2px);
+  background: linear-gradient(to bottom, #FF8EBF, #FFC8DF, #fff);
+  border-radius: 999px;
+  z-index: 1;
+  transition: left 0.3s ease;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.toggle-btn {
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.toggle-btn.left {
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+}
+
+.toggle-btn.right {
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+}

@@ -17,8 +17,8 @@ const MediaHome = () => {
         <MediaHeader/>
       </div>
       <div className="toggle-container">
-      <div className="toggle-bg" style={{   left: getIndex() === 1 ? `calc(50% + 1px)` : undefined,
-  right: getIndex() === 0 ? `calc(0% - 1px)` : undefined,}} />
+      <div className="toggle-bg" style={{   left: getIndex() === 1 ? `calc(50%)` : undefined,
+  right: getIndex() === 0 ? `calc(0%-1px)` : undefined,}} />
       <Link to="MediaA" className="toggle-btn">홈</Link>
       <Link to="MediaB" className="toggle-btn">전체</Link>
      
