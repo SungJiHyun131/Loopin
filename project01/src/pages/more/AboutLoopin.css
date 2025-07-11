@@ -1,0 +1,4 @@
+/* .container.About{margin: 100px auto; background: url(../../assets/img/SubscribeImg/Subscription_bg.png);height: 80vh;} */
+.container.About{padding: 100px 0; margin: 0 auto ;background: linear-gradient(to bottom,#fff,#5DABFF,#5DABFF, #C7E2FF);height: 100vh;}
+.container.About .about{text-align: center; margin: 40px;}
+.container.About .about2{text-align: center;line-height: 1.6;}

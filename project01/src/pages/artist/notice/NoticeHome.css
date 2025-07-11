@@ -1,0 +1,9 @@
+
+
+.container.NoticeHome ul li{border-bottom: 1px solid #eee; height: 100px;}
+.container.NoticeHome ul li .left h3{font-size: 16px; font-weight: 400;padding-bottom:20px ;}
+.container.NoticeHome ul li .left p{font-size: 15px; color: #8E8E8E;}
+
+.container.NoticeHome ul li a{display: flex; justify-content: space-between; align-items: center;padding:20px 0;}
+.container.NoticeHome ul li a img{width: 24px; height: 24px;}
+.container.NoticeHome ul li a p img{height: 100%;}
