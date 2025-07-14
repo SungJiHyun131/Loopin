@@ -12,7 +12,7 @@ const MediaHome = () => {
     return 0; // 기본 홈
   };
   return (
-    <div>
+    <div className='MediaContainer'>
       <div className="MediaHeader">
         <MediaHeader/>
       </div>

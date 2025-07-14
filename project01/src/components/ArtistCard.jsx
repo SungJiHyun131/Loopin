@@ -45,42 +45,41 @@ import { Link } from 'react-router-dom';
 import './ArtistCard.css';
 
 const artistData = [
-  { name: '아일릿', img: illit, logo: illitLogo, link: '/ArtistHome', isLink: true },
-  { name: '엔시티 위시', img: wish, logo: wishLogo },
-  { name: '에스파', img: aespa, logo: aespaLogo },
-  { name: '블랙핑크', img: blackpink, logo: blackpinkLogo },
-  { name: '세븐틴', img: seventeen, logo: seventeenLogo },
-  { name: '프로미스나인', img: promise9, logo: promise9Logo },
-  { name: '보이넥스트도어', img: boynextdoor, logo: boynextdoorLogo },
-  { name: '샤이니', img:shinee, logo: shineeLogo },
-  { name: '트와이스', img: twice, logo: twiceLogo },
-  { name: '아이브', img: ive, logo: iveLogo },
-  { name: '르세라핌', img: le, logo: leLogo },
-  { name: '라이즈', img: riize, logo: riizeLogo },
-  { name: '엔하이픈', img: en, logo: enLogo },
-  { name: '투모로우바이투게더', img: txt, logo: txtLogo },
-  { name: '베이비몬스터', img: bm, logo: bmLogo },
-  { name: '에이티즈', img: ateez, logo: ateezLogo },
-  { name: '투어스', img: tws, logo: twsLogo },
-  { name: '캣츠아이', img: kat, logo:katLogo },
-  { name: '레드벨벳', img: red, logo: redLogo },
-  { name: '하츠투하츠', img: h2h, logo: h2hLogo },
+  { name: 'ILLIT', img: illit, logo: illitLogo, link: '/ArtistHome', isLink: true },
+  { name: 'NCT WISH', img: wish, logo: wishLogo },
+  { name: 'AESPA', img: aespa, logo: aespaLogo },
+  { name: 'BLACKPINK', img: blackpink, logo: blackpinkLogo },
+  { name: 'SEVEN', img: seventeen, logo: seventeenLogo },
+  { name: 'PROMISE9', img: promise9, logo: promise9Logo },
+  { name: 'BOYNEXTDOOR', img: boynextdoor, logo: boynextdoorLogo },
+  { name: 'SHINEE', img:shinee, logo: shineeLogo },
+  { name: 'TWICE', img: twice, logo: twiceLogo },
+  { name: 'IVE', img: ive, logo: iveLogo },
+  { name: 'LESSERAPIM', img: le, logo: leLogo },
+  { name: 'RIIZE', img: riize, logo: riizeLogo },
+  { name: 'ENHYPHEN', img: en, logo: enLogo },
+  { name: 'TxT', img: txt, logo: txtLogo },
+  { name: 'BABY MONSTER', img: bm, logo: bmLogo },
+  { name: 'ATEEZ', img: ateez, logo: ateezLogo },
+  { name: 'TWS', img: tws, logo: twsLogo },
+  { name: 'KATSEYE', img: kat, logo:katLogo },
+  { name: 'RED VELVET', img: red, logo: redLogo },
+  { name: 'HEARTS TO HEARTS', img: h2h, logo: h2hLogo },
 ];
 
 const ArtistCard = () => {
+  const sortedData = [...artistData].sort((a, b) =>
+    a.name.localeCompare(b.name)
+  );
+
   return (
     <div className="cardlist">
       <ul>
-        {artistData.map((artist, index) => {
+        {sortedData.map((artist, index) => {
           const content = (
             <div className="artist-card">
-              <div className="artist-inner">
-                <img src={artist.img} alt={artist.name} className="artist-img" />
-                <div className="artist-info">
-                  <span className="artist-name">{artist.name}</span>
-                  <img src={artist.logo} alt={`${artist.name} 로고`} className="artist-logo" />
-                </div>
-              </div>
+              <img src={artist.img} alt={artist.name} className="artist-img" />
+              <div className="artist-name-tag">{artist.name}</div>
             </div>
           );
 

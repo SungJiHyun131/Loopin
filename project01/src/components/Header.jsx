@@ -2,6 +2,7 @@ import React from 'react'
 import {Link, useLocation} from 'react-router-dom';
 import './Header.css';
 import logo from '../assets/img/Main_header_logo.png'
+import logo2 from '../assets/img/logo2.png'
 import alarm from '../assets/img/Main_header_nav1.png'
 import dm from '../assets/img/Main_header_nav2.png'
 import more from '../assets/img/Main_header_nav3.png'
@@ -12,7 +13,7 @@ const Header = () => {
     <div>
         <header className='main'>
         <p className="logo">
-          <Link to='/'><img src={logo} alt="" /></Link>
+          <Link to='/'><img src={logo2} alt="" /></Link>
         </p>
         <ul className="nav">
         <li className="alarm">

@@ -58,12 +58,16 @@ function App() {
   </Route>
 
   <Route path="IllitHome" element={<IllitHome/>} />
-  <Route path="FanHome" element={<FanHome/>} />
+ 
   <Route path="LiveHome" element={<LiveHome/>} />
   <Route path="LiveDetail" element={<LiveDetail/>} />
   <Route path="ArtistProfile" element={<ArtistProfile/>} />
+
+  <Route path="FanHome" element={<FanHome/>} >
+  <Route index element={<FanPostDetail/>} />
   <Route path="FanPostDetail" element={<FanPostDetail/>} />
   <Route path="FanPostWrite" element={<FanPostWrite/>} />
+  </Route>
 
 </Routes>
 
