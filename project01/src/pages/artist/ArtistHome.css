@@ -2,11 +2,15 @@ li{list-style: none;}
 a {color: inherit; text-decoration: inherit;}
 * {margin: 0;padding: 0; box-sizing: border-box;}
 
-.container-Artist{background: url(../../assets/img/IllitHomeimg/bg.png);padding: 16px;padding-bottom: 200px;}
-.top{display: flex;justify-content: space-between;padding-top: 40px;}
+.container-Artist{background: url(../../assets/img/IllitHomeimg/bg.png);padding: 16px;padding-bottom: 200px;position: relative;}
+
+.top {display: flex;justify-content: center;align-items: baseline;}
+.top .img {margin-right: 20px;margin-top: 40px;}
 .top .img img{border-radius: 10px;box-shadow: 0 0 13px rgba(0,0,0,0.25);}
-.top nav{display: flex;width: 40%;}
-.top nav ul{text-align: center;}
-.top nav ul li{margin-bottom: 30px;}
-.top nav ul li img{display: block;}
-.top nav ul.second{margin-top: 50px;padding-left: 40px;}
+.top .img2 img{width: 180px;}
+
+.bottom{position:fixed ;bottom: 0;z-index: 999;width: 92%;}
+.bottom nav ul{text-align: center;display: flex;justify-content: center;}
+.bottom nav ul li{margin-bottom: 20px;margin-right: 80px;}
+.bottom nav ul li:last-child {margin-right: 0;}
+.bottom nav ul li img{display: block;}
