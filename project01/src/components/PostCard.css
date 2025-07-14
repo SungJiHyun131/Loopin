@@ -1,0 +1,123 @@
+.list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+  }
+  
+  /* 공통 스타일 */
+  .post-card {
+    width: 100%;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    padding: 16px;
+    font-family: sans-serif;
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .profile-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .username {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .time {
+    font-size: 12px;
+    color: gray;
+  }
+  
+  .post-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    white-space: pre-line;
+  }
+  
+  .clamp-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .more-btn {
+    font-size: 12px;
+    color: #3b82f6;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-top: 4px;
+    cursor: pointer;
+  }
+  
+  .post-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: gray;
+    padding: 0 4px;
+  }
+  
+  /* 이미지 레이아웃 */
+  .single-img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  .two-imgs {
+    display: flex;
+    gap: 8px;
+  }
+  .two-imgs img {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .three-imgs {
+    display: flex;
+    gap: 8px;
+  }
+  .img-left {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  .img-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .img-top, .img-bottom {
+    height: 96px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .four-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .four-imgs img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+  }
