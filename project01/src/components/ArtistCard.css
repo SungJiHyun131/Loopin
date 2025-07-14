@@ -1,56 +1,44 @@
 .cardlist ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .artist-card {
-    padding: 2px; /* 그라디언트 테두리 공간 */
-    border-radius: 10px;
-    background: #fff;
-    transition: background 0.5s ;
-    position: relative;
-    border: 1px solid #ddd;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 0;
+  list-style: none;
+  padding: 0;
+}
 
-  }
+.artist-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
-  .artist-card:hover {
-    background: linear-gradient(135deg,#007BFF,#7f80ff,#d1d8ff);transition: background 0.5s ;border: none;
-  }
+}
 
-  .artist-inner {
-    background: #fff;
-    border-radius: 9px;
-    overflow: hidden;
-    transition: transform 0.2s;
-  }
-  .artist-img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .artist-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 12px;
-background: #fff;
-  }
-  
-  .artist-name {
-    font-size: 16px;
-    font-weight: 500;text-align: center;
-    color: #333;
-  }
-  
-  .artist-logo {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-    position: absolute;
-    right: 14px;
-    bottom: 34px;
-  }
+.artist-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 3px 3px 1px rgba(0,0,0,1);
+  transition: transform 0.3s;
+  border: 1px solid #000;
+  margin-bottom: 5px;
+}
+
+.artist-card:hover .artist-name-tag{background:#7CFF71 ;}
+.artist-card:hover .artist-img{transform: scale(1.02);}
+
+.artist-name-tag {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: linear-gradient(to bottom, #ffffff, #C9FFC7,#7CFF71,#fff);
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  box-shadow: 3px 3px 1px rgba(0,0,0,1);
+  text-align: center;
+  min-width: 100px;
+  text-transform: uppercase; /* ILLIT 처럼 */
+  transition: 0.3s;
+  border: 1px solid #000;
+}
