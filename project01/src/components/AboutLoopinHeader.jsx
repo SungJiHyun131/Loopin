@@ -7,7 +7,7 @@ const AboutLoopinHeader = () => {
         const navigate = useNavigate();
   return (
     <header>
-       <button className="back-button" onClick={()=> navigate('/')}><img src={back} alt="" /></button>
+       <button className="back-button" onClick={()=> navigate('/MoreHome')}><img src={back} alt="" /></button>
         <h2 className="title">LOOPIN에 관하여</h2>
         <p className="more-button">more</p>
     </header>

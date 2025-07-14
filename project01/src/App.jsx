@@ -2,10 +2,17 @@ import React from 'react';
 import {Routes, Route } from 'react-router-dom';
 import MainHome from './pages/MainHome';
 import ArtistHome from './pages/artist/ArtistHome';
+import ArtistProfile from './pages/artist/illit/ArtistProfile';
+import ArtistA from './pages/artist/illit/ArtistA';
+import ArtistB from './pages/artist/illit/ArtistB';
 import Dm from './pages/Dm';
 import Alarm from './pages/Alarm';
 import MoreHome from './pages/more/MoreHome';
 import MyArchive from './pages/more/MyArchive';
+import ArchiveA from './pages/more/ArchiveA'
+import ArchiveB from './pages/more/ArchiveB'
+import ArchiveC from './pages/more/ArchiveC'
+import ArchiveD from './pages/more/ArchiveD'
 import Subscribe from './pages/more/Subscribe';
 import SubscribeSelect from './pages/more/SubscribeSelect';
 import SubscribeSelectDetail from './pages/more/SubscribeSelectDetail';
@@ -24,7 +31,6 @@ import FanPostDetail from './pages/artist/fan/FanPostDetail';
 import FanPostWrite from './pages/artist/fan/FanPostWrite';
 import LiveHome from './pages/artist/live/LiveHome';
 import LiveDetail from './pages/artist/live/LiveDetail';
-import ArtistProfile from './pages/artist/illit/ArtistProfile';
 
 
 function App() {
@@ -37,8 +43,13 @@ function App() {
   <Route path="Alarm" element={<Alarm/>} />
   <Route path="MoreHome" element={<MoreHome/>} />
  
-  <Route path="MyArchive" element={<MyArchive/>} />
-
+  <Route path="MyArchive" element={<MyArchive/>} >
+  <Route index element={<ArchiveA/>} />
+  <Route path="ArchiveA" element={<ArchiveA/>} />
+  <Route path="ArchiveB" element={<ArchiveB/>} />
+  <Route path="ArchiveC" element={<ArchiveC/>} />
+  <Route path="ArchiveD" element={<ArchiveD/>} />
+  </Route>
 
 
   <Route path="Subscribe" element={<Subscribe/>} />
@@ -58,7 +69,14 @@ function App() {
   </Route>
 
   <Route path="IllitHome" element={<IllitHome/>} />
- 
+  
+  <Route path="ArtistProfile" element={<ArtistProfile/>}>
+  <Route index element={<ArtistA/>} />
+  <Route path="ArtistA" element={<ArtistA/>} />
+  <Route path="ArtistB" element={<ArtistB/>} />
+  </Route>
+
+
   <Route path="LiveHome" element={<LiveHome/>} />
   <Route path="LiveDetail" element={<LiveDetail/>} />
   <Route path="ArtistProfile" element={<ArtistProfile/>} />

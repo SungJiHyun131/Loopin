@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link, useLocation, Route} from 'react-router-dom'
 import ArtistHeader from '../../../components/ArtistHeader';
+
 const IllitHome = () => {
      const location =useLocation();
   return (
@@ -9,10 +10,14 @@ const IllitHome = () => {
         <ArtistHeader/>
       </div>
       <div className="container IllitHome">
-      <Link to='/ArtistProfile'>원희</Link>
+        <div className="New"></div>
+        <div className="Albums"></div>
+        <div className="Posts">
+        <Link to='/ArtistProfile'>원희</Link>
+        </div>
       </div>
     </div>
   )
 }
-<Route path="ArtistHeader" element={<ArtistHeader/>} />
+
 export default IllitHome
