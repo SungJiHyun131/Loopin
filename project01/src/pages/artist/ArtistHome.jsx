@@ -4,6 +4,7 @@ import IllitHeader from '../../components/IllitHeader'
 import './ArtistHome.css'
 import folder from '../../assets/img/IllitHomeimg/folder.png'
 import illit from '../../assets/img/IllitHomeimg/illit.png'
+import minju from '../../assets/img/IllitHomeimg/pixel_minju.png'
 import ProfileCard from '../../components/ProfileCard'
 import ScheduleCalendar from '../../components/ScheduleCalendar'
 
@@ -15,8 +16,11 @@ const ArtistHome = () => {
       <div className="IllitHeader">
         <IllitHeader />
       </div>
-      <div className="top">
-        <p className="img"><img src={illit} alt="" /></p>
+     <div className="top">
+      <p className="img"><img src={illit} alt="" /></p>
+      <p className="img2"><img src={minju} alt="" /></p>
+     </div>
+      <div className="bottom nav">
         <nav>
           <ul className='first'>
             <li className='Artist'><Link to="/IllitHome"><img src={folder} alt="" />Artist</Link></li>
