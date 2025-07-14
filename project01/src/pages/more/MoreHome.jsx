@@ -5,10 +5,10 @@ import './MoreHome.css';
 import icon from '../../assets/img/moreImg/profile.png'
 import icon1 from '../../assets/img/moreImg/icon_profile.png'
 import icon2 from '../../assets/img/moreImg/icon_bookmark.png'
-import icon3 from '../../assets/img/moreImg/icon_bubble.png'
-import icon4 from '../../assets/img/moreImg/icon_alert.png'
-import icon5 from '../../assets/img/moreImg/icon_rotate.png'
-import icon6 from '../../assets/img/moreImg/icon_like.png'
+import icon3 from '../../assets/img/moreImg/icon_card.png'
+import icon4 from '../../assets/img/moreImg/icon_Q.png'
+import icon5 from '../../assets/img/moreImg/icon_earth.png'
+import icon6 from '../../assets/img/moreImg/icon_light.png'
 import icon7 from '../../assets/img/moreImg/icon_setting.png'
 
 
@@ -20,7 +20,7 @@ const MoreHome = () => {
       <MoreHeader/>
     </div>
     <div className='container-morehome'>
-      <div className="profile"><img src={icon} alt="" />닉네임</div>
+      <div className="profile"><img src={icon} alt="" />루핀즈</div>
         <ul>
           <li><p className="img"><img src={icon1} alt="" /></p>내 계정</li>
           <li><Link to='/MyArchive'><p className="img"><img src={icon2} alt="" /></p>내 아카이브</Link></li>
