@@ -11,6 +11,3 @@ header .logo {width: 50px;}
 /* more 버튼 있는 버전 */
 header.more .more-button {opacity: 1;}
 header.illitheader{padding: 0;}
-header.main{background: linear-gradient(#5DABFF,#C9E3FF);}
-
-header.Alarm{background: linear-gradient(#5DABFF,#C9E3FF);}

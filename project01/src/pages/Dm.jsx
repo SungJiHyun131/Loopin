@@ -12,7 +12,7 @@ import P5 from "../assets/img/DMImg/제니.png"
 import P6 from "../assets/img/DMImg/태산.png"
 import P7 from "../assets/img/DMImg/승관.png"
 import P8 from "../assets/img/DMImg/더보기.png"
-
+import SearchBar from '../components/SearchBar';
 
 const Dm = () => {
   
@@ -22,8 +22,10 @@ const Dm = () => {
         <DmHeader/>
       </div>
       <div className="container">
+      <SearchBar onChange={(e) => setQuery(e.target.value)} />
       <div className="message">
         <h3>메세지</h3>
+       
         <ul>
           <li>
             <img src={P1} alt="" />
