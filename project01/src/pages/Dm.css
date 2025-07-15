@@ -1,8 +1,8 @@
 
-
+.bgdm {background:linear-gradient(to bottom,#5dabff, #fff,#5dabff);min-height: 100vh;}
 .container .message{margin-top: 30px;}
 .container .message h3, .container .recommend h3{font-size: 18px; margin: 15px 0;}
-.container .message ul li{display: flex; align-items: center; width: 100%; height: 90px;border-bottom:1px solid #D2D2D2; margin: 10px 0;}
+.container .message ul li{display: flex; align-items: center; width: 100%; height: 90px;border-bottom:1px solid #fff;}
 .container .message ul li img{width: 60px; height: 60px;}
 .container .message ul li .right{ width: 90%; margin: 10px;}
 .container .message ul li .right .top{display: flex; justify-content: space-between; width: 100%;padding: 5px 0;}

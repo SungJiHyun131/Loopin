@@ -17,7 +17,7 @@ import P8 from "../assets/img/DMImg/더보기.png"
 const Dm = () => {
   
   return (
-    <div>
+    <div className='bgdm'> 
        <div className="DmHeader">
         <DmHeader/>
       </div>
