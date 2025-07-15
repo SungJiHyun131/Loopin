@@ -17,7 +17,7 @@ import SearchBar from '../components/SearchBar';
 const Dm = () => {
   
   return (
-    <div>
+    <div className='bgdm'> 
        <div className="DmHeader">
         <DmHeader/>
       </div>

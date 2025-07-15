@@ -1,0 +1,40 @@
+
+.bgArchive {background:linear-gradient(to bottom,#5dabff, #fff,#5dabff);min-height: 100vh;}
+.bgArchive .toggle-container {
+    position: relative;
+    display: flex;
+    width: 380px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 999px;
+    background: transparent;
+    overflow: hidden;
+    margin: 20px auto;
+  }
+  
+  .bgArchive .toggle-bg {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 25%;
+    height: 104%;
+    background: linear-gradient(to bottom, #ffffff, #C9FFC7,#7CFF71,#fff);
+    border-radius: 999px;
+    z-index: 1;
+    transition: left 0.3s ease;
+    border: 1px solid #000;
+    box-sizing: border-box;
+  }
+  
+  .bgArchive .toggle-btn {
+    flex: 1;
+    z-index: 2;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    cursor: pointer;
+  }

@@ -15,7 +15,7 @@ import icon7 from '../../assets/img/moreImg/icon_setting.png'
 const MoreHome = () => {
     const location = useLocation();
   return (
-    <div>
+    <div className='bgMore'>
     <div className="MoreHeader">
       <MoreHeader/>
     </div>
@@ -34,5 +34,5 @@ const MoreHome = () => {
     </div>
   )
 }
-<Route path="MoreHeader" element={<MoreHeader/>} />
+
 export default MoreHome

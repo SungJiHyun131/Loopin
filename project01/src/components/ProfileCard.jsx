@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 import 'swiper/css'
@@ -51,6 +52,7 @@ const ProfileCard = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
+        <Link to='/ArtistProfile'>
           <div className="card">
             <div className="img"><img src={img4} alt="원희" /></div>
             <div className="txt">
@@ -58,6 +60,7 @@ const ProfileCard = () => {
               <p className="intro">걸그룹 아일릿(ILLIT)의 멤버로, 2007년 06월 26일 생입니다.</p>
             </div>
           </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
           <div className="card">
