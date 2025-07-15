@@ -29,6 +29,8 @@ import IllitHome from './pages/artist/illit/IllitHome';
 import FanHome from './pages/artist/fan/FanHome';
 import FanPostDetail from './pages/artist/fan/FanPostDetail';
 import FanPostWrite from './pages/artist/fan/FanPostWrite';
+import FanLetter from './pages/artist/fan/FanLetter';
+import SecretLetter from './pages/artist/fan/SecretLetter';
 import LiveHome from './pages/artist/live/LiveHome';
 import LiveDetail from './pages/artist/live/LiveDetail';
 
@@ -86,7 +88,8 @@ function App() {
   <Route path="FanPostDetail" element={<FanPostDetail/>} />
   <Route path="FanPostWrite" element={<FanPostWrite/>} />
   </Route>
-
+  <Route path="FanLetter" element={<FanLetter/>} />
+  <Route path="SecretLetter" element={<SecretLetter/>} />
 </Routes>
 
   );

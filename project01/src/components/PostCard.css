@@ -21,6 +21,7 @@
     align-items: center;
     gap: 8px;
     margin-bottom: 15px;
+    justify-content: space-between;
   }
   
   .post-header .profile-img {
@@ -31,14 +32,17 @@
     font-weight: 500;
     font-size: 18px;
   }
-  
+  .left-group {
+    display: flex;
+    align-items: center;
+  }
   .post-header .time {
     font-size: 12px;
     color: #666;
     margin-top: 4px;
 
   }
-  .post-header .morebtn{margin-left: 100px;}
+ 
    .post-text {
     font-size: 16px;
     margin-bottom: 10px;
@@ -73,12 +77,14 @@
     align-items: center;
   }
   .post-footer span{display: inline-block;margin-right: 10px;align-items: center;}
+
   
   /* 이미지 레이아웃 */
   .single-img {
     width: 100%;
     border-radius: 4px;
     object-fit: cover;
+    height: 300px;
   }
   
   .two-imgs {
