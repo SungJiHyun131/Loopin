@@ -45,10 +45,12 @@ const PostCard = ({ user, text, images, likes, comments }) => {
   return (
     <div className="post-card">
       <div className="post-header">
-        <img src={profile} alt="profile" className="profile-img" />
+        <div className="left-group">
+        <img src={user.profileImg} alt="profile" className="profile-img" />
         <div className="user-info">
           <div className="username">{user.name}</div>
           <div className="time">{user.time}</div>
+        </div>
         </div>
         <div className="morebtn"><img src={more} alt="" /></div>
       </div>
