@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import './PostCard.css';
+import heart from '../assets/img/IllitHomeimg/postimg/heart.png'
+import comment from '../assets/img/IllitHomeimg/postimg/comment.png'
+import more from'../assets/img/IllitHomeimg/postimg/more.png'
+import mark from'../assets/img/IllitHomeimg/postimg/mark.png'
+import profile from '../assets/img/IllitHomeimg/postimg/profile.png'
 
 const PostCard = ({ user, text, images, likes, comments }) => {
   const [showFullText, setShowFullText] = useState(false);
@@ -40,11 +45,12 @@ const PostCard = ({ user, text, images, likes, comments }) => {
   return (
     <div className="post-card">
       <div className="post-header">
-        <img src={user.profileImg} alt="profile" className="profile-img" />
+        <img src={profile} alt="profile" className="profile-img" />
         <div className="user-info">
           <div className="username">{user.name}</div>
           <div className="time">{user.time}</div>
         </div>
+        <div className="morebtn"><img src={more} alt="" /></div>
       </div>
 
       <div className="post-text">
@@ -60,10 +66,10 @@ const PostCard = ({ user, text, images, likes, comments }) => {
 
       <div className="post-footer">
         <div className="footer-left">
-          <span>❤️ {likes}</span>
-          <span>💬 {comments}</span>
+          <span><img src={heart} alt="" /> {likes}</span>
+          <span><img src={comment} alt="" /> {comments}</span>
         </div>
-        <div className="footer-right">📤</div>
+        <div className="footer-right"><img src={mark} alt="" /></div>
       </div>
     </div>
   );

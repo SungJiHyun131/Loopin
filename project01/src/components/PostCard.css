@@ -7,54 +7,55 @@
   
   /* 공통 스타일 */
   .post-card {
-    width: 100%;
+    width: 370px;
     background: white;
-    border-radius: 16px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-radius: 4px;
+   border: 1px solid #ccc;
     padding: 16px;
     font-family: sans-serif;
+    margin: 0 auto;
   }
   
   .post-header {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
   }
   
-  .profile-img {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
+  .post-header .profile-img {
+    border: 1px solid #000;border-radius: 50%;
   }
   
-  .username {
-    font-weight: bold;
-    font-size: 14px;
+  .post-header .username {
+    font-weight: 500;
+    font-size: 18px;
   }
   
-  .time {
+  .post-header .time {
     font-size: 12px;
-    color: gray;
+    color: #666;
+    margin-top: 4px;
+
   }
-  
-  .post-text {
-    font-size: 14px;
+  .post-header .morebtn{margin-left: 100px;}
+   .post-text {
+    font-size: 16px;
     margin-bottom: 10px;
     line-height: 1.4;
     white-space: pre-line;
+    display: flex;justify-content: space-between;align-items: end;
   }
   
-  .clamp-text {
+ .clamp-text {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    overflow: hidden;
+    overflow: hidden;width: 85%;
   }
   
   .more-btn {
-    font-size: 12px;
+    font-size: 16px;
     color: #3b82f6;
     background: none;
     border: none;
@@ -67,14 +68,16 @@
     display: flex;
     justify-content: space-between;
     font-size: 14px;
-    color: gray;
-    padding: 0 4px;
+    color: #333;
+    padding: 10px 0 0 0;
+    align-items: center;
   }
+  .post-footer span{display: inline-block;margin-right: 10px;align-items: center;}
   
   /* 이미지 레이아웃 */
   .single-img {
     width: 100%;
-    border-radius: 12px;
+    border-radius: 4px;
     object-fit: cover;
   }
   
@@ -85,7 +88,7 @@
   .two-imgs img {
     width: 50%;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius:4px;
   }
   
   .three-imgs {
@@ -94,9 +97,9 @@
   }
   .img-left {
     width: 50%;
-    height: 200px;
+    height: 308px;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 4px;
   }
   .img-right {
     width: 50%;
@@ -105,9 +108,9 @@
     gap: 8px;
   }
   .img-top, .img-bottom {
-    height: 96px;
+    height: 150px;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 4px;
   }
   
   .four-imgs {
@@ -119,5 +122,5 @@
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 4px;
   }

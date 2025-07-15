@@ -31,7 +31,7 @@ const recentNotifications = [
 ];
 const Alarm = () => {
   return (
-    <div>
+    <div className='alarmhome'>
     <div className="AlarmHeader">
       <AlarmHeader/>
     </div>

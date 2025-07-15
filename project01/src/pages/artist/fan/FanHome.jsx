@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link, useLocation, Route, Outlet} from 'react-router-dom'
 import FanHeader from '../../../components/FanHeader';
+import './FanHome.css'
 
 
 const FanHome = () => {
@@ -12,6 +13,7 @@ const FanHome = () => {
         };
   return (
     <div>
+      <div className="fantop">
         <div className="FanHeader">
         <FanHeader/>
       </div>
@@ -20,7 +22,7 @@ const FanHome = () => {
        right: getIndex() === 0 ? `calc(0%-1px)` : undefined,}} />
            <Link to="FanPostDetail" className="toggle-btn">팬레터</Link>
            <Link to="FanPostWrite" className="toggle-btn">비밀레터</Link>
-          
+         </div>
          </div>
          <Outlet/>
     </div>
