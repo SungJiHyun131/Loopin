@@ -2,9 +2,13 @@ import React,{useState} from 'react'
 import ArtistCard from '../components/ArtistCard'
 import './MainHome.css'
 import SearchBar from '../components/SearchBar';
-import filter from'../assets/img/filter_icon.png'
+// import filter from'../assets/img/filter_icon.png';
+import ChatbotButton from './ChatbotButton';
+import ChatbotModal from '../components/ChatbotModal';
+
 const MainHome = () => {
   const [query, setQuery] = useState('');
+  const [chatOpen, setChatOpen] = useState(false);
 
   return (
     <div className='container main'>
@@ -19,6 +23,9 @@ const MainHome = () => {
        </p>
      
      <ArtistCard/>
+
+      <ChatbotButton onClick={() => setChatOpen(true)} />
+      {chatOpen && <ChatbotModal onClose={() => setChatOpen(false)} />}
     </div>
   )
 }

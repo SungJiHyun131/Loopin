@@ -60,7 +60,7 @@ const ArtistHome = () => {
     </ul>
 
     {/* 두 번째 박스 */}
-    <div className="nav-background second-layer" />
+
     <ul className="nav-row second">
       <li className="Fan"><Link to="/FanHome"><img src={folder} alt="" />Fan</Link></li>
       <li className="Notice"><Link to="/NoticeHome"><img src={folder} alt="" />Notice</Link></li>
