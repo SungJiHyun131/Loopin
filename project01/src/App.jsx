@@ -31,13 +31,17 @@ import FanPostDetail from './pages/artist/fan/FanPostDetail';
 import FanPostWrite from './pages/artist/fan/FanPostWrite';
 import LiveHome from './pages/artist/live/LiveHome';
 import LiveDetail from './pages/artist/live/LiveDetail';
-
-
+import ChatbotModal from './components/ChatbotModal';
+import ChatbotView from './components/ChatbotView';
 function App() {
   return (
     <Routes>
       <Route path='/' element={<Layout/>}>
-  <Route index element={<MainHome/>} /></Route>
+  <Route index element={<MainHome/>} />
+  <Route path="MainHome" element={<MainHome/>} />
+  </Route>
+  <Route path="ChatbotModal" element={<ChatbotModal/>} />
+  <Route path="ChatbotView" element={<ChatbotView/>} />
   <Route path="ArtistHome" element={<ArtistHome/>} />
   <Route path="Dm" element={<Dm/>} />
   <Route path="Alarm" element={<Alarm/>} />
