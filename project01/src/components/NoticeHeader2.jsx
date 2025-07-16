@@ -8,7 +8,7 @@ const NoticeHeader = () => {
     <div>
      <header className='more'>
            <button className="back-button" onClick={()=> navigate('/NoticeHome')}><img src={back} alt="" /></button>
-           <h2 className="title">공지사항</h2>
+           <h2 className="title">NOTICE</h2>
           <p className="more-button"><a href=""><img src={more} alt="" /></a></p> 
          </header>
     </div>

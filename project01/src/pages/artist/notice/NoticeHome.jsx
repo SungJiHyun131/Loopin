@@ -4,12 +4,15 @@ import NoticeHeader from '../../../components/NoticeHeader';
 import './NoticeHome.css';
 import newIcon from '../../../assets/img/icon_new.png'
 import rightIcon from '../../../assets/img/Icon_right.png'
+import bgbottom from '../../../assets/img/bg-bottom.png'
+import bgtop from '../../../assets/img/bg-top.png'
 
 
 const Notice = () => {
   const location =useLocation();
   return (
     <div className='noticemain'>
+        <div className="bg top"><img src={bgtop} alt="" /></div>
        <div className="NoticeHeader">
         <NoticeHeader/>
       </div>
@@ -91,9 +94,10 @@ const Notice = () => {
           </li>
         </ul>
       </div>
+      <div className="bg"><img src={bgbottom} alt="" /></div>
     </div>
   )
 }
 
-<Route path="NoticeHeader" element={<NoticeHeader/>} />
+
 export default Notice
