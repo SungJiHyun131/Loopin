@@ -12,7 +12,7 @@ const Notice = () => {
   const location =useLocation();
   return (
     <div className='noticemain'>
-        <div className="bg top"><img src={bgtop} alt="" /></div>
+        <div className="bg-top"><img src={bgtop} alt="" /></div>
        <div className="NoticeHeader">
         <NoticeHeader/>
       </div>
@@ -94,7 +94,7 @@ const Notice = () => {
           </li>
         </ul>
       </div>
-      <div className="bg"><img src={bgbottom} alt="" /></div>
+      <div className="bg-bottom"><img src={bgbottom} alt="" /></div>
     </div>
   )
 }
