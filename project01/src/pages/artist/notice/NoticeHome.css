@@ -1,4 +1,4 @@
-.noticemain{background: url(../../../assets/img/IllitHomeimg/bg.png);}
+.noticemain{background: url(../../../assets/img/IllitHomeimg/bg.png); height: 100vh;}
 
 .container.NoticeHome ul li{border-bottom: 1px solid #eee; height: 100px;}
 .container.NoticeHome ul li .left h3{font-size: 16px; font-weight: 400;padding-bottom:20px ;}

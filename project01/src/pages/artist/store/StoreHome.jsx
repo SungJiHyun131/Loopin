@@ -2,7 +2,7 @@ import React from 'react'
 import {Link, useLocation, Route} from 'react-router-dom'
 import StoreHeader from '../../../components/StoreHeader';
 import banner from '../../../assets/img/StoreImg/Store.png'
-
+import './StoreHome.css';
 
 const StoreHome = () => {
     const location =useLocation();
@@ -14,8 +14,10 @@ const StoreHome = () => {
       <div className="container StoreHome">
         <div className="banner">
           <img src={banner} alt="" />
-          <h3>2025 ILLIT GLITTER <br />DAY IN SEOUL</h3>
-          <p>공식 상품을 만나보세요</p>
+          <div className="textBox">
+            <h3>2025 ILLIT GLITTER <br />DAY IN SEOUL</h3>
+            <p>공식 상품을 만나보세요</p>
+          </div>
         </div>
         <div className="Products">
           <h3>Products</h3>

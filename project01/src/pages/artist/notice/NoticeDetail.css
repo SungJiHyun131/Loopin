@@ -1,9 +1,9 @@
-
-.container.NoticeDetail .top{display: block; margin-bottom: 30px;}
-.container.NoticeDetail .top .blue{color: #5DABFF;margin-bottom: 6px;}
+.container.NoticeDetail{height: 100vh; }
+.container.NoticeDetail .top{display: block; margin-bottom: 35px;}
+.container.NoticeDetail .top .pink{color: #FF8EBF;margin-bottom: 6px;}
 .container.NoticeDetail .top h3{font-size: 18px; font-weight: 500;margin-bottom:10px;}
 .container.NoticeDetail .top p{font-size: 15px; color: #8E8E8E;}
-.container.NoticeDetail .bottom{background: #F7F5F5; width: 100%; padding: 10px;}
+.container.NoticeDetail .bottom{background: #F7F5F5; width: 100%; padding: 10px;position: static;}
 .container.NoticeDetail .bottom .txt{font-size: 16px; line-height: 1.6;}
 .container.NoticeDetail .bottom .txt .Notice{font-size: 18px; font-weight:500 ;}
-.container.NoticeDetail .bottom .btn{width: 235px; height: 52px; margin: 30px auto; border: 1px solid #000;background: linear-gradient(to bottom,#fff, #5DABFF, #C7E2FF,#fff); text-align: center; line-height: 52px; border-radius: 50px;}
+.container.NoticeDetail .bottom .btn{width: 235px; height: 52px; margin: 30px auto; border: 1px solid #000;background: linear-gradient(to bottom,#fff, #FF8EBF, #FFC8DF,#fff); text-align: center; line-height: 52px; border-radius: 50px;}

@@ -11,7 +11,7 @@ const NoticeDetail = () => {
       </div>
       <div className="container NoticeDetail">
           <div className="top">
-            <p className="blue">EVENT</p>
+            <p className="pink">EVENT</p>
             <h3 className="Notice_tit">[EVENT] 최애가 말아주는 여름 콘텐츠?! 😳🏖️ </h3>
             <p>2025.07.04</p>
           </div>
@@ -47,7 +47,6 @@ const NoticeDetail = () => {
               <br />
               Love What You Love More’
             </p>
-
             <div className="btn"><p>새로운 미션 참여하기 🚀</p></div>
           </div>
       </div>
