@@ -8,9 +8,11 @@
 .container .message ul li .right .top{display: flex; justify-content: space-between; width: 100%;padding: 5px 0;}
 .container .message ul li .right .top .name{font-size: 16px;font-weight: 500;}
 .container .message ul li .right .top .date{font-size: 14px;}
-.container .message ul li .right .content{font-size: 15px;}
+.container .message ul li .right .content{font-size: 15px;line-height: 1.4;}
 
-.container .recommend{margin-top: 35px;}
-.container .recommend ul{display: flex;}
-.container .recommend ul li{margin-right: 10px;}
-.container .recommend ul li p{text-align: center; font-size: 14px;}
+.recommend h3 {margin-bottom: 10px;padding-left: 16px;}
+.recommend{margin-top: 35px;}
+.recommend ul{display: flex;overflow-x: auto;}
+.recommend ul li{margin-right: 10px;}
+.recommend ul li:first-child{padding-left: 16px;}
+.recommend ul li p{text-align: center; font-size: 14px;}

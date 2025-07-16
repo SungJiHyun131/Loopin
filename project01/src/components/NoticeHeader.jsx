@@ -6,9 +6,9 @@ const NoticeHeader = () => {
     const navigate = useNavigate();
   return (
     <div>
-     <header>
+     <header className='notice'>
            <button className="back-button" onClick={()=> navigate('/ArtistHome')}><img src={back} alt="" /></button>
-           <h2 className="title">공지사항</h2>
+           <h2 className="title">NOTICE</h2>
            <p className="more-button">more</p> 
          </header>
     </div>

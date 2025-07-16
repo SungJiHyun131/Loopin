@@ -1,0 +1,43 @@
+
+  .chatbot-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #dbeeff, #ffffff);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+  }
+  
+  .chatbot-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .chatbot-body {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+  }
+.chatbot-conBox {background: #fff;width: 100%;height: 200px;border-radius: 15px;padding: 20px;margin-bottom: 15px;}
+.using {font-size: 12px;text-align: center;color: #666;}
+
+.askbtn {background: #007BFF;padding: 14px 140px;border-radius: 30px;color: #fff;font-size: 16px;}
+.askbtn img {display: inline-block;vertical-align: middle;margin-left: 5px;}
+
+.profile {display: flex;}
+.profile .img {border-radius: 50%;overflow: hidden;width: 38px;height: 38px;border: 1px solid #111;}
+.profile .img img {width: 100%; height: 100%;object-fit: cover;}
+.profile .profile-name {margin-left: 15px;}
+.profile .profile-name .name {font-size: 14px;font-weight: 500;margin-bottom: 5px;}
+.profile .profile-name .intro {font-size: 16px;color: #666;}

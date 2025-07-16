@@ -10,7 +10,7 @@ import P3 from "../assets/img/DMImg/정원.png"
 import P4 from "../assets/img/DMImg/닝닝.png"
 import P5 from "../assets/img/DMImg/제니.png"
 import P6 from "../assets/img/DMImg/태산.png"
-import P7 from "../assets/img/DMImg/승관.png"
+import P7 from "../assets/img/DMImg/성찬.png"
 import P8 from "../assets/img/DMImg/더보기.png"
 import SearchBar from '../components/SearchBar';
 
@@ -50,6 +50,8 @@ const Dm = () => {
           </li>
         </ul>
       </div>
+     
+      </div>
       <div className="recommend">
         <h3>추천</h3>
         <ul>
@@ -71,14 +73,14 @@ const Dm = () => {
           </li>
           <li>
             <img src={P7} alt="" />
-            <p>승관</p>
+            <p>성찬</p>
           </li>
           <li>
+          
             <img src={P8} alt="" />
             <p>더보기</p>
           </li>
         </ul>
-      </div>
       </div>
     </div>
   )
