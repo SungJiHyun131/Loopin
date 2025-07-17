@@ -3,7 +3,7 @@ import SubscribeHeader3 from '../../components/SubscribeHeader3';
 import {Link,Route} from 'react-router-dom';
 import './SubscribeSelectDetail.css';
 import card from '../../assets/img/Subscribeimg/membership_card.png';
-import card2 from '../../assets/img/Subscribeimg/payment_done_icon.png';
+import card2 from '../../assets/img/Subscribeimg/payment_done_icon.svg';
 const SubscribeSelectDetail = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
