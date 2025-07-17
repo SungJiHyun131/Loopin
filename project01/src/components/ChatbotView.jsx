@@ -96,7 +96,7 @@ const ChatbotView = () => {
 
         {isLoading && (
           <div className="chat-message bot">
-            <img src={icon} alt="bot" className="avatar" />
+            <img src={profile} alt="bot" className="avatar" />
             <div className="chat-bubble bot typing">
               <span className="dot"></span>
               <span className="dot"></span>

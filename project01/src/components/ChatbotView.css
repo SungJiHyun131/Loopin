@@ -54,13 +54,13 @@
 .chat-bubble.user { background: #007BFF; color: white; }
 
 .chat-bubble.typing { display: flex; align-items: center; gap: 6px; padding: 10px 14px;border-radius: 16px; }
-.dot { width: 6px; height: 6px; background: #007BFF; border-radius: 50%; animation: blink 1.2s infinite ease-in-out; }
-.dot:nth-child(2) { animation-delay: 0.2s; }
-.dot:nth-child(3) { animation-delay: 0.4s; }
+.chat-bubble .dot { width: 6px; height: 6px; background: #007BFF; border-radius: 50%; animation: blink 1.2s infinite ease-in-out; }
+.chat-bubble .dot:nth-child(2) { animation-delay: 0.2s; }
+.chat-bubble .dot:nth-child(3) { animation-delay: 0.4s; }
 
 @keyframes blink {
   0% { opacity: 0.3; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.4); }
+  50% { opacity: 1; transform: scale(1.2); }
   100% { opacity: 0.3; transform: scale(1); }
 }
 .chat-message {
