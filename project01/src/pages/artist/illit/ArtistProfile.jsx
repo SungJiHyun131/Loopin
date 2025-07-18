@@ -4,6 +4,8 @@ import ArtistHeader2 from '../../../components/ArtistHeader2';
 import './ArtistProfile.css';
 import profile from '../../../assets/img/IllitHomeimg/artistimg/wonhee.png';
 import official from '../../../assets/img/IllitHomeimg/artistimg/official-badge.png';
+import content from '../../../assets/img/IllitHomeimg/artistimg/bg-artistcontent.png';
+import headerbg from '../../../assets/img/IllitHomeimg/artistimg/bg-artistheader.png';
 import './ArtistProfile.css'
 
 const ArtistProfile = () => {
@@ -16,9 +18,12 @@ const ArtistProfile = () => {
 
   return (
     <div className='ArtistProfile'>
+  
       <div className="ArtistHeader">
         <ArtistHeader2/>
+        <div className="artistheaderbg"><img src={headerbg} alt="" /></div>
       </div>
+      <div className="Artistcontent">
       <div className="top-profile">
         <div className="profile-img"><img src={profile} alt="" /></div>
         <p className="birth">2007.06.26</p>
@@ -32,7 +37,8 @@ const ArtistProfile = () => {
             <Link to="ArtistB" className="toggle-btn">댓글</Link>
           </div>
           <div className="container Artist"><Outlet /></div>
-        
+          <div className="artistbg"><img src={content} alt="" /></div>
+          </div>
     </div>
   )
 }

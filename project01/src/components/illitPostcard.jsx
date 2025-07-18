@@ -31,7 +31,7 @@ const illitPostcard = () => {
         user: {
           name: '모카삐',
           profileImg: moka,
-          time: '10분 전',
+          time: '50분 전',
         },
         text: `오늘 1위 너무너무 고마워여어ㅓ ~~ 🥺🥺💗💗💗
 글릿덕분에 저는 너무너무 행복해서 날아가요~~ 🧚‍♀️🧚‍♀️`,
