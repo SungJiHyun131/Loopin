@@ -37,3 +37,11 @@
     cursor: pointer;
   }
 
+
+.ArtistProfile .top-profile {display: flex;flex-direction: column;justify-content: center;text-align: center;align-items: center;color: #666;}
+.ArtistProfile .top-profile .profile-img {border: 1px solid #000;border-radius: 50%;margin-bottom: 6px;width: 60px;height: 60px;margin-left: 5px;}
+.ArtistProfile .top-profile .profile-img img {width: 100%;height: 100%;object-fit: cover;}
+.ArtistProfile .top-profile .birth {font-size: 10px;margin-bottom: 1px;line-height: 16px;}
+.ArtistProfile .top-profile .nickname {font-size: 18px;font-weight: 500;color: #111;margin-bottom: 1px;display: flex;justify-content: center;align-items: center;line-height: 26px;}
+.ArtistProfile .top-profile .nickname img {margin-left: 3px;}
+.ArtistProfile .top-profile .smalltext {font-size: 14px;line-height: 20px;}

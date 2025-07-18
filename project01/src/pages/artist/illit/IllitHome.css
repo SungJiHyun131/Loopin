@@ -2,3 +2,4 @@
 .Albums {margin-bottom: 23px;}
 .bg {width:100%;position: fixed;z-index: -999;top: 0;left: 0;height: 1300px;}
 .bg img {width: 100%;height: 100%;object-fit: cover;mask-image: none;}
+.artistcontainer {padding-bottom: 100px;}
