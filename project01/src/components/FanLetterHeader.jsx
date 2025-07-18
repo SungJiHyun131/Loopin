@@ -1,15 +1,14 @@
-import React from 'react'
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import back from '../assets/img/header_back.png'
-import check from '../assets/img/check.png'
-import './FanLetterHeader.css'
+import back from '../assets/img/header_back.png';
+import check from '../assets/img/check.png';
+import './FanLetterHeader.css';
 
-const FanLetterHeader = ({ isActive }) => {
-  const navigate = useNavigate();
+const FanLetterHeader = ({ isActive, onBack }) => {
   return (
     <div>
       <header className='more'>
-        <button className="back-button" onClick={() => navigate(-1)}>
+        <button className="back-button" onClick={onBack}>
           <img src={back} alt="" />
         </button>
         <h2 className="title">
@@ -26,4 +25,5 @@ const FanLetterHeader = ({ isActive }) => {
 }
 
 export default FanLetterHeader;
+
 
