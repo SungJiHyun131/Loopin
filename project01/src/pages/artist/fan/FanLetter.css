@@ -1,0 +1,88 @@
+.fanletterbg{position: fixed;width: 100%;height: 130px;}
+.fanletterbg img{width: 100%;mask-image: linear-gradient(to top, transparent,#fff,#fff,#fff,#fff);width: 100%;height: 100%;object-fit: cover;}
+.FanLetterContent textarea {
+    width: 370px;
+    height: 600px;
+    margin: 40px auto;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    resize: none;
+  }
+
+  .FanLetterContent textarea:focus {
+    outline: none;
+  }
+
+  .fanletter-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding: 10px 16px;
+    background: #fff;
+  }
+  
+  .fan-icon-btn {
+    background: none;
+    border: none;
+    margin-right: 10px;
+  }
+  
+  .secret-toggle {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+  }
+
+  /* 토글 스위치 CSS */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 18px;
+    margin-left: 5px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .fan-slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 18px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .4s;
+  }
+  
+  .fan-slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .fan-slider {
+    background-color: #DABCF6;
+  }
+  
+  input:checked + .fan-slider:before {
+    transform: translateX(16px);
+  }
+
+  

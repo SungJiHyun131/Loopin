@@ -3,10 +3,14 @@ import { Link, useLocation, Outlet } from 'react-router-dom'
 import FanHeader from '../../../components/FanHeader';
 import './FanHome.css'
 import btnmore from '../../../assets/img/IllitHomeimg/postimg/btn.png'
-import down from '../../../assets/img/IllitHomeimg/postimg/down.png';
+
 import fan from '../../../assets/img/IllitHomeimg/postimg/fan.png';
 import secret from '../../../assets/img/IllitHomeimg/postimg/secret.png';
 import X from '../../../assets/img/IllitHomeimg/postimg/X.png';
+import fanbg from '../../../assets/img/Fanimg/FANBG.png';
+import fansearch from '../../../assets/img/Fanimg/fansearch.png';
+import fanletter from '../../../assets/img/Fanimg/fanletter.png';
+
 
 
 const FanHome = () => {
@@ -20,10 +24,14 @@ const FanHome = () => {
 
   return (
     <div className='fanContainer'>
-      <div className="fantop">
+      <div className="fanletter"><img src={fanletter} alt="" /></div>
+      <div className="fanbg"><img src={fanbg} alt="" /></div>
+      <div className="fantop">   
         <div className="FanHeader">
           <FanHeader />
         </div>
+        <div className="togglesearch">
+        <div className="fansearcha"><img src={fansearch} alt="" /></div>
         <div className="toggle-container">
           <div
             className="toggle-bg"
@@ -34,10 +42,12 @@ const FanHome = () => {
           />
           <Link to="FanPostDetail" className="toggle-btn">팬레터</Link>
           <Link to="FanPostWrite" className="toggle-btn">비밀레터</Link>
+          
         </div>
-        <p className="recent">최신순 <img src={down} alt="" /></p>
+        <div className="fansearch"><img src={fansearch} alt="" /></div>
+        </div>
       </div>
-
+      
       <Outlet />
 
       <p className="btnmore" onClick={() => setIsMenuOpen(true)}>
