@@ -9,6 +9,7 @@
     font-size: 16px;
     border: none;
     resize: none;
+    margin-bottom: 60px;
   }
 
   .FanLetterContent textarea:focus {
@@ -16,12 +17,17 @@
   }
 
   .fanletter-toolbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid #eee;
-    padding: 10px 16px;
+    padding: 10px;
     background: #fff;
+    z-index: 100;
   }
   
   .fan-icon-btn {
