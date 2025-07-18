@@ -19,6 +19,7 @@ import spr2 from '../../../assets/img/IllitHomeimg/postimg/spr2.png'
 import spr3 from '../../../assets/img/IllitHomeimg/postimg/spr3.png'
 import spr4 from '../../../assets/img/IllitHomeimg/postimg/spr4.png'
 import spr5 from '../../../assets/img/IllitHomeimg/postimg/spr5.png'
+import down from '../../../assets/img/IllitHomeimg/postimg/down.png';
 import './FanPostWrite.css'
 const FanPostWrite = () => {
    const dummyPosts = [
@@ -90,6 +91,7 @@ const FanPostWrite = () => {
   ]
   return (
     <div className='container FanPostWrite'>
+       <p className="recent">최신순 <img src={down} alt="" /></p>
 <div className="fan-post-write-container">
       <PostList posts={dummyPosts} />
     </div>

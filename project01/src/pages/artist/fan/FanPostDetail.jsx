@@ -21,6 +21,7 @@ import pr2 from '../../../assets/img/IllitHomeimg/postimg/pr2.png';
 import pr3 from '../../../assets/img/IllitHomeimg/postimg/pr3.png';
 import pr4 from '../../../assets/img/IllitHomeimg/postimg/pr4.png';
 import pr from '../../../assets/img/IllitHomeimg/postimg/profile.png';
+import down from '../../../assets/img/IllitHomeimg/postimg/down.png';
 
 import './FanPostDetail.css'
 
@@ -98,8 +99,9 @@ const FanPostDetail = () => {
 
   return (
     <div className="container FanPostDetail">
-     
+     <p className="recent">최신순 <img src={down} alt="" /></p>
       <div className="fan-post-detail-container">
+      
       <PostList posts={dummyPosts} />
     </div>
     </div>
