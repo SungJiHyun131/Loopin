@@ -91,4 +91,34 @@
     transform: translateX(16px);
   }
 
+  .modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
   
+  .modal-content {
+    background: #fff;
+    padding: 30px ;
+    border-radius: 16px;
+    text-align: center;
+    width: 320px;height: 200px;
+  }
+  .modal-content .real{font-weight: 500;font-size: 18px;margin-bottom: 10px;}
+  .modal-content .hey{font-size: 16px;color: #666;}
+  .modal-buttons button {
+    margin: 30px 5px;
+    padding: 10px 25px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .modal-buttons button.letter-save{background: linear-gradient(to top, #FF8EBF, #FFC8DF, #fff);}
+

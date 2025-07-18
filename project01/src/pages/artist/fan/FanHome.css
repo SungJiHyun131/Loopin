@@ -5,8 +5,42 @@
 .fantop{position: fixed;width: 100%;}
 .togglesearch{display: flex;align-items: center;width: 80%;margin: 0 auto;}
 .fansearcha{opacity: 0;}
-.toggle-container{background: #fff;}
-.btnmore{position: fixed;bottom: 20px;right: 20px;border: 1px solid #000;border-radius: 50%;background: linear-gradient(to bottom, #fff,#FF8EBF, #FFC8DF, #fff);width: 50px;height: 50px;text-align: center;line-height: 64px;}
+.toggle-container{ position: relative;
+  display: flex;
+  width: 180px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 999px;
+  background: transparent;
+  overflow: hidden;
+  margin: 20px auto;
+  background: #fff;}
+.toggle-bg {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 51%;
+  height: 104%;
+  background: linear-gradient(to top, #FF8EBF, #FFC8DF,#fff);
+  border-radius: 999px;
+  z-index: 1;
+  transition: left 0.3s ease;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+.toggle-btn {
+  flex: 1;
+  z-index: 2;
+  text-align: center;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  cursor: pointer;
+}
+.btnmore{position: fixed;bottom: 20px;right: 20px;border: 1px solid #000;border-radius: 50%;background: linear-gradient(to bottom, #fff, #FFC8DF,#FF8EBF );width: 50px;height: 50px;text-align: center;line-height: 64px;}
 .floating-overlay {
     position: fixed;
     top: 0;
@@ -44,7 +78,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background:linear-gradient(to bottom, #fff,#FF8EBF, #FFC8DF,  #fff);
+    background:linear-gradient(to bottom, #fff, #FFC8DF,#FF8EBF );
     padding: 8px;
     border: 1px solid #000;
   }
@@ -71,5 +105,27 @@
     height: 24px;
   }
 
-
- 
+  .fan-toast {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    background: #F7EFFF;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 16px 20px rgba(0,0,0,0.2);
+    font-weight: 300;
+    z-index: 999;
+    width: 370px;
+    height: 60px;
+    line-height: 40px;
+    font-size: 16px;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .fan-toast.show {
+    transform: translateX(-50%) translateY(30px);
+    opacity: 1;
+  }
