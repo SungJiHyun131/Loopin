@@ -5,7 +5,7 @@ import heart from '../assets/img/IllitHomeimg/postimg/heart.png'
 import comment from '../assets/img/IllitHomeimg/postimg/comment.png'
 import more from'../assets/img/IllitHomeimg/postimg/more.png'
 import mark from'../assets/img/IllitHomeimg/postimg/mark.png'
-
+import badge from '../assets/img/IllitHomeimg/artistimg/official-badge.png'
 const PostCard2 = ({ user, text, images, likes, comments }) => {
   const [showFullText, setShowFullText] = useState(false);
 
@@ -43,12 +43,12 @@ const PostCard2 = ({ user, text, images, likes, comments }) => {
   };
 
   return (
-    <div className="post-card">
+    <div className="post-card2">
       <div className="post-header">
         <div className="left-group">
         <Link to='/ArtistProfile'><img src={user.profileImg} alt="profile" className="profile-img" /></Link>
         <div className="user-info">
-          <div className="username">{user.name}</div>
+          <div className="username">{user.name}<img src={badge} alt=""style={{width:16}} className='username-badge'/></div>
           <div className="time">{user.time}</div>
         </div>
         </div>
