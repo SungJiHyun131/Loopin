@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './PostCard.css';
 import heart from '../assets/img/IllitHomeimg/postimg/heart.png'
 import comment from '../assets/img/IllitHomeimg/postimg/comment.png'
@@ -6,8 +7,9 @@ import more from'../assets/img/IllitHomeimg/postimg/more.png'
 import mark from'../assets/img/IllitHomeimg/postimg/mark.png'
 
 
-const PostCard = ({ user, text, images, likes, comments }) => {
+const PostCard = ({ user, text, images, likes, comments,index }) => {
   const [showFullText, setShowFullText] = useState(false);
+  const navigate = useNavigate();
 
   const renderImages = () => {
     if (images.length === 1) {
@@ -43,7 +45,7 @@ const PostCard = ({ user, text, images, likes, comments }) => {
   };
 
   return (
-    <div className="post-card">
+    <div className="post-card" onClick={() => navigate(`/FanPostView/${index}`)}>
       <div className="post-header">
         <div className="left-group">
         <img src={user.profileImg} alt="profile" className="profile-img" />

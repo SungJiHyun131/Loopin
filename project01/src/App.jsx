@@ -30,6 +30,7 @@ import FanHome from './pages/artist/fan/FanHome';
 import FanPostDetail from './pages/artist/fan/FanPostDetail';
 import FanPostWrite from './pages/artist/fan/FanPostWrite';
 import FanLetter from './pages/artist/fan/FanLetter';
+import FanPostView from './pages/artist/fan/FanPostView';
 import SecretLetter from './pages/artist/fan/SecretLetter';
 import LiveHome from './pages/artist/live/LiveHome';
 import LiveDetail from './pages/artist/live/LiveDetail';
@@ -93,6 +94,7 @@ function App() {
   <Route path="FanPostWrite" element={<FanPostWrite/>} />
   </Route>
   <Route path="FanLetter" element={<FanLetter/>} />
+  <Route path="/FanPostView/:id" element={<FanPostView />} />
   <Route path="SecretLetter" element={<SecretLetter/>} />
 </Routes>
 

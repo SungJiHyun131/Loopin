@@ -79,15 +79,15 @@ const SecretLetter = () => {
       {isModalOpen && (
         <div className="modal-overlay">
           <div className="modal-content">
-            <p>이대로 나가면... 진짜 안녕이야? 🥺</p>
-            <small>
+            <p className='real'>이대로 나가면... 진짜 안녕이야? 🥺</p>
+            <span className='hey'>
               저장해두면 나중에 이어서 쓸 수 있어!
               <br />
               (너의 마음 아직 다 못 전했잖아...!)
-            </small>
+            </span>
             <div className="modal-buttons">
               <button onClick={() => window.history.back()}>나갈래</button>
-              <button onClick={handleSave}>저장할래</button>
+              <button onClick={handleSave} className='letter-save'>저장할래</button>
             </div>
           </div>
         </div>
