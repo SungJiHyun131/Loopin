@@ -1,3 +1,30 @@
-
+.container.StoreHome{height: 100vh;}
+.container.StoreHome .banner{width: 100%; display: flex; justify-content: space-between;position: relative;}
 .container.StoreHome .banner img{width: 100%;}
-.container.StoreHome .banner .textBox{display: flex;}
+.container.StoreHome .banner .textBox{position: absolute; top:70%; margin-left: 15px;}
+.container.StoreHome .banner .textBox2{position: absolute; top:70%; margin-left: 15px;}
+.container.StoreHome .banner .textBox h3{margin-bottom: 5px; color: #000;}
+.container.StoreHome .banner .textBox2 h3{margin-bottom: 5px; color: #fff;}
+.container.StoreHome .banner .textBox p{color: #666666;}
+.container.StoreHome .banner .textBox2 p{color: #E5E5E5;}
+
+/* 카테고리 */
+.container.StoreHome .Products .Big ul{width: 100%; display: flex; overflow:scroll; white-space: nowrap; margin-top:10px; scrollbar-width: none;}
+.container.StoreHome .Products .Big ul li{margin-right: 10px;}
+.container.StoreHome .Products .Big ul li.active{background-color: black; color: white; border-radius:20px; padding: 5px 10px; }
+
+.container.StoreHome .Products .Small ul{width: 100%; display: flex; overflow:scroll; white-space: nowrap; margin-top: 10px; scrollbar-width: none;}
+.container.StoreHome .Products .Small ul li{border: 1px solid #000; border-radius: 50px; padding: 8px 10px; margin-right: 10px;}
+
+/* 상품정렬 */
+.container.StoreHome .Goods{width: 100%; margin-top: 15px;}
+.container.StoreHome .Goods ul{width: 100%; display: flex; justify-content: space-between; margin: 10px;}
+.container.StoreHome .Goods ul li{width: 100%; display: flex; justify-content: space-between;}
+.container.StoreHome .Goods ul li .explain{width: 100%; border: 1px solid #000; margin-top: -5px; height: 87px; padding: 4px;}
+.container.StoreHome .Goods ul li .explain .name{font-size: 16px; margin-top: 3px;}
+.container.StoreHome .Goods ul li .explain .tag{display: flex; justify-content: space-between;width: 52%; margin-top: 3px;}
+.container.StoreHome .Goods ul li .explain .tag .blue{color:#007BFF; border: 1px solid #007BFF; border-radius: 5px; font-size: 12px;padding: 2px;}
+.container.StoreHome .Goods ul li .explain .tag .KR발송{color:#9F9F9F; border: 1px solid #9F9F9F; border-radius: 5px;font-size: 12px;padding: 2px;}
+.container.StoreHome .Goods ul li .explain .price{display: flex; justify-content: space-between; margin-top: 3px;}
+.container.StoreHome .Goods ul li .explain .price h3{ font-size: 20px; font-weight:400}
+
