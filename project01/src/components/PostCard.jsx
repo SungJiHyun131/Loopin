@@ -4,7 +4,7 @@ import heart from '../assets/img/IllitHomeimg/postimg/heart.png'
 import comment from '../assets/img/IllitHomeimg/postimg/comment.png'
 import more from'../assets/img/IllitHomeimg/postimg/more.png'
 import mark from'../assets/img/IllitHomeimg/postimg/mark.png'
-import profile from '../assets/img/IllitHomeimg/postimg/profile.png'
+
 
 const PostCard = ({ user, text, images, likes, comments }) => {
   const [showFullText, setShowFullText] = useState(false);
@@ -59,7 +59,7 @@ const PostCard = ({ user, text, images, likes, comments }) => {
         <p className={showFullText ? 'full-text' : 'clamp-text'}>{text}</p>
         {!showFullText && (
           <button onClick={() => setShowFullText(true)} className="more-btn">
-            더 보기
+            더보기
           </button>
         )}
       </div>

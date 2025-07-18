@@ -6,10 +6,11 @@ import Albums from '../../../components/Albums';
 import Post from '../../../components/illitPostcard';
 import './IllitHome.css'
 import bg from '../../../assets/img/IllitHomeimg/artistimg/bg-artist.png';
+
 const IllitHome = () => {
      const location =useLocation();
   return (
-    <div>
+    <div className='artistcontainer'>
      
       <div className="ArtistHeader">
         <ArtistHeader/>
