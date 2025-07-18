@@ -37,8 +37,8 @@ const ArtistProfile = () => {
             <Link to="ArtistB" className="toggle-btn">댓글</Link>
           </div>
           <div className="container Artist"><Outlet /></div>
-          <div className="artistbg"><img src={content} alt="" /></div>
           </div>
+          <div className="artistbg"><img src={content} alt="" /></div>
     </div>
   )
 }
