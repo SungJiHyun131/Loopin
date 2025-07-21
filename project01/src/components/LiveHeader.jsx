@@ -10,7 +10,7 @@ const LiveHeader = () => {
     <div>
         <header className='more'>
                <button className="back-button" onClick={()=> navigate('/ArtistHome')}><img src={back} alt="" /></button>
-               <h2 className="title">라이브</h2>
+               <h2 className="title">LIVE</h2>
                <p className="more-button"><a href=""><img src={more} alt="" /></a></p> 
         </header>
     </div>
