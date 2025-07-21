@@ -36,7 +36,7 @@ const ArtistHome = () => {
       <div className="IllitHeader">
         <IllitHeader />
       </div>
-     <div className="top">
+     <div className="Artisttop">
       <p className="img"><img src={illit} alt="" /></p>
       <div className="right">
       <p className="textbox">
@@ -49,7 +49,7 @@ const ArtistHome = () => {
       </div>
      </div>
 
-     <div className="bottom">
+     <div className="Artistbottom">
   <nav className="nav-container">
     {/* 배경 박스 */}
     <div className="nav-background first-layer" />

@@ -5,15 +5,16 @@ import NewMv from '../../../components/NewMv';
 import Albums from '../../../components/Albums';
 import Post from '../../../components/illitPostcard';
 import './IllitHome.css'
-import bg from '../../../assets/img/IllitHomeimg/artistimg/bg-artist.png';
+import bg from '../../../assets/img/IllitHomeimg/bg-illitHome.png';
+import headerbg from '../../../assets/img/IllitHomeimg/bg-illithomeHeader.png';
 
 const IllitHome = () => {
      const location =useLocation();
   return (
     <div className='artistcontainer'>
-     
       <div className="ArtistHeader">
         <ArtistHeader/>
+        <div className="artistheaderbg"><img src={headerbg} alt="" /></div>
       </div>
       <div className="container IllitHome">
         <div className="NewMv">
@@ -26,7 +27,7 @@ const IllitHome = () => {
           <Post/>
         </div>
       </div>
-      <div className="bg"><img src={bg} alt="" /></div>
+      <div className="IllitHomebg"><img src={bg} alt="" /></div>
     </div>
   )
 }
