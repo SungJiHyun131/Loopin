@@ -7,7 +7,7 @@ const LiveArtistProfile = ({ artist }) => {
           <div className="inner-ring">
             <img src={artist.img} alt={artist.name} />
           </div>
-          {artist.isLive && <div className="live-badge">Lfive</div>}
+          {artist.isLive && <div className="live-badge">LIVE</div>}
         </div>
         <p className="artist-name">{artist.name}</p>
       </div>

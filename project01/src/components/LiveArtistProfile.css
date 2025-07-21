@@ -36,18 +36,10 @@
 /* live활성화테두리 */
   .outer-ring.live {
     border: 1px solid #111; /* LIVE 테두리 */
-    background: linear-gradient(135deg, #fff,#ff007a, #fff);
+    background: linear-gradient(135deg, #fff,#ff26b7, #fff);
   }
   .outer-ring.live .inner-ring {border: 1px solid #111;}
 
-  .live-badge {
-    position: absolute;
-    bottom: -4px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #ff2d76;
-    color: white;
-    font-size: 10px;
-    padding: 2px 12px;
-    border-radius: 12px 12px 12px 12px;
-  }
+  .live-badge {position: absolute;bottom: -4px;left: 50%;transform: translateX(-50%);background-color: #ff26b7;color: white;font-size: 10px;padding: 2px 6px;border-radius: 12px 12px 12px 12px;}
+
+  .artist-name {margin-top: 6px;}

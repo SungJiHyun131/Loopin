@@ -1,8 +1,7 @@
 .Live-artist-list-container {
     display: flex;
     overflow-x: auto;
-    padding: 12px;
-    gap: 16px;
+    gap: 10px;
     scrollbar-width: none;
   }
   
