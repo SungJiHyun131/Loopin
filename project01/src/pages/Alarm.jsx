@@ -8,6 +8,7 @@ import imgYn from'../assets/img/moreImg/yoonapr.png';
 import imgWh from'../assets/img/moreImg/wonheepr.png';
 import imgMk from'../assets/img/moreImg/mokapr.png';
 import imgIh from'../assets/img/moreImg/ilohapr.png';
+import mainbg from'../assets/img/mainheaderbg.png';
 
 const todayNotifications = [
   { userImg: imgMj, name: '민주', message: '민주님이 게시물을 올렸습니다.', time: '3분 전' },
@@ -32,16 +33,18 @@ const recentNotifications = [
 const Alarm = () => {
   return (
     <div className='alarmhome'>
+       <div className="alarmbg"><img src={mainbg} alt="" /></div>
     <div className="AlarmHeader">
       <AlarmHeader/>
     </div>
     <div className='container Alarm'>
       <div className="inner">
       <p className="subtitle">Today</p>
+      <div className="today-notifications">
           {todayNotifications.map((item, idx) => (
             <NotificationCard key={idx} {...item} />
           ))}
-          
+          </div>
           <p className="subtitle">Yesterday</p>
           {yesterdayNotifications.map((item, idx) => (
             <NotificationCard key={idx} {...item} />

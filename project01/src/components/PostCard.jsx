@@ -51,7 +51,7 @@ const PostCard = ({ user, text, images, likes, comments,index }) => {
         <div className="left-group">
         <img src={user.profileImg} alt="profile" className="profile-img" />
         <div className="user-info">
-          <div className="username">{user.name} <img src={mem} alt="mem" className="membership" /></div>
+          <div className="username">{user.name}<img src={mem} alt="mem" className="membership" /></div>
           <div className="time">{user.time}</div>
         </div>
         </div>

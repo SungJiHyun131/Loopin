@@ -10,12 +10,15 @@ import icon4 from '../../assets/img/moreImg/icon_Q.png'
 import icon5 from '../../assets/img/moreImg/icon_earth.png'
 import icon6 from '../../assets/img/moreImg/icon_light.png'
 import icon7 from '../../assets/img/moreImg/icon_setting.png'
+import Footer from '../../components/Footer';
+import mainbg from '../../assets/img/mainheaderbg.png'
 
 
 const MoreHome = () => {
     const location = useLocation();
   return (
     <div className='bgMore'>
+      <div className="moreheaderbg"><img src={mainbg} alt="" /></div>
     <div className="MoreHeader">
       <MoreHeader/>
     </div>
@@ -31,6 +34,7 @@ const MoreHome = () => {
           <li><p className="img"><img src={icon7} alt="" /></p>로그아웃</li>
         </ul>
     </div>
+    <Footer/>
     </div>
   )
 }

@@ -1,11 +1,11 @@
 .notification-card {
     display: flex;
     align-items: center;
-    border: 1px solid #000;
+    border: 1px solid #666;
     border-radius: 12px;
     padding: 10px;
     margin-bottom: 10px;
-    background: linear-gradient(to bottom, #fff,#E6E6E6,#fff,#fff);cursor: pointer;
+    background:rgba(255, 255, 255, 0.5);cursor: pointer;
   }
   .notification-card:hover{ background: linear-gradient(to bottom, #ffffff, #C9FFC7,#7CFF71,#fff);}
 

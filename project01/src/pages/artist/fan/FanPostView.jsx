@@ -155,7 +155,7 @@ const FanPostView = () => {
 
         <div className="post-footer">
           <div className="footer-left">
-            <span className='fanlike'><LikeButton/> {post.likes}</span>
+            <span><img src={heart} alt="" /> {post.likes}</span>
             <span><img src={comment} alt="" /> {post.comments}</span>
           </div>
           <div className="footer-right"><img src={mark} alt="" /></div>
