@@ -9,6 +9,7 @@ import minju2 from '../../assets/img/IllitHomeimg/pixel_minju2.png'
 import textbox from '../../assets/img/IllitHomeimg/pixel_textbox.png'
 import ProfileCard from '../../components/ProfileCard'
 import ScheduleCalendar from '../../components/ScheduleCalendar'
+import content from '../../assets/img/IllitHomeimg/bg-ArtistHome.png';
 
 const ArtistHome = () => {
   const location = useLocation()
@@ -76,6 +77,7 @@ const ArtistHome = () => {
       <div className="ScheduleCalendar">
   <ScheduleCalendar />
 </div>
+      <div className="ArtistHomebg"><img src={content} alt="" /></div>
     </div>
   )
 }

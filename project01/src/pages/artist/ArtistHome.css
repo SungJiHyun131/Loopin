@@ -4,7 +4,7 @@ a {color: inherit; text-decoration: inherit;}
 
 .container-Artist{background: url(../../assets/img/IllitHomeimg/bg.png);padding: 16px;padding-bottom: 200px;position: relative;}
 
-.Artisttop {display: flex;justify-content: space-between;align-items:flex-end;width: 100%;}
+.Artisttop {display: flex;justify-content: space-between;align-items:flex-end;width: 100%;margin-top: 55px;}
 .Artisttop .img {margin-right: 20px;margin-top: 40px;}
 .Artisttop .img img{border-radius: 10px;box-shadow: 0 0 13px rgba(0,0,0,0.25);width: 100%;border: 1px solid #000;}
 
@@ -42,3 +42,7 @@ box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 .nav-row {position: absolute;}
 .nav-row.first {top: -20px;}
 .nav-row.second {top: 60px;}
+
+.IllitHeader {height: 106px;position: fixed;top: 0;left: 0;width: 100%;z-index: 999;background: #D6B6F5;}
+.ArtistHomebg {position: fixed;top:105px;left: 0;z-index: -999;width: 100%;height:auto;}
+.ArtistHomebg img {width: 100%;height: 100%;object-fit: cover;}

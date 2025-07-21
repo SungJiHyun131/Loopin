@@ -71,60 +71,63 @@
   align-items: center;
 }
 .post-card2 .post-footer span{display: inline-block;margin-right: 10px;align-items: center;}
+.post-card2 .post-footer span.like img {width: 100%;object-fit: cover;margin-right: 1px;}
 .post-card2 .post-footer span img {width: 100%;object-fit: cover;margin-right: 5px;}
 .post-card2 .post-footer .footer-left {display: flex;justify-content: space-between;}
 .post-card2 .post-footer .footer-left span {display: flex;justify-content: space-between;}
 /* 이미지 레이아웃 */
-.single-img {
+.post-card2 .single-img {
   width: 100%;
   border-radius: 4px;
   object-fit: cover;
   height: 300px;
 }
 
-.two-imgs {
+.post-card2 .two-imgs {
   display: flex;
   gap: 8px;
 }
-.two-imgs img {
+.post-card2 .two-imgs img {
   width: 50%;
   object-fit: cover;
   border-radius:4px;
 }
 
-.three-imgs {
+.post-card2 .three-imgs {
   display: flex;
   gap: 8px;
 }
-.img-left {
+.post-card2 .img-left {
   width: 50%;
   height: 308px;
   object-fit: cover;
   border-radius: 4px;
 }
-.img-right {
+.post-card2 .img-right {
   width: 50%;
   display: flex;
   flex-direction: column;
   gap: 8px;
   overflow: hidden;
 }
-.img-top, .img-bottom {
+.post-card2 .img-top, .img-bottom {
   height: 150px;
   object-fit: cover;
   border-radius: 4px;
 }
 
-.four-imgs {
+.post-card2 .four-imgs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
 }
-.four-imgs img {
+.post-card2 .four-imgs img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 4px;
 }
-.username {align-items:center;display: flex;}
-.username-badge {margin-left: 4px;display: inline-block;}
+.post-card2 .username {align-items:center;display: flex;}
+.post-card2 .username-badge {margin-left: 4px;display: inline-block;}
+.post-card2 .post-images img {margin-bottom: 0;}
+.post-card2 .post-text p {margin-bottom: 0;}

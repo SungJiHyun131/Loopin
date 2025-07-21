@@ -6,6 +6,7 @@ import comment from '../assets/img/IllitHomeimg/postimg/comment.png'
 import more from'../assets/img/IllitHomeimg/postimg/more.png'
 import mark from'../assets/img/IllitHomeimg/postimg/mark.png'
 import badge from '../assets/img/IllitHomeimg/artistimg/official-badge.png'
+import LikeButton from '../components/LikeButton';
 const PostCard2 = ({ user, text, images, likes, comments }) => {
   const [showFullText, setShowFullText] = useState(false);
 
@@ -68,7 +69,7 @@ const PostCard2 = ({ user, text, images, likes, comments }) => {
 
       <div className="post-footer">
         <div className="footer-left">
-          <span><img src={heart} alt="" /> {likes}k</span>
+          <span className='like'><LikeButton/>{likes}k</span>
           <span><img src={comment} alt="" /> {comments}</span>
         </div>
         <div className="footer-right"><img src={mark} alt="" /></div>
