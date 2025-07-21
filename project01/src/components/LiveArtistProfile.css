@@ -12,6 +12,7 @@
     justify-content: center;
     align-items: center;
     border: 1px solid #ddd;
+    position: relative;
   }
   
   .inner-ring {
@@ -38,3 +39,15 @@
     background: linear-gradient(135deg, #fff,#ff007a, #fff);
   }
   .outer-ring.live .inner-ring {border: 1px solid #111;}
+
+  .live-badge {
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff2d76;
+    color: white;
+    font-size: 10px;
+    padding: 2px 12px;
+    border-radius: 12px 12px 12px 12px;
+  }
