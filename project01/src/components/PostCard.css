@@ -7,7 +7,7 @@
   
   /* 공통 스타일 */
   .post-card {
-    width: 382px;
+    width: 100%;
     background: white;
     border-radius: 8px;
    border: 1px solid #ccc;
@@ -32,6 +32,7 @@
     font-weight: 500;
     font-size: 18px;
   }
+  .post-header .username .membership{margin-left: 3px;display: inline-block;}
   .left-group {
     display: flex;
     align-items: center;
@@ -68,7 +69,7 @@
     cursor: pointer;
   }
   
-  .post-footer {
+ .post-footer {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
@@ -76,7 +77,10 @@
     padding: 10px 0 0 0;
     align-items: center;
   }
-  .post-footer span{display: inline-block;margin-right: 10px;align-items: center;}
+ .post-footer span{display: inline-block;margin-right: 10px;align-items: center;}
+ .post-footer span img {width: 100%;object-fit: cover;margin-right: 5px;}
+  .post-footer .footer-left {display: flex;justify-content: space-between;}
+  .post-footer .footer-left span {display: flex;justify-content: space-between;}
 
   
   /* 이미지 레이아웃 */

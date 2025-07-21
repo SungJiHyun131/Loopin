@@ -27,36 +27,37 @@
     margin-right: 10px;
   }
   
-  .user-info .username {
+  .Postcontainer .user-info .username {
     font-weight: 500;
     font-size: 18px;
   }
+  .Postcontainer .user-info .username .mem{margin-left: 3px;}
   
-  .user-info .time {
+ .Postcontainer .user-info .time {
     font-size: 12px;
     color: #666;
   }
   
-  .post-text p {
+.Postcontainer .post-text p {
     font-size: 16px;
     line-height: 1.4;
     margin-bottom: 10px;
   }
   
-  .post-images img {
+  .Postcontainer .post-images img {
     width: 100%;
     margin-bottom: 8px;
     border-radius: 4px;
   }
   
-  .post-footer {
+  .Postcontainer .post-footer {
     display: flex;
     justify-content: space-between;
     gap: 16px;
     margin-bottom: 16px;
   }
   
-  .post-footer img {
+  .Postcontainer .post-footer img {
  
     vertical-align: middle;
     margin-right: 4px;
@@ -104,3 +105,6 @@
     border: none;
     cursor: pointer;
   }
+  .PostView-artist{font-weight: 500;font-size: 16px;color: #333;padding: 30px 0 20px 0;}
+  .PostView-fan{font-weight: 500;font-size: 16px;color: #333;padding: 30px 0 20px 0;}
+  .Postcontainer .line{width: 100%;height: 10px;background: #eee;position: absolute;left: 0;}
