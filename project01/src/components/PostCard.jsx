@@ -5,6 +5,7 @@ import heart from '../assets/img/IllitHomeimg/postimg/heart.png'
 import comment from '../assets/img/IllitHomeimg/postimg/comment.png'
 import more from'../assets/img/IllitHomeimg/postimg/more.png'
 import mark from'../assets/img/IllitHomeimg/postimg/mark.png'
+import mem from'../assets/img/IllitHomeimg/postimg/mem.png'
 
 
 const PostCard = ({ user, text, images, likes, comments,index }) => {
@@ -50,7 +51,7 @@ const PostCard = ({ user, text, images, likes, comments,index }) => {
         <div className="left-group">
         <img src={user.profileImg} alt="profile" className="profile-img" />
         <div className="user-info">
-          <div className="username">{user.name}</div>
+          <div className="username">{user.name} <img src={mem} alt="mem" className="membership" /></div>
           <div className="time">{user.time}</div>
         </div>
         </div>
