@@ -4,6 +4,8 @@ import LiveHeader from '../../../components/LiveHeader';
 import headerbg from '../../../assets/img/IllitHomeimg/Live/bg-header.png';
 import Live from '../../../assets/img/IllitHomeimg/Live/bg-Live.png';
 import './LiveHome.css'
+import LiveArtistList from '../../../components/LiveArtistList'
+
 const LiveHome = () => {
     const location =useLocation();
   return (
@@ -13,7 +15,9 @@ const LiveHome = () => {
           <div className="Liveheaderbg"><img src={headerbg} alt="" /></div>
       </div>
       <div className="container LiveHome">
+      <LiveArtistList/>
       <Link to="/LiveDetail">라이브 들어오세요</Link>
+     
       </div>
      <div className="Livebg"><img src={Live} alt="" /></div>
     </div>
