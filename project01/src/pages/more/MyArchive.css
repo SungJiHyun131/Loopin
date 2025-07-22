@@ -1,5 +1,5 @@
 
-.bgArchive {background:linear-gradient(to bottom,#5dabff, #fff,#5dabff);min-height: 100vh;}
+.bgArchive {background:linear-gradient(to bottom,#5dabff, #fff,#5dabff);height: auto;background-attachment: fixed;}
 .bgArchive .toggle-container {
     position: relative;
     display: flex;

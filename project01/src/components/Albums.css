@@ -13,5 +13,5 @@
     display: flex;
     gap: 16px;
     overflow-x: auto;
-  }
+    scrollbar-width: none;}
   
