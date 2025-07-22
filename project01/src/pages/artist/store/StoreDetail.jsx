@@ -7,6 +7,7 @@ import img1 from '../../../assets/img/Storeimg/Detail/img1.png'
 import heart from '../../../assets/img/Storeimg/Detail/icon_heart.png'
 import share from '../../../assets/img/Storeimg/Detail/icon_share.png'
 import warning from '../../../assets/img/Storeimg/Detail/icon_warning.png'
+import warning2 from '../../../assets/img/Storeimg/Detail/icon_warning2.png'
 
 import img2 from '../../../assets/img/Storeimg/Detail/img2.png'
 import title from '../../../assets/img/Storeimg/Detail/GlitterDay.png'
@@ -15,8 +16,8 @@ import Detail1 from '../../../assets/img/Storeimg/Detail/Detail1.png'
 import Detail2 from '../../../assets/img/Storeimg/Detail/Detail2.png'
 import ex1 from '../../../assets/img/Storeimg/Detail/ex1.png'
 import ex2 from '../../../assets/img/Storeimg/Detail/ex2.png'
-import front from '../../../assets/img/Storeimg/Detail/front.png'
-import back from '../../../assets/img/Storeimg/Detail/back.png'
+import front from '../../../assets/img/Storeimg/Detail/front1.png'
+import back from '../../../assets/img/Storeimg/Detail/back1.png'
 
 const StoreDetail = () => {
   return (
@@ -82,9 +83,24 @@ const StoreDetail = () => {
             </div>
           </div>
         </div>
-      
+      </div>
+      <div className="BottomBox">
+        <p className='tit'><img src={warning2} alt="" /> 안내</p>
+        <div className='txt'>
+          <h3 className="kor">화면 해상도, 컬러 설정에 따라 제품이 왜곡되거나<br />컬러가 다르게 보일 수 있습니다.</h3>
+          <p className="eng">The actual product may slightly vary in appearance or color due to your monitor resolution or color settings.</p>
+        </div>
+        <div className='txt'>
+          <h3 className="kor">사이즈 실측의 경우 제품의 특성 및 측정 방식에 따라<br />오차가 발생할 수 있습니다.</h3>
+          <p className="eng">There may be slight discrepancies in size based on measurement methods used and the nature of the product.</p>
+        </div>
+        <div className='txt'>
+          <h3 className="kor">제조 과정 시 마무리 작업 단계에서 발생하는<br />미세한 스크래치는 불량이 아닙니다.</h3>
+          <p className="eng">Minuscule scratches that occur during the finishing produre od production are not defects.</p>
+        </div>
       </div>
     </div>
+    
   )
 }
 <Route path="StoreHeader2" element={<StoreHeader2/>} />

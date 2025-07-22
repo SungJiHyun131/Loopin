@@ -8,6 +8,7 @@ import 'swiper/css/pagination';
 
 import StoreHeader from '../../../components/StoreHeader';
 import LikeButton from '../../../components/LikeButton';
+import Footer2 from '../../../components/Footer2';
 
 import banner1 from '../../../assets/img/Storeimg/banner1.png'
 import banner2 from '../../../assets/img/Storeimg/banner2.png'
@@ -47,12 +48,42 @@ import goods28 from '../../../assets/img/Storeimg/productM12.png'
 import goods29 from '../../../assets/img/Storeimg/productM13.png'
 import goods30 from '../../../assets/img/Storeimg/productM14.png'
 
+import goods31 from '../../../assets/img/Storeimg/album1.png'
+import goods32 from '../../../assets/img/Storeimg/album2.png'
+import goods33 from '../../../assets/img/Storeimg/album3.png'
+import goods34 from '../../../assets/img/Storeimg/album4.png'
+import goods35 from '../../../assets/img/Storeimg/album5.png'
+import goods36 from '../../../assets/img/Storeimg/album6.png'
+import goods37 from '../../../assets/img/Storeimg/album7.png'
+import goods38 from '../../../assets/img/Storeimg/album8.png'
+import goods39 from '../../../assets/img/Storeimg/album9.png'
+import goods40 from '../../../assets/img/Storeimg/album10.png'
+import goods41 from '../../../assets/img/Storeimg/album11.png'
 
+
+import goods42 from '../../../assets/img/Storeimg/magazine1.png'
+import goods43 from '../../../assets/img/Storeimg/magazine2.png'
+import goods44 from '../../../assets/img/Storeimg/magazine3.png'
+import goods45 from '../../../assets/img/Storeimg/magazine4.png'
+import goods46 from '../../../assets/img/Storeimg/magazine5.png'
+import goods47 from '../../../assets/img/Storeimg/magazine6.png'
+import goods48 from '../../../assets/img/Storeimg/magazine7.png'
+
+import goods49 from '../../../assets/img/Storeimg/gllit.png'
+import goods50 from '../../../assets/img/Storeimg/gllit(2).png'
 
 import './StoreHome.css';
 
 const bigCategories = ["MERCH", "TOUR MERCH", "ALBUM", "MAGAZINE", "GLOBAL MEMBERSHIP", "JAPAN MEMBERSHIP"];
-const smallCategories = ["ALL", "bomb", "1st Anniversary", "Official Merch", "I’LL LIKE YOU", "SUPER REAL ME"];
+
+const smallCategories = {
+  "MERCH": ["ALL", "bomb", "Official Merch", "I'LL LIKE YOU", "SUPER REAL ME"],
+  "TOUR MERCH": ["ALL", "2025 ILLIT GLITTER DAY IN SEOUL"],
+  "ALBUM": ["ALL", "bomb"],
+  "MAGAZINE": ["ALL", "VOGUE"],
+  "GLOBAL MEMBERSHIP": ["ALL", "MEMBERSHIP", "GIFT"],
+  "JAPAN MEMBERSHIP": ["ALL", "MEMBERSHIP"],
+};
 
 const products = [
   {
@@ -60,15 +91,15 @@ const products = [
     name: "Invitation Set",
     img: goods1,
     bigCategory: "TOUR MERCH",
-    smallCategory: "ALL",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
     price: "14,000",
   }, 
   {
     id: 2,
     name: "Image Picket",
     img: goods2,
-    bigCategory: "TOUR MERCH",
-    smallCategory: "ALL",
+    bigCategory: "TOUR_MERCH",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
     price: "10,000",
   },
   {
@@ -76,7 +107,7 @@ const products = [
     name: "Lucky Draw",
     img: goods3,
     bigCategory: "TOUR MERCH",
-    smallCategory: "ALL",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
     price: "9,000",
   },
   {
@@ -84,7 +115,7 @@ const products = [
     name: "ID Card Set",
     img: goods4,
     bigCategory: "TOUR MERCH",
-    smallCategory: "ALL",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
     price: "7,000",
   },
   {
@@ -92,7 +123,7 @@ const products = [
     name: "Keyring",
     img: goods5, 
     bigCategory: "TOUR MERCH",
-    smallCategory: "ALL",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
     price: "20,000",
   },
   {
@@ -100,7 +131,7 @@ const products = [
     name: "Mini Photo Holder",
     img: goods6,
     bigCategory: "TOUR MERCH",
-    smallCategory: "ALL",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
     price: "13,000",
   },
   {
@@ -108,7 +139,7 @@ const products = [
     name: "Sticker Set",
     img: goods7, 
     bigCategory: "TOUR MERCH",
-    smallCategory: "ALL",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
     price: "15,000",
   },
   {
@@ -116,7 +147,7 @@ const products = [
     name: "DIY Beads Keyring Set",
     img: goods8,
     bigCategory: "TOUR MERCH",
-    smallCategory: "ALL",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
     price: "59,400",
   },
   {
@@ -124,7 +155,7 @@ const products = [
     name: "Tumbler",
     img: goods9, 
     bigCategory: "TOUR MERCH",
-    smallCategory: "ALL",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
     price: "35,000",
   },
   {
@@ -132,7 +163,7 @@ const products = [
     name: "Cubic Crop T-Shirt",
     img: goods10,
     bigCategory: "TOUR MERCH",
-    smallCategory: "ALL",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
     price: "59,000",
   },
   {
@@ -140,7 +171,7 @@ const products = [
     name: "S/S T-shirt",
     img: goods11, 
     bigCategory: "TOUR MERCH",
-    smallCategory: "ALL",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
     price: "59,400",
   },
   {
@@ -148,7 +179,7 @@ const products = [
     name: "String Bag",
     img: goods12,
     bigCategory: "TOUR MERCH",
-    smallCategory: "ALL",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
     price: "52,000",
   },
   {
@@ -156,7 +187,7 @@ const products = [
     name: "Ball Cap",
     img: goods13, 
     bigCategory: "TOUR MERCH",
-    smallCategory: "ALL",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
     price: "42,000",
   },
   {
@@ -164,7 +195,7 @@ const products = [
     name: "Slogan",
     img: goods14,
     bigCategory: "TOUR MERCH",
-    smallCategory: "ALL",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
     price: "20,000",
   },
   {
@@ -172,7 +203,7 @@ const products = [
     name: "Shopper Bag",
     img: goods15, 
     bigCategory: "TOUR MERCH",
-    smallCategory: "ALL",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
     price: "6,000",
   },
   {
@@ -180,7 +211,7 @@ const products = [
     name: "Trading Card",
     img: goods16,
     bigCategory: "TOUR MERCH",
-    smallCategory: "ALL",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
     price: "8,000",
   },
 
@@ -190,7 +221,7 @@ const products = [
     name: "Hair Scrunchie",
     img: goods17,
     bigCategory: "MERCH",
-    smallCategory: "ALL",
+    smallCategory: "bomb",
     price: "19,000",
   },
   {
@@ -198,7 +229,7 @@ const products = [
     name: "S/S T-Shirt",
     img: goods18,
     bigCategory: "MERCH",
-    smallCategory: "ALL",
+    smallCategory: "bomb",
     price: "45,000",
   },
     {
@@ -206,7 +237,7 @@ const products = [
     name: "Hair Scrunchie",
     img: goods19,
     bigCategory: "MERCH",
-    smallCategory: "ALL",
+    smallCategory: "bomb",
     price: "19,000",
   },
   {
@@ -214,7 +245,7 @@ const products = [
     name: "S/S T-Shirt",
     img: goods20,
     bigCategory: "MERCH",
-    smallCategory: "ALL",
+    smallCategory: "bomb",
     price: "45,000",
   },
     {
@@ -222,7 +253,7 @@ const products = [
     name: "Hair Scrunchie",
     img: goods21,
     bigCategory: "MERCH",
-    smallCategory: "ALL",
+    smallCategory: "Official Merch",
     price: "19,000",
   },
   {
@@ -230,7 +261,7 @@ const products = [
     name: "S/S T-Shirt",
     img: goods22,
     bigCategory: "MERCH",
-    smallCategory: "ALL",
+    smallCategory: "SUPER REAL ME",
     price: "45,000",
   },
   {
@@ -246,7 +277,7 @@ const products = [
     name: "S/S T-Shirt",
     img: goods24,
     bigCategory: "MERCH",
-    smallCategory: "ALL",
+    smallCategory: "SUPER REAL ME",
     price: "45,000",
   },
       {
@@ -254,7 +285,7 @@ const products = [
     name: "Hair Scrunchie",
     img: goods25,
     bigCategory: "MERCH",
-    smallCategory: "ALL",
+    smallCategory: "I'LL LIKE YOU",
     price: "19,000",
   },
   {
@@ -262,7 +293,7 @@ const products = [
     name: "S/S T-Shirt",
     img: goods26,
     bigCategory: "MERCH",
-    smallCategory: "ALL",
+    smallCategory: "I'LL LIKE YOU",
     price: "45,000",
   },
   {
@@ -270,7 +301,7 @@ const products = [
     name: "Hair Scrunchie",
     img: goods27,
     bigCategory: "MERCH",
-    smallCategory: "ALL",
+    smallCategory: "I'LL LIKE YOU",
     price: "19,000",
   },
   {
@@ -278,7 +309,7 @@ const products = [
     name: "S/S T-Shirt",
     img: goods28,
     bigCategory: "MERCH",
-    smallCategory: "ALL",
+    smallCategory: "SUPER REAL ME",
     price: "45,000",
   },
     {
@@ -286,7 +317,7 @@ const products = [
     name: "Hair Scrunchie",
     img: goods29,
     bigCategory: "MERCH",
-    smallCategory: "ALL",
+    smallCategory: "Official Merch",
     price: "19,000",
   },
   {
@@ -294,24 +325,212 @@ const products = [
     name: "S/S T-Shirt",
     img: goods30,
     bigCategory: "MERCH",
-    smallCategory: "ALL",
+    smallCategory: "I'LL LIKE YOU",
     price: "45,000",
+  },
+
+
+
+  {
+    id: 31,
+    name: "3rd Mini Album 'bomb'(Set)",
+    img: goods31,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "59,400",
+  },
+  {
+    id: 32,
+    name: "3rd Mini Album 'bomb'(Random)",
+    img: goods32,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "19,800",
+  },
+  {
+    id: 33,
+    name: "3rd Mini Album 'bomb' (GLLIT ver.)(Set)",
+    img: goods33,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "77,500",
+  },
+  {
+    id: 34,
+    name: "3rd Mini Album 'bomb'(Random)",
+    img: goods34,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "15,500",
+  },
+    {
+    id: 35,
+    name: "3rd Mini Album 'bomb'(Set)",
+    img: goods35,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "59,400",
+  },
+  {
+    id: 36,
+    name: "3rd Mini Album 'bomb'(Random)",
+    img: goods36,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "19,800",
+  },
+  {
+    id: 37,
+    name: "3rd Mini Album 'bomb' (GLLIT ver.)(Set)",
+    img: goods37,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "77,500",
+  },
+  {
+    id: 38,
+    name: "3rd Mini Album 'bomb'(Random)",
+    img: goods38,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "15,500",
+  },
+      {
+    id: 39,
+    name: "3rd Mini Album 'bomb'(Set)",
+    img: goods39,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "59,400",
+  },
+  {
+    id: 40,
+    name: "3rd Mini Album 'bomb'(Random)",
+    img: goods40,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "19,800",
+  },
+  {
+    id: 41,
+    name: "3rd Mini Album 'bomb' (GLLIT ver.)(Set)",
+    img: goods41,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "77,500",
+  },
+  {
+    id: 42,
+    name: "VOGUE ILLIT SPECIAL (2025.06 / A type)",
+    img: goods42,
+    bigCategory: "MAGAZINE",
+    smallCategory: "ALL",
+    price: "10,000",
+  },
+  {
+    id: 43,
+    name: "VOGUE ILLIT SPECIAL (2025.06 / B type)",
+    img: goods43,
+    bigCategory: "MAGAZINE",
+    smallCategory: "VOGUE",
+    price: "10,000",
+  },
+  {
+    id: 44,
+    name: "VOGUE ILLIT SPECIAL (2025.06 / C type)",
+    img: goods44,
+    bigCategory: "MAGAZINE",
+    smallCategory: "VOGUE",
+    price: "10,000",
+  },
+  {
+    id: 45,
+    name: "VOGUE ILLIT SPECIAL (2025.06 / D type)",
+    img: goods45,
+    bigCategory: "MAGAZINE",
+    smallCategory: "VOGUE",
+    price: "10,000",
+  },
+  {
+    id: 46,
+    name: "VOGUE ILLIT SPECIAL (2025.06 / E type)",
+    img: goods46,
+    bigCategory: "MAGAZINE",
+    smallCategory: "VOGUE",
+    price: "10,000",
+  },
+  {
+    id: 47,
+    name: "VOGUE ILLIT SPECIAL (2025.06 / F type)",
+    img: goods47,
+    bigCategory: "MAGAZINE",
+    smallCategory: "VOGUE",
+    price: "10,000",
+  },
+  {
+    id: 48,
+    name: "VOGUE ILLIT SPECIAL (2025.06 / G type)",
+    img: goods48,
+    bigCategory: "MAGAZINE",
+    smallCategory: "VOGUE",
+    price: "10,000",
+  },
+
+  {
+    id: 49,
+    name: "GLLIT MEMBERSHIP",
+    img: goods49,
+    bigCategory: "GLOBAL MEMBERSHIP",
+    smallCategory: "MEMBERSHIP",
+    price: "25,000",
+  },
+  {
+    id: 50,
+    name: "VOGUE ILLIT SPECIAL (2025.06 / B type)",
+    img: goods50,
+    bigCategory: "GLOBAL MEMBERSHIP",
+    smallCategory: "GIFT",
+    price: "0",
+  },
+
+    {
+    id: 51,
+    name: "GLLIT MEMBERSHIP(JP)",
+    img: goods49,
+    bigCategory: "JAPAN MEMBERSHIP",
+    smallCategory: "MEMBERSHIP",
+    price: "56,550",
   },
 ]; 
 
 const StoreHome = () => {
   const location = useLocation();
- 
-const [activeBigCategory, setActiveBigCategory] = useState(0); // MERCH
-const [activeSmallCategory, setActiveSmallCategory] = useState(0); // ALL
 
- const filteredProducts = products.filter((product) => {
+  const [activeBigCategory, setActiveBigCategory] = useState(0); // 기본은 첫 번째 카테고리
+  const [activeSmallCategory, setActiveSmallCategory] = useState(["ALL"]);
+
+  const onBigCategoryClick = (index) => {
+    setActiveBigCategory(index);
+    setActiveSmallCategory(["ALL"]);
+  };
+
+  const handleSmallCategoryClick = (category) => {
+    setActiveSmallCategory([category]);
+  };
+
+  const currentSmallCategories = smallCategories[bigCategories[activeBigCategory]] || [];
+const filteredProducts = products.filter((product) => {
   const matchBig = product.bigCategory === bigCategories[activeBigCategory];
-  const matchSmall = smallCategories[activeSmallCategory] === "ALL"
+  const selectedSmall = activeSmallCategory[0]; // "ALL" 또는 하나의 카테고리
+
+  // small이 "ALL"이면 해당 Big 카테고리 전체 출력
+  const matchSmall = selectedSmall === "ALL"
     ? true
-    : product.smallCategory === smallCategories[activeSmallCategory];
+    : product.smallCategory === selectedSmall || product.smallCategory === "ALL";
+
   return matchBig && matchSmall;
 });
+
 
   return (
     <div>
@@ -369,26 +588,26 @@ const [activeSmallCategory, setActiveSmallCategory] = useState(0); // ALL
           <h3>Products</h3>
 
           <div className="Big">
-            <ul>
-              {bigCategories.map((item, index) => (
-                <li
-                  key={index}
-                  className={activeBigCategory === index ? "underline" : ""}
-                  onClick={() => setActiveBigCategory(index)}
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
+              <ul>
+    {bigCategories.map((item, index) => (
+      <li
+        key={index}
+        className={activeBigCategory === index ? "underline" : ""}
+        onClick={() => onBigCategoryClick(index)}
+      >
+        {item}
+      </li>
+    ))}
+  </ul>
           </div>
 
           <div className="Small">
             <ul>
-              {smallCategories.map((item, index) => (
+              {currentSmallCategories.map((item, index) => (
                 <li
                   key={index}
-                  className={activeSmallCategory === index ? "active" : ""}
-                  onClick={() => setActiveSmallCategory(index)}
+                  className={activeSmallCategory.includes(item) ? "active" : ""}
+                  onClick={() => handleSmallCategoryClick(item)}
                 >
                   {item}
                 </li>
@@ -422,6 +641,7 @@ const [activeSmallCategory, setActiveSmallCategory] = useState(0); // ALL
           </div>
         </div>
       </div>
+    <Footer2/>
     </div>
   );
 }

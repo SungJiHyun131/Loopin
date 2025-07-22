@@ -10,6 +10,7 @@
 .container.StoreHome .banner .textBox2 p{color: #E5E5E5;}
 
 /* 카테고리 */
+.container.StoreHome .Products{margin-bottom: 80px;}
 .container.StoreHome .Products .Big ul{width: 100%; display: flex; overflow:scroll; white-space: nowrap; margin-top:10px; scrollbar-width: none;}
 .container.StoreHome .Products .Big ul li{margin-right: 10px;}
 .container.StoreHome .Products .Big ul li.underline{border-bottom: 1px solid #000;}
@@ -31,11 +32,10 @@
 .container.StoreHome .Goods .goods img {width: 100%;}
 
 /* 상품 설명 */
-.container.StoreHome .Goods .goods .explain {border: 1px solid #000; padding: 8px; height: 90px; margin-top: -5px;}
-.container.StoreHome .Goods .goods .explain .name {font-size: 16px;}
-.container.StoreHome .Goods .goods .explain .tag {display: flex;justify-content: space-between;width: 56%;margin-top: 4px;}
-.container.StoreHome .Goods .goods .explain .tag .blue {color: #007BFF;border: 1px solid #007BFF;border-radius: 5px;font-size: 12px; padding: 2px;}
-.container.StoreHome .Goods .goods .explain .tag .KR발송 {color: #9F9F9F;border: 1px solid #9F9F9F;
-border-radius: 5px;font-size: 12px;padding: 2px;}
+.container.StoreHome .Goods .goods .explain{border: 1px solid #000; padding: 8px; height: 88px; margin-top: -5px;}
+.container.StoreHome .Goods .goods .explain .name {font-size: 14px; white-space: nowrap;overflow: hidden; text-overflow: ellipsis;}
+.container.StoreHome .Goods .goods .explain .tag {display: flex;justify-content: space-between;width: 48%;margin-top: 4px;}
+.container.StoreHome .Goods .goods .explain .tag .blue {color: #007BFF;border: 1px solid #007BFF;border-radius: 5px;font-size: 10px; padding: 2px;}
+.container.StoreHome .Goods .goods .explain .tag .KR발송 {color: #9F9F9F;border: 1px solid #9F9F9F; border-radius: 5px;font-size: 10px;padding: 2px;}
 .container.StoreHome .Goods .goods .explain .price {display: flex;justify-content: space-between;margin-top: 4%;}
-.container.StoreHome .Goods .goods .explain .price h3 {font-size: 20px;font-weight: 400;}
+.container.StoreHome .Goods .goods .explain .price h3 {font-size: 18px;font-weight: 400;}
