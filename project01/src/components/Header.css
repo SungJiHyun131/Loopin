@@ -6,7 +6,7 @@ header .more-button {opacity: 0;pointer-events: none;}
 header .nav  {display: flex;justify-content: space-between;}
 header .nav li {margin-left: 10px;}
 header .nav li img {width: 30px; image-rendering: auto;-webkit-backface-visibility: hidden;-webkit-transform: translate3d(0,0,0);}
-header .logo {width: 50px;}
+header .logo {width: 50px;image-rendering: auto;-webkit-backface-visibility: hidden;-webkit-transform: translate3d(0,0,0);}
 
 /* more 버튼 있는 버전 */
 header.more .more-button {opacity: 1;}

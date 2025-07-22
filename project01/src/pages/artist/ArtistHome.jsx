@@ -41,7 +41,19 @@ const ArtistHome = () => {
       <p className="img"><img src={illit} alt="" /></p>
       <div className="right">
       <p className="textbox">
-  <span className="text">{dialogues[currentIndex].text}</span>
+  <span className="text">오늘 스케줄 어때?</span>
+  <img src={textbox} alt="말풍선" />
+</p>
+      <p className="textbox1">
+  <span className="text">밥 먹었어?</span>
+  <img src={textbox} alt="말풍선" />
+</p>
+      <p className="textbox2">
+  <span className="text">뭐해?</span>
+  <img src={textbox} alt="말풍선" />
+</p>
+      <p className="textbox3">
+  <span className="text">🤍🤍</span>
   <img src={textbox} alt="말풍선" />
 </p>
 <p className="img2">

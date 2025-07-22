@@ -6,7 +6,7 @@ const AlarmHeader = () => {
     const navigate = useNavigate();
     return (
       <header className='Alarm'>
-          <button className="back-button" onClick={()=> navigate('/')}><img src={back} alt="" /></button>
+          <button className="back-button" onClick={()=> navigate('/MainHome')}><img src={back} alt="" /></button>
           <h2 className="title">알림</h2>
           <p className="more-button">more</p>
       </header>

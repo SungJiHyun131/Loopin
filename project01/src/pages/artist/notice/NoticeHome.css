@@ -1,4 +1,4 @@
-
+.container.NoticeHome{padding: 100px 16px;}
 .container.NoticeHome ul li{border-bottom: 1px solid #eee; height: 100px;}
 .container.NoticeHome ul li .left h3{font-size: 16px; font-weight: 400;padding-bottom:20px ;}
 .container.NoticeHome ul li .left p{font-size: 15px; color: #8E8E8E;}
@@ -6,7 +6,7 @@
 .container.NoticeHome ul li a{display: flex; justify-content: space-between; align-items: center;padding:20px 0;}
 .container.NoticeHome ul li a img{width: 24px; height: 24px;}
 .container.NoticeHome ul li a p img{height: 100%;}
-
+.NoticeHeader{position: fixed;width: 100%;}
 .noticemain .bg-top {position: fixed;top: 0;left: 0;width: 100%;height: 130px;}
 .noticemain .bg-top img {mask-image: linear-gradient(to top, transparent,#fff,#fff,#fff,#fff);width: 100%;height: 100%;object-fit: cover;}
 .noticemain .bg-bottom {position: fixed;bottom: 0;z-index: 1;width: 100%;height: 130px;}

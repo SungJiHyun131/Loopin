@@ -7,7 +7,7 @@ const DmHeader = () => {
     return (
       <div>
       <header className='Dm'>
-          <button className="back-button" onClick={()=> navigate('/')}><img src={back} alt="" /></button>
+          <button className="back-button" onClick={()=> navigate('/MainHome')}><img src={back} alt="" /></button>
           <h2 className="title">DM</h2>
           <h2 className="more-button">DM</h2>
       </header>
