@@ -1,9 +1,9 @@
 
-.bgArchive {background:linear-gradient(to bottom,#5dabff, #fff,#5dabff);height: auto;background-attachment: fixed;}
+.bgArchive {background:linear-gradient(to bottom,#5dabff, #fff,#5dabff);height: auto;background-attachment: fixed;padding-top: 163px;}
 .bgArchive .toggle-container {
     position: relative;
     display: flex;
-    width: 380px;
+    width: 368px;
     height: 40px;
     border: 1px solid #000;
     border-radius: 999px;
@@ -33,9 +33,12 @@
     text-align: center;
     line-height: 40px;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     color: #000;
     position: relative;
     cursor: pointer;
   }
+
+
+  .ArchiveFixHeader {position: fixed;z-index: 999;left: 0;top: 0;height: 163px;   background: linear-gradient(to bottom, #5dabff,#9ACBFF);;width: 100%;}

@@ -43,6 +43,11 @@
   }
 
   
-.MediaHeader {height: 152px;position: fixed;top: 0;left: 0;width: 100%;z-index: 999;}
-.Media-bg {position: fixed;top:152px;left: 0;z-index: -999;width: 100%;height:auto;}
+
+.Media-bg {position: fixed;top:151px;left: 0;z-index: -999;width: 100%;height:auto;}
 .Media-bg img {width: 100%;height: 100%;object-fit: cover;}
+.outlet {margin-top: 150px;margin-bottom: 170px;}
+
+.MediaHeader {height: 152px;position: fixed;top: 0;left: 0;width: 100%;z-index: 999;}
+.Media-headerbg  {position: fixed;top:0;left: 0;z-index: 999;width: 100%;height: 152px}
+.Media-headerbg img {width: 100%;height: 100%;object-fit: cover;}

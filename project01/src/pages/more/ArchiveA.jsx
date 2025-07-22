@@ -31,7 +31,7 @@ const ArtistA = () => {
     { img: img2, icon: icon2 },
     { img: img3 }, // 아이콘 없음
     { img: img4},
-    { img: img5, icon: icon1, link: '/FanPostView' },
+    { img: img5, icon: icon1, link: '/FanPostView/0' },
     { img: img6, icon: icon1 },
     { img: img7},
     { img: img8, icon: icon1 },
