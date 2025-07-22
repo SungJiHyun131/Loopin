@@ -8,7 +8,7 @@
 .onlive-info {margin-top: 12px;display: flex;align-items: center;}
 .onlive-text {margin-left: 10px;}
 .onlive-title-text {font-weight: 500;font-size: 14px;margin: 4px 0;}
-.onlive-artist-time { font-size: 14px;font-weight: 500}
+.onlive-artist-time { font-size: 14px;font-weight: 500;}
 .onlive-title .circle {width: 11px;height: 11px;background: #FE5A58;border-radius: 50%;display: inline-block;margin-right: 8px;animation: circle 2s ease-out infinite;}
 
 @keyframes circle {
