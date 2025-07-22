@@ -1,5 +1,8 @@
 import React from 'react';
 import {Routes, Route } from 'react-router-dom';
+import Splash from './pages/intro/Splash';
+import Onboarding from './pages/intro/Onboarding';
+import Login from './pages/intro/Login';
 import MainHome from './pages/MainHome';
 import ArtistHome from './pages/artist/ArtistHome';
 import ArtistProfile from './pages/artist/illit/ArtistProfile';
@@ -39,10 +42,14 @@ import ChatbotView from './components/ChatbotView';
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<Layout/>}>
-  <Route index element={<MainHome/>} />
-  <Route path="MainHome" element={<MainHome/>} />
-  </Route>
+         <Route path="/" element={<Splash />} />
+      <Route path="/Onboarding" element={<Onboarding />} />
+      <Route path="/Login" element={<Login />} />
+
+      {/* ✅ 메인 앱 라우트 (Layout 포함) */}
+      <Route path="/MainHome" element={<Layout />}>
+        <Route index element={<MainHome />} />
+      </Route>
   <Route path="ChatbotModal" element={<ChatbotModal/>} />
   <Route path="ChatbotView" element={<ChatbotView/>} />
   <Route path="ArtistHome" element={<ArtistHome/>} />

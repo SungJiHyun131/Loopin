@@ -4,15 +4,24 @@ a {color: inherit; text-decoration: inherit;}
 
 .container-Artist{background: url(../../assets/img/IllitHomeimg/bg.png);padding: 16px;padding-bottom: 200px;position: relative;}
 
-.Artisttop {display: flex;justify-content: space-between;align-items:flex-end;width: 100%;margin-top: 55px;}
+.Artisttop {display: flex;justify-content: center;align-items:flex-end;width: 100%;margin-top: 55px;}
 .Artisttop .img {margin-right: 20px;margin-top: 40px;}
 .Artisttop .img img{border-radius: 10px;box-shadow: 0 0 13px rgba(0,0,0,0.25);width: 100%;border: 1px solid #000;}
 
-.Artisttop .right {margin-top: 40px;}
-.Artisttop .right .textbox {width: 150px;position: relative;}
+.Artisttop .right {margin-top: 40px;position: relative;}
+.Artisttop .right .textbox {width: 150px;animation: up 10s infinite;animation-delay: 0s;position: absolute;bottom: 0;}
 .Artisttop .right .textbox .text {position: absolute;left: 50%;top: 25%;transform: translateX(-50%);text-align: center;width: 100%;font-size: 16px;}
 .Artisttop .right .textbox img{width: 100%;}
-.Artisttop .right .img2 {width: 140px;}
+.Artisttop .right .textbox1 {width: 100px;position: relative;opacity: 0;margin: 20px 0 10px 10px;  animation: up 10s infinite;animation-delay: 3.5s;position: absolute;bottom: 0;}
+.Artisttop .right .textbox1 .text {position: absolute;left: 50%;top: 20%;transform: translateX(-50%);text-align: center;width: 100%;font-size: 14px;}
+.Artisttop .right .textbox1 img{width: 100%;}
+.Artisttop .right .textbox2 {width: 60px; animation: up 10s infinite;animation-delay: 4.5s;position: absolute;bottom: 0;opacity: 0;margin-left: 90px;}
+.Artisttop .right .textbox2 .text {position: absolute;left: 50%;top: 13%;transform: translateX(-50%);text-align: center;width: 100%;font-size: 12px;}
+.Artisttop .right .textbox2 img{width: 100%;height: 100%;object-fit: cover;}
+.Artisttop .right .textbox3 {width: 80px; animation: up 10s infinite;animation-delay: 6s;position: absolute;bottom: 0;opacity: 0;}
+.Artisttop .right .textbox3 .text {position: absolute;left: 50%;top: 13%;transform: translateX(-50%);text-align: center;width: 100%;font-size: 12px;}
+.Artisttop .right .textbox3 img{width: 100%;height: 100%;object-fit: cover;}
+.Artisttop .right .img2 {width: 140px;position: relative;z-index: 10;}
 .Artisttop .right .img2 img{width: 100%;}
 
 .Artistbottom{position:fixed ;bottom: 0;z-index: 999;width: 100%; background: none;left: 0;}
@@ -32,8 +41,8 @@ align-items: center;}
 .nav-background {
 position: relative;
 width: 100%;
-height: 130px;
-background: linear-gradient(to bottom, #d2aaff,#fff5fe);
+height: 150px;
+background: linear-gradient(to bottom, #EBC2F5,#fff5fe);
 border-radius: 16px 16px 0 0;
 box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
@@ -46,3 +55,9 @@ box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 .IllitHeader {height: 106px;position: fixed;top: 0;left: 0;width: 100%;z-index: 999;background: #D6B6F5;}
 .ArtistHomebg {position: fixed;top:105px;left: 0;z-index: -999;width: 100%;height:auto;}
 .ArtistHomebg img {width: 100%;height: 100%;object-fit: cover;}
+
+@keyframes up {
+  0%{transform: translateY(0); opacity: 0;}
+  50%{opacity: 1;}
+  100%{transform: translateY(-260px); opacity: 0;}
+}
