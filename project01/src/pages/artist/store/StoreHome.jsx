@@ -234,47 +234,47 @@ const products = [
   },
     {
     id: 19,
-    name: "Hair Scrunchie",
+    name: "Can Badge",
     img: goods19,
     bigCategory: "MERCH",
     smallCategory: "bomb",
-    price: "19,000",
+    price: "5,000",
   },
   {
     id: 20,
-    name: "S/S T-Shirt",
+    name: "Lucky Draw",
     img: goods20,
     bigCategory: "MERCH",
     smallCategory: "bomb",
-    price: "45,000",
+    price: "10,000",
   },
     {
     id: 21,
-    name: "Hair Scrunchie",
+    name: "Lenticular Photo Set",
     img: goods21,
     bigCategory: "MERCH",
     smallCategory: "Official Merch",
-    price: "19,000",
+    price: "25,000",
   },
   {
     id: 22,
-    name: "S/S T-Shirt",
+    name: "Printed Photo Set",
     img: goods22,
     bigCategory: "MERCH",
     smallCategory: "SUPER REAL ME",
-    price: "45,000",
+    price: "10,000",
   },
   {
     id: 23,
-    name: "Hair Scrunchie",
+    name: "Photo Set",
     img: goods23,
     bigCategory: "MERCH",
     smallCategory: "ALL",
-    price: "19,000",
+    price: "24,000",
   },
   {
     id: 24,
-    name: "S/S T-Shirt",
+    name: "Disposable Camera",
     img: goods24,
     bigCategory: "MERCH",
     smallCategory: "SUPER REAL ME",
@@ -282,7 +282,7 @@ const products = [
   },
       {
     id: 25,
-    name: "Hair Scrunchie",
+    name: "Film Keyring",
     img: goods25,
     bigCategory: "MERCH",
     smallCategory: "I'LL LIKE YOU",
@@ -290,43 +290,43 @@ const products = [
   },
   {
     id: 26,
-    name: "S/S T-Shirt",
+    name: "Keyring",
     img: goods26,
     bigCategory: "MERCH",
     smallCategory: "I'LL LIKE YOU",
-    price: "45,000",
+    price: "18,000",
   },
   {
     id: 27,
-    name: "Hair Scrunchie",
+    name: "Eco Bag",
     img: goods27,
     bigCategory: "MERCH",
     smallCategory: "I'LL LIKE YOU",
-    price: "19,000",
+    price: "35,000",
   },
   {
     id: 28,
-    name: "S/S T-Shirt",
+    name: "Photo Deco Set",
     img: goods28,
     bigCategory: "MERCH",
     smallCategory: "SUPER REAL ME",
-    price: "45,000",
+    price: "24,000",
   },
     {
     id: 29,
-    name: "Hair Scrunchie",
+    name: "Official Light Stick",
     img: goods29,
     bigCategory: "MERCH",
     smallCategory: "Official Merch",
-    price: "19,000",
+    price: "49,000",
   },
   {
     id: 30,
-    name: "S/S T-Shirt",
+    name: "CARD COVER STICKER",
     img: goods30,
     bigCategory: "MERCH",
     smallCategory: "I'LL LIKE YOU",
-    price: "45,000",
+    price: "6,000",
   },
 
 
@@ -620,7 +620,7 @@ const filteredProducts = products.filter((product) => {
               {filteredProducts.map((product) => (
                 <li key={product.id}>
                   <div className="goods">
-                    <Link to='/StoreDetail'>
+                    <Link to='/StoreDetail' >
                     <img src={product.img} alt={product.name} />
                     </Link>
                     <div className="explain">
