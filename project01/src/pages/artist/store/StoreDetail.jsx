@@ -84,6 +84,7 @@ const StoreDetail = () => {
           </div>
         </div>
       </div>
+
       <div className="BottomBox">
         <p className='tit'><img src={warning2} alt="" /> 안내</p>
         <div className='txt'>
@@ -98,6 +99,10 @@ const StoreDetail = () => {
           <h3 className="kor">제조 과정 시 마무리 작업 단계에서 발생하는<br />미세한 스크래치는 불량이 아닙니다.</h3>
           <p className="eng">Minuscule scratches that occur during the finishing produre od production are not defects.</p>
         </div>
+      </div>
+
+      <div className="BTN">
+        <a>장바구니에 담기</a>
       </div>
     </div>
     

@@ -1,4 +1,4 @@
-.container.StoreDetail{background: url(../../../assets/img/StoreImg/Detail/bg-StoreDetail.png);}
+.container.StoreDetail{background: url(../../../assets/img/StoreImg/Detail/bg-StoreDetail.png);  background-size: cover;}
 
 .container.StoreDetail .TopBox{width: 100%;}
 .container.StoreDetail .TopBox .img1{width: 100%;}
@@ -15,7 +15,7 @@
 .container.StoreDetail .TopBox .Warn1 .tit img{width: 16px; margin-right: 7px;}
 .container.StoreDetail .TopBox .Warn1 .txt{font-size: 14px; color: #808080; padding:10px 0;}
 
-.container.StoreDetail .MiddleBox{text-align: center; width: 100%; margin-bottom: 150px;}
+.container.StoreDetail .MiddleBox{text-align: center; width: 100%; margin-bottom: 200px;}
 .container.StoreDetail .MiddleBox .title{width: 100%; margin: 100px auto;}
 .container.StoreDetail .MiddleBox .title img{width: 100%;}
 .container.StoreDetail .MiddleBox .img2{margin:30px auto;padding-right: 30px;}
@@ -30,14 +30,17 @@
 .container.StoreDetail .MiddleBox .final .back{width: 100%; color:#BF95E8; font-size: 14px;}
 .container.StoreDetail .MiddleBox .final .front p, .container.StoreDetail .MiddleBox .final .back p{margin-top:5px ;}
 
-.container.StoreDetail .MiddleBox .textBox{width: 100%; margin: 45px auto;}
+.container.StoreDetail .MiddleBox .textBox{width: 100%; margin: 45px auto;line-height: 22px;}
 .container.StoreDetail .MiddleBox .textBox .bold{color: #7A4FA3; font-size: 16px; font-weight: 500;margin-bottom: 10px;}
 .container.StoreDetail .MiddleBox .textBox .light{color:#BF95E8; font-size: 16px; font-weight: 300;margin-bottom: 100px;}
 
-.BottomBox{width: 100%; background: #D6B6F5; height: 500px; color: #FFFFFF;}
+
+.BottomBox{width: 100%; background: #D6B6F5; height: 550px; color: #FFFFFF; line-height: 20px;}
 .BottomBox .tit{font-size: 16px; font-weight: 500; color: #fff; padding: 30px 20px; align-items: center; display: flex;}
 .BottomBox .tit img{padding-right: 10px;}
 .BottomBox .txt{width: 95%; margin-bottom:40px; padding-left: 20px;}
 .BottomBox .txt .kor{font-size: 16px; font-weight: 500; color: #fff; padding:10px 0;}
 .BottomBox .txt .eng{font-size: 15px; font-weight: 300; color: #A163DD;}
 
+.BTN{position: sticky; bottom:0; background: #E0C8F7;height: 100px; padding-top: 15px;}
+.BTN a{  display: flex; align-items: center; justify-content: center; border: 1px solid #000; border-radius: 50px; font-size: 16px; font-weight: 500; height: 50px; width: 98%; margin: 0 auto; background: linear-gradient(to top, #ffffff, #e6e6e6, #ffffff);color: black; text-decoration: none;}

@@ -1,4 +1,4 @@
-.StoreHeader{background: url(../../../assets/img/StoreImg/bg-StoreHeader.png);}
+.StoreHeader{background: url(../../../assets/img/StoreImg/bg-StoreHeader.png);padding: 16px;padding-bottom:0px;position: relative;}
 .container.StoreHome{background: url(../../../assets/img/StoreImg/bg-StoreHome.png);}
 .container.StoreHome .banner{width: 100%; display: flex; justify-content: space-between;position: relative;}
 .container.StoreHome .banner img{width: 100%;}
@@ -11,9 +11,9 @@
 
 /* 카테고리 */
 .container.StoreHome .Products{margin-bottom: 80px;}
-.container.StoreHome .Products .Big ul{width: 100%; display: flex; overflow:scroll; white-space: nowrap; margin-top:10px; scrollbar-width: none;}
+.container.StoreHome .Products .Big ul{width: 100%; display: flex; overflow:scroll; white-space: nowrap; margin-top:10px; scrollbar-width: none;color: #BB9FD5;}
 .container.StoreHome .Products .Big ul li{margin-right: 10px;}
-.container.StoreHome .Products .Big ul li.underline{border-bottom: 1px solid #000;}
+.container.StoreHome .Products .Big ul li.underline{border-bottom: 1px solid #000; color:#000}
 
 
 .container.StoreHome .Products .Small ul{width: 100%; display: flex; overflow:scroll; white-space: nowrap; margin-top: 10px; scrollbar-width: none;}
@@ -29,6 +29,7 @@
 
 /* 상품 아이템 */
 .container.StoreHome .Goods .goods {width: 100%;display: flex;flex-direction: column;}
+.container.StoreHome .Goods .goods:focus{border: 4px solid #7CFF71; outline: none; display: inline-block; }
 .container.StoreHome .Goods .goods img {width: 100%;}
 
 /* 상품 설명 */
