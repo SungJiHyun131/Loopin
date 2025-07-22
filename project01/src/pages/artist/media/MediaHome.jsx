@@ -15,18 +15,20 @@ const MediaHome = () => {
   return (
     <div className='MediaContainer'>
       <div className="Media-headerbg">
-        <img src={headerbg} alt="" className='mediaheaderbg'/>
+        <img src={headerbg} alt=""/>
       <div className="MediaHeader">
         <MediaHeader/>
-      </div>
-      <div className="toggle-container">
-      <div className="toggle-bg" style={{   left: getIndex() === 1 ? `calc(50%)` : undefined,
-  right: getIndex() === 0 ? `calc(0%-1px)` : undefined,}} />
-      <Link to="MediaA" className="toggle-btn">홈</Link>
-      <Link to="MediaB" className="toggle-btn">전체</Link>
+        <div className="toggle-container">
+        <div className="toggle-bg" style={{   left: getIndex() === 1 ? `calc(50%)` : undefined,
+    right: getIndex() === 0 ? `calc(0%-1px)` : undefined,}} />
+        <Link to="MediaA" className="toggle-btn">홈</Link>
+        <Link to="MediaB" className="toggle-btn">전체</Link>
+        </div>
       </div>
     </div>
+    <div className="outlet">
     <Outlet />
+    </div>
     <div className="Media-bg"><img src={bg} alt=""/></div> 
     </div>
   );

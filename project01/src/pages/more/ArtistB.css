@@ -1,0 +1,29 @@
+.artist-b-container {
+min-height: 100vh;
+font-family: 'Pretendard', sans-serif;
+}
+
+.artist-b-container .archive-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 16px;
+}
+
+.artist-b-container .archive-card {
+text-align: center;
+}
+
+.artist-b-container .archive-card img {
+width: 100%;
+height: auto;
+display: block;
+box-shadow:3px 3px 1px rgba(0,0,0,1);
+border-radius: 10px;
+border: 1px solid #111;
+}
+
+.artist-b-container .archive-card p {
+font-size: 14px;
+color: #111;
+margin-top: 10px;
+}

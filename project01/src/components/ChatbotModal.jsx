@@ -1,12 +1,12 @@
 import React from 'react';
 import './ChatbotModal.css';
-import {Link, useLocation, Route} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import close from '../assets/img/header_close.png';
 import talk from '../assets/img/chatbot-talkicon.png';
 import ask from '../assets/img/chatbot-ask.png';
 import profile from '../../public/loopin.svg'
+
 const ChatbotModal = ({ onClose }) => {
-  const location = useLocation();
   return (
     <div className="chatbot-modal-overlay" onClick={onClose}>
       <div className="chatbot-modal" onClick={(e) => e.stopPropagation()}>
@@ -14,14 +14,12 @@ const ChatbotModal = ({ onClose }) => {
         <div className="chatbot-header">
 
           <div className="chatbot-profile">
-            <p className="profileImg"></p>
+            <p className="profileImg"><img src={profile} alt="" /></p>
             <div className="rightText">
-            <p className="img"><img src={profile} alt="" /></p>
-              <p className="name">Loopin</p>
-              <span>운영시간 보기</span>
+              <p className="name">LOOPIN</p>
+              <span className='time'> 운영시간 10:00 ~ 18:00</span>
             </div>
           </div>
-
           <button onClick={onClose}><img src={close} alt="" /></button>
         </div>
 
