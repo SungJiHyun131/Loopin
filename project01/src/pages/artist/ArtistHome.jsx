@@ -11,6 +11,7 @@ import ProfileCard from '../../components/ProfileCard'
 import ScheduleCalendar from '../../components/ScheduleCalendar'
 import content from '../../assets/img/IllitHomeimg/bg-ArtistHome.png';
 
+
 const ArtistHome = () => {
   const location = useLocation()
   const [currentIndex, setCurrentIndex] = useState(0);

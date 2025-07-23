@@ -1,4 +1,4 @@
-.fanContainer .fanletter{position: fixed;z-index: -1;width: 100%;height: 115%;}
+.fanContainer .fanletter{position: fixed;z-index: -1;width: 100%;height: 100vh;}
 .fanContainer .fanletter img{width: 100%;height: 100%;object-fit: cover;}
 .fanbg{position: fixed;;width: 100%;height: 155px;}
 .fanbg img{width: 100%;object-fit: cover;height: 100%;}

@@ -67,7 +67,7 @@ const SubscribeSelectDetail = () => {
             <button className="go-btn">ILLIT 홈으로 가기 💜</button>
           </Link>
         </div>
-        <Link to="/SubscribeSelect">
+        <Link to="/MainHome">
             <button className="close">닫기</button>
           </Link>
         </div>
