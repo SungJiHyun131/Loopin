@@ -27,29 +27,30 @@
   flex-direction: column;
 }
 
-.chatbot-modal .chatbot-profile .rightText .img img {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: none;
-  margin-bottom: 8px;
-}
+
 
 .chatbot-modal .chatbot-profile .rightText .name {
   font-weight: 600;
   font-size: 18px;
   margin: 0;
   line-height: 1;
+  margin-bottom: 12px;
 }
 
 .chatbot-modal .chatbot-profile .rightText span {
   font-size: 14px;
-  color: #333;
+  color: #333; 
   margin-top: 4px;
   font-weight: 400;
   line-height: 1;
   /* 사진처럼 '10:00 ~ 18:00' 텍스트 스타일 */
+}
+.chatbot-modal .chatbot-profile .rightText .time{position: relative;}
+.chatbot-modal .chatbot-profile .rightText .time::after {content: '';width: 6px;height: 6px;background: #7CFF71;border-radius: 50%;position: absolute;top: 50%;transform: translateY(-50%);right:-16px;border: 1px solid #111;animation: circle 1.5s ease infinite;}
+
+@keyframes circle {
+    0%{opacity: 1;}
+    100% {opacity: 0;}
 }
 
 .chatbot-modal > button {
@@ -69,7 +70,6 @@ object-fit: cover;
 
 .chatbot-modal .chatbot-body {
   flex: 1;
-  padding-top: 24px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -79,25 +79,25 @@ object-fit: cover;
 .chatbot-modal .chatbot-conBox {
   background: #ffffff;
   height: 200px;
-  border-radius: 16px;
-  padding: 24px 28px;
+  border-radius: 10px;
+  padding: 20px 15px;
   box-sizing: border-box;
   margin-bottom: 24px;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 365px;
+  max-width: 365px;
+  width: 100%;
 }
 
 .chatbot-modal .profile {
   display: flex;
-  align-items: center;
 }
 
 .chatbot-modal .profile .img {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid #111;
@@ -122,9 +122,9 @@ object-fit: cover;
 }
 
 .chatbot-modal .profile .profile-name .intro {
-  font-size: 14px;
-  color: #444;
-  line-height: 1.4;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.2;
 }
 
 .chatbot-modal .askbtn {
@@ -148,14 +148,14 @@ object-fit: cover;
 .chatbot-modal .askbtn img {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 8px;
-  width: 20px;
-  height: 20px;
+  margin-left: 6px;
+  width: 16px;
+  height: 14px;
 }
 
 .chatbot-modal .smallText {
   font-size: 12px;
-  color: #999999;
+  color: #666;
   text-align: center;
   margin-top: 10px;
   user-select: none;
