@@ -3,7 +3,7 @@ import DmHeader from '../components/DmHeader'
 import {Routes, Route } from 'react-router-dom';
 import "./Dm.css"
 
-import search from "../assets/img/DMImg/icon_search.png"
+
 import P1 from "../assets/img/DMImg/moka.png"
 import P2 from "../assets/img/DMImg/won.png"
 import P3 from "../assets/img/DMImg/정원.png"
@@ -20,14 +20,14 @@ const Dm = () => {
   return (
     <div className='bgdm'> 
     <div className="dmheaderbg"><img src={mainbg} alt="" /></div>
-       <div className="DmHeader">
+      <div className="DmHeader">
         <DmHeader/>
       </div>
       <div className="container">
       <SearchBar onChange={(e) => setQuery(e.target.value)} />
       <div className="message">
         <h3>메세지</h3>
-       
+    
         <ul>
           <li>
             <img src={P1} alt="" />
@@ -58,28 +58,27 @@ const Dm = () => {
         <h3>추천</h3>
         <ul>
           <li>
-            <img src={P3} alt="" />
+            <p className="img"><img src={P3} alt="" /></p>
             <p>정원</p>
           </li>
           <li>
-            <img src={P4} alt="" />
+            <p className="img"><img src={P4} alt="" /></p>
             <p>닝닝</p>
           </li>
           <li>
-            <img src={P5} alt="" />
+            <p className="img"><img src={P5} alt="" /></p>
             <p>제니</p>
           </li>
           <li>
-            <img src={P6} alt="" />
+            <p className="img"><img src={P6} alt="" /></p>
             <p>태산</p>
           </li>
           <li>
-            <img src={P7} alt="" />
+            <p className="img"><img src={P7} alt="" /></p>
             <p>성찬</p>
           </li>
           <li>
-          
-            <img src={P8} alt="" />
+            <p className="img"><img src={P8} alt="" /></p>
             <p>더보기</p>
           </li>
         </ul>
