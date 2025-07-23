@@ -4,5 +4,5 @@
 .idol-image {width: 100%;height: 100%;object-fit: cover;}
 .idol-name {margin-top: 12px;font-size: 14px;font-weight: 600;color:#111;}
 
-.idol-card.selected .idol-image-border-outer { background: linear-gradient(135deg,#007BFF,#7f80ff,#d1d8ff);border: none;}
+.idol-card.selected .idol-image-border-outer { background: linear-gradient(135deg,#7CFF71,#C2FFBD);border: none;}
 .idol-card.selected .idol-image-border-inner {border: none;}
