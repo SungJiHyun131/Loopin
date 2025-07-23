@@ -18,12 +18,14 @@ import ex1 from '../../../assets/img/Storeimg/Detail/ex1.png'
 import ex2 from '../../../assets/img/Storeimg/Detail/ex2.png'
 import front from '../../../assets/img/Storeimg/Detail/front1.png'
 import back from '../../../assets/img/Storeimg/Detail/back1.png'
+import storehd from '../../../assets/img/StoreImg/storehd.png'
 
 const StoreDetail = () => {
   return (
     <div>
-      <div className="StoreHeader">
-        <StoreHeader2/>
+        <div className="storehd"><img src={storehd} alt="" /></div>
+      <div className="StoreHeader2">
+        <StoreHeader2 />
       </div>
       <div className="container StoreDetail">
         <div className="TopBox">
@@ -38,14 +40,16 @@ const StoreDetail = () => {
             </div>
             <div className="tag">
               <p className="blue">단독판매</p>
-              <p className="KR발송">KR발송</p>
+              <p className="KR발송">KR 발송</p>
             </div>
             <h3 className="price">₩20,000</h3>
           </div>
+          <div className="Warnline">
           <div className="Warn1">
             <p className='tit'><img src={warning} alt="" /> 판매공지</p>
             <p className='txt'>최대 구매 수량은 3개 입니다.</p>
           </div>
+        </div>
         </div>
         <div className="MiddleBox">
           <p className='title'><img src={title} alt=""/></p>
@@ -108,5 +112,5 @@ const StoreDetail = () => {
     
   )
 }
-<Route path="StoreHeader2" element={<StoreHeader2/>} />
+
 export default StoreDetail

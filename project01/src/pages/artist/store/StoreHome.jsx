@@ -5,7 +5,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
+import storehd from '../../../assets/img/StoreImg/storehd.png'
 import StoreHeader from '../../../components/StoreHeader';
 import LikeButton from '../../../components/LikeButton';
 import Footer2 from '../../../components/Footer2';
@@ -534,6 +534,7 @@ const filteredProducts = products.filter((product) => {
 
   return (
     <div>
+      <div className="storehd"><img src={storehd} alt="" /></div>
       <div className="StoreHeader">
         <StoreHeader />
       </div>
@@ -627,7 +628,7 @@ const filteredProducts = products.filter((product) => {
                       <p className="name">{product.name}</p>
                       <div className="tag">
                         <p className="blue">단독판매</p>
-                        <p className="KR발송">KR발송</p>
+                        <p className="KR발송">KR 발송</p>
                       </div>
                       <div className="price">
                         <h3>₩{product.price.toLocaleString()}</h3>

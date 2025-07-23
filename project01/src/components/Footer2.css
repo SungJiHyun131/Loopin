@@ -1,4 +1,4 @@
-.footer2{text-align: center; margin: 40px auto;}
+.footer2{text-align: center; margin: 40px auto;height: 120px;}
 .footer2 ul{display: flex;justify-content: center;}
 .footer2 ul li{border-right: 1px solid #ACAFB2;padding: 0 5px;font-size: 12px;color: #ACAFB2;}
 .footer2 ul li:last-child{border: none;}

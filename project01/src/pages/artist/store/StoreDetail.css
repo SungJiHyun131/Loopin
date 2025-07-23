@@ -1,22 +1,43 @@
-.container.StoreDetail{background: url(../../../assets/img/StoreImg/Detail/bg-StoreDetail.png);  background-size: cover;}
-
+.container.StoreDetail {
+    position: relative;
+    padding: 100px 16px 0;
+    background: linear-gradient(to top, #D6B6F5, #decaf3, #fff, #fff);
+    z-index: -1;
+    overflow: hidden;
+    background-attachment: fixed;
+  }
+  
+  .container.StoreDetail::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url(../../../assets/img/StoreImg/Detail/bg-StoreDetail.png) top/cover no-repeat;
+    z-index: -1;
+    pointer-events: none; /* 클릭 안 막게 처리 */
+    opacity: 1; /* 투명도 조절 가능 */
+  }
+.StoreHeader2{padding: 16px;padding-bottom:0px;position: fixed;z-index: 100;width: 100%;padding: 0;top: 0; left: 0;}
+.storehd{position: fixed;top: 0;left: 0;width: 100%;z-index: 90;height: 70px;}
+.storehd img{width: 100%;display: block;height: 100%;object-fit: cover;}
 .container.StoreDetail .TopBox{width: 100%;}
 .container.StoreDetail .TopBox .img1{width: 100%;}
 .container.StoreDetail .TopBox .ProductInfo{width: 100%;}
 .container.StoreDetail .TopBox .ProductInfo .top{width: 100%; display: flex; justify-content:space-between;align-items: center;margin-top:10px ;}
 .container.StoreDetail .TopBox .ProductInfo .top .name{font-size:18px;font-weight: 400}
 .container.StoreDetail .TopBox .ProductInfo .top .icon img{padding-left: 5px;}
-.container.StoreDetail .TopBox .ProductInfo .tag{width: 28%; display: flex; justify-content: space-between; margin:10px 0 ;}
-.container.StoreDetail .TopBox .ProductInfo .tag .blue {color: #007BFF;border: 1px solid #007BFF;border-radius: 5px;font-size: 15px; padding: 2px;}
-.container.StoreDetail .TopBox .ProductInfo .tag .KR발송 {color: #9F9F9F;border: 1px solid #9F9F9F; border-radius: 5px;font-size: 15px; padding: 2px;}
+.container.StoreDetail .TopBox .ProductInfo .tag{width: 100%; display: flex;  margin:10px 0 ;}
+.container.StoreDetail .TopBox .ProductInfo .tag .blue {color: #007BFF;border: 1px solid #007BFF;border-radius: 5px;font-size: 15px; padding: 2px 5px;display: flex;align-items: center;margin-right: 5px;}
+.container.StoreDetail .TopBox .ProductInfo .tag .KR발송 {color: #9F9F9F;border: 1px solid #9F9F9F; border-radius: 5px;font-size: 15px; padding: 2px 5px;display: flex;align-items: center;margin-right: 5px;}
 .container.StoreDetail .TopBox .ProductInfo .price{font-size:24px;}
-.container.StoreDetail .TopBox .Warn1{width: 100%; background: #FFFFFF; border-radius: 10px;height: 80px; padding: 18px; margin: 30px auto;}
+
+.container.StoreDetail .TopBox .Warnline{border-bottom: 5px dotted #fff;}
+.container.StoreDetail .TopBox .Warn1{width: 100%; background: #FFFFFF; border-radius: 10px;height: 80px; padding: 18px; margin: 30px auto 40px;}
 .container.StoreDetail .TopBox .Warn1 .tit{font-size: 14px; color: #333333; align-items: center; display: flex;}
 .container.StoreDetail .TopBox .Warn1 .tit img{width: 16px; margin-right: 7px;}
 .container.StoreDetail .TopBox .Warn1 .txt{font-size: 14px; color: #808080; padding:10px 0;}
 
 .container.StoreDetail .MiddleBox{text-align: center; width: 100%; margin-bottom: 200px;}
-.container.StoreDetail .MiddleBox .title{width: 100%; margin: 100px auto;}
+.container.StoreDetail .MiddleBox .title{width: 100%; margin: 70px auto;}
 .container.StoreDetail .MiddleBox .title img{width: 100%;}
 .container.StoreDetail .MiddleBox .img2{margin:30px auto;padding-right: 30px;}
 .container.StoreDetail .MiddleBox .img2 img{padding-right: 30px;}
@@ -25,9 +46,11 @@
 .container.StoreDetail .MiddleBox .ex{width: 100%; height:700px; ;position: relative;}
 .container.StoreDetail .MiddleBox .ex1{width: 62%; position: absolute; right: 0; top: 0px;}
 .container.StoreDetail .MiddleBox .ex2{width: 62%; position: absolute; left: 0; bottom: 0px;}
-.container.StoreDetail .MiddleBox .final{width: 100%; display: flex; justify-content: space-between;}
+.container.StoreDetail .MiddleBox .final{width: 100%; display: flex; justify-content: space-between;gap: 10px;}
 .container.StoreDetail .MiddleBox .final .front{width: 100%; position: relative; color:#BF95E8; font-size: 14px;}
+.container.StoreDetail .MiddleBox .final .front img{width: 100%;}
 .container.StoreDetail .MiddleBox .final .back{width: 100%; color:#BF95E8; font-size: 14px;}
+.container.StoreDetail .MiddleBox .final .back img{width: 100%;}
 .container.StoreDetail .MiddleBox .final .front p, .container.StoreDetail .MiddleBox .final .back p{margin-top:5px ;}
 
 .container.StoreDetail .MiddleBox .textBox{width: 100%; margin: 45px auto;line-height: 22px;}
@@ -35,12 +58,12 @@
 .container.StoreDetail .MiddleBox .textBox .light{color:#BF95E8; font-size: 16px; font-weight: 300;margin-bottom: 100px;}
 
 
-.BottomBox{width: 100%; background: #D6B6F5; height: 550px; color: #FFFFFF; line-height: 20px;}
+.BottomBox{width: 100%; background: #D6B6F5; height: 552px; color: #FFFFFF; line-height: 20px;}
 .BottomBox .tit{font-size: 16px; font-weight: 500; color: #fff; padding: 30px 20px; align-items: center; display: flex;}
 .BottomBox .tit img{padding-right: 10px;}
 .BottomBox .txt{width: 95%; margin-bottom:40px; padding-left: 20px;}
 .BottomBox .txt .kor{font-size: 16px; font-weight: 500; color: #fff; padding:10px 0;}
 .BottomBox .txt .eng{font-size: 15px; font-weight: 300; color: #A163DD;}
 
-.BTN{position: sticky; bottom:0; background: #E0C8F7;height: 100px; padding-top: 15px;}
-.BTN a{  display: flex; align-items: center; justify-content: center; border: 1px solid #000; border-radius: 50px; font-size: 16px; font-weight: 500; height: 50px; width: 98%; margin: 0 auto; background: linear-gradient(to top, #ffffff, #e6e6e6, #ffffff);color: black; text-decoration: none;}
+.BTN{position: sticky; bottom:0; background: #D6B6F5;height: 100px; padding-top: 15px;}
+.BTN a{  display: flex; align-items: center; justify-content: center; border: 1px solid #000; border-radius: 50px; font-size: 16px; font-weight: 500; height: 50px; width: 340px; margin: 0 auto; background: linear-gradient(to top, #ffffff, #e6e6e6, #ffffff);color: black; text-decoration: none;}

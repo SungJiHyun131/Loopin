@@ -2,17 +2,20 @@ import React from 'react'
 import {Route} from 'react-router-dom'
 import NoticeHeader2 from '../../../components/NoticeHeader2';
 import './NoticeDetail.css';
+import bgbottom from '../../../assets/img/bg-bottom.png'
+import bgtop from '../../../assets/img/IllitHomeimg/postimg/bgt.png'
 
 const NoticeDetail = () => {
   return (
-    <div>
+    <div className='NoticeDetailMain'>
+      <div className="bg-top"><img src={bgtop} alt="" /></div>
        <div className="NoticeHeader2">
         <NoticeHeader2/>
       </div>
       <div className="container NoticeDetail">
           <div className="top">
-            <p className="pink">EVENT</p>
-            <h3 className="Notice_tit">[EVENT] 최애가 말아주는 여름 콘텐츠?! 😳🏖️ </h3>
+            <p className="pink">[EVENT] </p>
+            <h3 className="Notice_tit">최애가 말아주는 여름 콘텐츠?! 😳🏖️ </h3>
             <p>2025.07.04</p>
           </div>
           <div className="bottom">
@@ -50,7 +53,9 @@ const NoticeDetail = () => {
             <div className="btn"><p>새로운 미션 참여하기 🚀</p></div>
           </div>
       </div>
+      <div className="bg-bottom"><img src={bgbottom} alt="" /></div>
     </div>
+    
   )
 }
 <Route path="NoticeHeader2" element={<NoticeHeader2/>} />
