@@ -2,7 +2,9 @@ li{list-style: none;}
 a {color: inherit; text-decoration: inherit;}
 * {margin: 0;padding: 0; box-sizing: border-box;}
 
-.bgSub{background:linear-gradient(to bottom,#5dabff, #fff,#5dabff);min-height: 100vh;padding-bottom: 1200px;}
+.SubscribeHeader{position: fixed;height: 70px;width: 100%;z-index: 90;background: #5dabff;}
+
+.container.sub{margin-top: 69px;background:linear-gradient(to top ,#5dabff,#fff,#5dabff);min-height: 100vh;}
 .container.sub .topBox .ticket {position: relative;}
 .container.sub .topBox .ticket img {width: 100%;}
 .container.sub .topBox .ticket .ontext {position: absolute;top: 50%;left: 30px;transform: translateY(-50%);}

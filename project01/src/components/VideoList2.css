@@ -1,4 +1,4 @@
-.video-list {
+.video-list2 {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -21,9 +21,9 @@
     display: block;
   }
   
-  .video-list .duration {
+  .video-list2 .duration {
     position: absolute;
-    bottom: 16px;
+    bottom: 8px;
     right: 8px;
 
     color: #eaeaea;
@@ -31,7 +31,7 @@ letter-spacing: 0;
     font-size: 12px;
     border-radius: 4px;
   }
-  .video-list .duration img{margin-right: 2px;}
+  .video-list2 .duration img{margin-right: 2px;}
   
   .play-button {
     position: absolute;

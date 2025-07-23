@@ -5,8 +5,8 @@ import NewMv from '../../../components/NewMv';
 import Albums from '../../../components/Albums';
 import Post from '../../../components/illitPostcard';
 import './IllitHome.css'
-import bg from '../../../assets/img/IllitHomeimg/bg-illitHome.png';
-import headerbg from '../../../assets/img/IllitHomeimg/bg-illithomeHeader.png';
+import bg from '../../../assets/img/IllitHomeimg/bg-ArtistHome.png';
+import headerbg from '../../../assets/img/bg-top.png';
 
 const IllitHome = () => {
      const location =useLocation();

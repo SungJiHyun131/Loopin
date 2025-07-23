@@ -7,9 +7,9 @@ import btnmore from '../../../assets/img/IllitHomeimg/postimg/btn.png'
 import fan from '../../../assets/img/IllitHomeimg/postimg/fan.png';
 import secret from '../../../assets/img/IllitHomeimg/postimg/secret.png';
 import X from '../../../assets/img/IllitHomeimg/postimg/X.png';
-import fanbg from '../../../assets/img/Fanimg/FANBG.png';
+import fanbg from '../../../assets/img/IllitHomeimg/mediaimg/bgheader-media.png';
 import fansearch from '../../../assets/img/Fanimg/fansearch.png';
-import fanletter from '../../../assets/img/Fanimg/fanletter.png';
+import fanletter from '../../../assets/img/IllitHomeimg/mediaimg/bg-media.png';
 
 const FanHome = () => {
   const location = useLocation();

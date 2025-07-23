@@ -1,6 +1,6 @@
 import React from 'react';
 import './NewMv.css'
-import VideoList from '../components/VideoList';
+import VideoList2 from '../components/VideoList2';
 import Thum2 from '../assets/img/IllitHomeimg/mediaimg/Thum2.png';
 
 const HistoryVideos = [
@@ -19,7 +19,7 @@ const NewMv = () => {
     return (
       <div className='container-newMv'>
         <p className="subtitle">New Released</p>
-        <VideoList videos={HistoryVideos} />
+        <VideoList2 videos={HistoryVideos} />
       </div>
     );
   };
