@@ -50,8 +50,8 @@ function App() {
       <Route path="/MainHome" element={<Layout />}>
         <Route index element={<MainHome />} />
       </Route>
-  <Route path="ChatbotModal" element={<ChatbotModal/>} />
-  <Route path="ChatbotView" element={<ChatbotView/>} />
+  <Route path="/MainHome/chatbot" element={<ChatbotModal />} />
+  <Route path="/ChatbotView" element={<ChatbotView />} />
   <Route path="ArtistHome" element={<ArtistHome/>} />
   <Route path="Dm" element={<Dm/>} />
   <Route path="Alarm" element={<Alarm/>} />

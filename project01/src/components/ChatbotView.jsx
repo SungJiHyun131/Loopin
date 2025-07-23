@@ -4,13 +4,20 @@ import close from '../assets/img/header_close.png';
 import back from '../assets/img/header_back.png';
 import profile from '../../public/loopin.svg';
 import notice from '../assets/img/noticeicon.png';
+import { useLocation ,useNavigate } from 'react-router-dom';
+
 
 const ChatbotView = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const from = location.state?.from || '/MainHome';
+
+
   const [messages, setMessages] = useState([
     { type: 'bot', text: '안녕하세요 LOOPIN입니다 💙' },
     {
       type: 'buttons',
-      side: 'user',  // 버튼 처음에도 오른쪽에 띄우기
+      side: 'user',
       options: [
         '⭐ New ⭐',
         '멤버십 혜택 안내 🎉',
@@ -21,6 +28,7 @@ const ChatbotView = () => {
     },
   ]);
   const [isLoading, setIsLoading] = useState(false);
+  const [inputText, setInputText] = useState('');
 
   const handleSelect = (type) => {
     setIsLoading(true);
@@ -55,7 +63,7 @@ const ChatbotView = () => {
 
       if (typeof response === 'string') {
         setMessages((prev) => [...prev, { type: 'bot', text: response }]);
-        showButtonsAgain('user'); // 버튼 다시 띄울 때 사용자 말풍선으로
+        showButtonsAgain('user');
       } else {
         setMessages((prev) => [...prev, { type: 'bot', custom: true, content: response.content }]);
       }
@@ -84,17 +92,18 @@ const ChatbotView = () => {
   return (
     <div className="chatbot-body">
       <div className="chatbot-body__header">
-        <button onClick={() => window.history.back()}><img src={back} alt="back" /></button>
+      <button onClick={() => navigate(from)}><img src={back} alt="back" /></button>
         <div className="chatbot-body__profile">
-            <p className="chatbot-body__title">LOOPIN</p>
-            <span className="chatbot-body__subtitle">몇 분 내 답변 받으실 수 있어요</span>
+          <p className="chatbot-body__title">LOOPIN</p>
+          <span className="chatbot-body__subtitle">몇 분 내 답변 받으실 수 있어요</span>
         </div>
-        <button onClick={() => (window.location.href = 'fandom-app/MainHome#/MainHome')}><img src={close} alt="close" /></button>
+        <button onClick={() => navigate('/MainHome')}><img src={close} alt="close" /></button>
       </div>
       <div className="topNotice">
-        <img src={notice} alt="notice icon" style={{width:14}} />
-          <p className="topNotice-text">설레는 마음이 흐르는 공간, <br />LOOPIN이 그 순간을 함께합니다 ✨</p>
+        <img src={notice} alt="notice icon" style={{ width: 14 }} />
+        <p className="topNotice-text">설레는 마음이 흐르는 공간, <br />LOOPIN이 그 순간을 함께합니다 ✨</p>
       </div>
+
       <div className="chatbot-body__chatbox">
         {messages.map((msg, idx) => (
           <div
@@ -122,21 +131,26 @@ const ChatbotView = () => {
             )}
           </div>
         ))}
-              {isLoading && (
-            <div className="chatbot-body__message bot">
-              <img src={profile} alt="bot" className="chatbot-body__avatar" />
-              <div className="chatbot-body__bubble typing">
-                <span className="dot"></span>
-                <span className="dot"></span>
-                <span className="dot"></span>
-              </div>
+        {isLoading && (
+          <div className="chatbot-body__message bot">
+            <img src={profile} alt="bot" className="chatbot-body__avatar" />
+            <div className="chatbot-body__bubble typing">
+              <span className="dot"></span>
+              <span className="dot"></span>
+              <span className="dot"></span>
             </div>
-          )}
+          </div>
+        )}
       </div>
 
       <div className="chatbot-body__input-bar">
-        <input type="text" placeholder="AI 에이전트에게 질문해 주세요." disabled />
-        <button disabled>전송</button>
+        <input
+          type="text"
+          placeholder="AI 에이전트에게 질문해 주세요."
+          value={inputText}
+          onChange={(e) => setInputText(e.target.value)}
+        />
+        <button className={inputText.trim() ? 'active' : ''}>전송</button>
       </div>
     </div>
   );
