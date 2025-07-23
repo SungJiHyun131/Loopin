@@ -41,8 +41,8 @@
 .container.StoreDetail .MiddleBox{text-align: center; width: 100%; margin-bottom: 200px;}
 .container.StoreDetail .MiddleBox .title{width: 100%; margin: 70px auto;}
 .container.StoreDetail .MiddleBox .title img{width: 100%;}
-.container.StoreDetail .MiddleBox .img2{margin:30px auto;padding-right: 30px;}
-.container.StoreDetail .MiddleBox .img2 img{padding-right: 30px;}
+.container.StoreDetail .MiddleBox .img2{margin:30px auto;padding-right: 30px;width: 250px;}
+.container.StoreDetail .MiddleBox .img2 img{padding-right: 30px;width: 100%;}
 .container.StoreDetail .MiddleBox .Detail1 img{width: 100%;}
 .container.StoreDetail .MiddleBox .Detail2 img{width: 100%;}
 .container.StoreDetail .MiddleBox .ex{width: 100%; height:700px; ;position: relative;}
