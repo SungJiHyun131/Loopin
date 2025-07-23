@@ -3,27 +3,52 @@ import {Link,Route} from 'react-router-dom';
 import SubscribeHeader2 from '../../components/SubscribeHeader2';
 import SelectArtist from '../../components/SelectArtist';
 import './SubscribeSelect.css';
-import illit from '../../assets/img/Subscribeimg/illit.png';
+
 import aespa from '../../assets/img/Subscribeimg/aespa.png';
-import nct from '../../assets/img/Subscribeimg/nctwish.png';
-import seventeen from '../../assets/img/Subscribeimg/seventeen.png';
-import fromis from '../../assets/img/Subscribeimg/fromis.png';
+import ATEEZ from '../../assets/img/Subscribeimg/ATEEZ.png';
+import BABYMONSTER from '../../assets/img/Subscribeimg/BABY MONSTER.png';
 import blackpink from '../../assets/img/Subscribeimg/blackpink.png';
+import BOYNEXTDOOR from '../../assets/img/Subscribeimg/BOYNEXTDOOR.png';
+import ENHYPHEN from '../../assets/img/Subscribeimg/ENHYPHEN.png';
+import fromis from '../../assets/img/Subscribeimg/fromis.png';
+import H2H from '../../assets/img/Subscribeimg/H2H.png';
+import illit from '../../assets/img/Subscribeimg/illit.png';
 import ive from '../../assets/img/Subscribeimg/ive.png';
+import KATSEYE from '../../assets/img/Subscribeimg/KATSEYE.png';
+import LESSERAPIM from '../../assets/img/Subscribeimg/LESSERAPIM.png';
 import meovv from '../../assets/img/Subscribeimg/meovv.png';
+import nct from '../../assets/img/Subscribeimg/nctwish.png';
+import REDVELVET from '../../assets/img/Subscribeimg/REDVELVET.png';
 import riize from '../../assets/img/Subscribeimg/riize.png';
+import seventeen from '../../assets/img/Subscribeimg/seventeen.png';
+import SHINEE from '../../assets/img/Subscribeimg/SHINEE.png';
+import TWICE from '../../assets/img/Subscribeimg/TWICE.png';
+import TWS from '../../assets/img/Subscribeimg/TWS.png';
+import TXT from '../../assets/img/Subscribeimg/TXT.png';
 import SearchBar from '../../components/SearchBar';
 
 const idols = [
-  { name: 'ILLIT', image: illit },
   { name: 'AESPA', image: aespa },
-  { name: 'NCT WISH', image: nct },
-  { name: 'SEVENTEEN', image: seventeen },
-  { name: 'FROMIS_9', image: fromis },
+  { name: 'ATEEZ', image: ATEEZ },
+  { name: 'BABY MONSTER', image: BABYMONSTER },
   { name: 'BLACKPINK', image: blackpink },
+  { name: 'BOYNEXTDOOR', image: BOYNEXTDOOR },
+  { name: 'ENHYPHEN', image: ENHYPHEN },
+  { name: 'FROMIS_9', image: fromis },
+  { name: 'H2H', image: H2H },
+  { name: 'ILLIT', image: illit },
   { name: 'IVE', image: ive },
+  { name: 'KATSEYE', image: KATSEYE },
+  { name: 'LESSERAPIM', image: LESSERAPIM },
   { name: 'MEOVV', image: meovv },
+  { name: 'NCT WISH', image: nct },
+  { name: 'REDVELVET', image: REDVELVET },
   { name: 'RIIZE', image: riize },
+  { name: 'SEVENTEEN', image: seventeen },
+  { name: 'SHINEE', image: SHINEE },
+  { name: 'TWICE', image: TWICE },
+  { name: 'TWS', image: TWS },
+  { name: 'TXT', image: TXT },
 ];
 
 const SubscribeSelect = () => {

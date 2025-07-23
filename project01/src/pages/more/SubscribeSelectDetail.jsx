@@ -32,14 +32,14 @@ const SubscribeSelectDetail = () => {
          
             <div className="bottomSection">
               <p className="subtitle">
-                Membership Benefits
+                Subscription Benefits
               </p>
               <ul className="smalltext">
-                <li>멤버십 전용 ILLIT 공식 상품 구매 기회</li>
-                <li>LOOPIN ILLIT 콘텐츠 구매 관련 혜택</li>
+                <li>구독권 전용 ILLIT 공식 상품 구매 기회</li>
+                <li>LOOPIN 내 ILLIT 독점 콘텐츠 시청 관련 혜택</li>
                 <li>ILLIT 공연 시 선예매, 추첨제 참여 기회</li>
-                <li>ILLIT LOOPIN 내 멤버십 전용 독점 콘텐츠</li>
-                <li>온라인 멤버십 카드</li>
+                <li>ILLIT LOOPIN 내 구독권 전용 독점 콘텐츠</li>
+                <li>커뮤니티 내 특별한 혜택</li>
               </ul>
             </div>
              <div className="complete-btn">
