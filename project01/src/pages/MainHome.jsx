@@ -1,4 +1,5 @@
-import React,{useState} from 'react'
+import React,{useState} from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import ArtistCard from '../components/ArtistCard'
 import './MainHome.css'
 import SearchBar from '../components/SearchBar';
@@ -10,8 +11,9 @@ import wingright from '../assets/img/wingright.png'
 
 const MainHome = () => {
   const [query, setQuery] = useState('');
-  const [chatOpen, setChatOpen] = useState(false);
-
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isChatbotOpen = location.pathname === '/MainHome/chatbot';
   return (
     <div className='container main'>
      
@@ -33,8 +35,10 @@ const MainHome = () => {
        </div>
      <ArtistCard/>
 
-      <ChatbotButton onClick={() => setChatOpen(true)} />
-      {chatOpen && <ChatbotModal onClose={() => setChatOpen(false)} />}
+     <ChatbotButton onClick={() => navigate('/MainHome/chatbot')} />
+      {isChatbotOpen && (
+        <ChatbotModal onClose={() => navigate('/MainHome')} />
+      )}
     </div>
   )
 }

@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to bottom, #dbeeff, #ffffff);
+  background: #E9F4FF;
   display: flex;
   flex-direction: column;
   z-index: 9999;
