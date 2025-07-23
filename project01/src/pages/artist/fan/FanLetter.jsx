@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import React, {  useEffect, useState } from 'react'
 import FanLetterHeader from '../../../components/FanLetterHeader';
-import bgtop from '../../../assets/img/bg-top.png';
+import bgtop from '../../../assets/img/IllitHomeimg/postimg/bgt.png';
 import './FanLetter.css';
 import clip from '../../../assets/img/Fanimg/clip.png'
 import photo from '../../../assets/img/Fanimg/photo.png'

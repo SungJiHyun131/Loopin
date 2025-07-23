@@ -1,5 +1,11 @@
-.StoreHeader{background: url(../../../assets/img/StoreImg/bg-StoreHeader.png);padding: 16px;padding-bottom:0px;position: sticky;}
-.container.StoreHome{background: url(../../../assets/img/StoreImg/bg-StoreHome.png);}
+
+.StoreHeader{padding: 16px;padding-bottom:0px;position: fixed;z-index: 100;width: 100%;padding: 0;top: 0; left: 0;}
+.storehd{position: fixed;top: 0;left: 0;width: 100%;z-index: 90;height: 70px;}
+.storehd img{width: 100%;height: 100%;object-fit: cover;}
+
+
+.container.StoreHome{background:  linear-gradient(to top, #D6B6F5, #decaf3, #fff, #fff);padding: 80px 16px 10px;background-attachment: fixed;}
+
 .container.StoreHome .banner{width: 100%; display: flex; justify-content: space-between;position: relative;}
 .container.StoreHome .banner img{width: 100%;}
 .container.StoreHome .banner .textBox{position: absolute; top:70%; margin-left: 15px;}
@@ -11,13 +17,13 @@
 
 /* 카테고리 */
 .container.StoreHome .Products{margin-bottom: 80px;}
-.container.StoreHome .Products .Big ul{width: 100%; display: flex; overflow:scroll; white-space: nowrap; margin-top:10px; scrollbar-width: none;color: #BB9FD5;}
-.container.StoreHome .Products .Big ul li{margin-right: 10px;}
-.container.StoreHome .Products .Big ul li.underline{border-bottom: 1px solid #000; color:#000}
+.container.StoreHome .Products .Big ul{width: 100%; display: flex; overflow:scroll; white-space: nowrap; margin-top:15px; scrollbar-width: none;color: #d4ceda;}
+.container.StoreHome .Products .Big ul li{margin-right: 10px;transition: all 0.3s;padding-bottom: 5px;}
+.container.StoreHome .Products .Big ul li.underline{border-bottom: 1px solid #000; color:#000;transition: all 0.3s;}
 
 
 .container.StoreHome .Products .Small ul{width: 100%; display: flex; overflow:scroll; white-space: nowrap; margin-top: 10px; scrollbar-width: none;}
-.container.StoreHome .Products .Small ul li{border: 1px solid #000; border-radius: 50px; padding: 8px 10px; margin-right: 10px;}
+.container.StoreHome .Products .Small ul li{border: 1px solid #000; border-radius: 50px; padding: 8px 10px; margin-right: 10px;background: #fff;color: #666;transition: all 0.3S;}
 .container.StoreHome .Products .Small ul li.active{background: linear-gradient(to top, #FF8EBF, #FFC8DF,#fff); color: #000;}
 
 
@@ -33,10 +39,12 @@
 .container.StoreHome .Goods .goods img {width: 100%;}
 
 /* 상품 설명 */
-.container.StoreHome .Goods .goods .explain{border: 1px solid #000; padding: 8px; height: 88px; margin-top: -5px;}
+.container.StoreHome .Goods .goods .explain{border: 1px solid #000; padding: 8px; height: 88px; margin-top: -5px;background: #fff;}
 .container.StoreHome .Goods .goods .explain .name {font-size: 14px; white-space: nowrap;overflow: hidden; text-overflow: ellipsis;}
-.container.StoreHome .Goods .goods .explain .tag {display: flex;justify-content: space-between;width: 50%;margin-top: 4px;}
-.container.StoreHome .Goods .goods .explain .tag .blue {color: #007BFF;border: 1px solid #007BFF;border-radius: 5px;font-size: 10px; padding: 2px;}
+
+.container.StoreHome .Goods .goods .explain .tag {display: flex;width: 100%;margin-top: 5px;}
+.container.StoreHome .Goods .goods .explain .tag .blue {color: #007BFF;border: 1px solid #007BFF;border-radius: 5px;font-size: 10px; padding: 2px;margin-right: 5px;}
+
 .container.StoreHome .Goods .goods .explain .tag .KR발송 {color: #9F9F9F;border: 1px solid #9F9F9F; border-radius: 5px;font-size: 10px;padding: 2px;}
 .container.StoreHome .Goods .goods .explain .price {display: flex;justify-content: space-between;margin-top: 4%;}
 .container.StoreHome .Goods .goods .explain .price h3 {font-size: 18px;font-weight: 400;}

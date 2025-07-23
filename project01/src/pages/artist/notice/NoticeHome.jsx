@@ -2,10 +2,9 @@ import React from 'react'
 import {Link, useLocation, Route} from 'react-router-dom'
 import NoticeHeader from '../../../components/NoticeHeader';
 import './NoticeHome.css';
-import newIcon from '../../../assets/img/icon_new.png'
 import rightIcon from '../../../assets/img/Icon_right.png'
 import bgbottom from '../../../assets/img/bg-bottom.png'
-import bgtop from '../../../assets/img/bg-top.png'
+import bgtop from '../../../assets/img/IllitHomeimg/postimg/bgt.png'
 
 
 const Notice = () => {
@@ -22,7 +21,7 @@ const Notice = () => {
             <Link to='/NoticeDetail'>
             <div className="left">
               <h3 className="Notice_tit">[EVENT] 최애가 말아주는 여름 콘텐츠?! 😳🏖️ </h3>
-              <p>2025.07.04 <img src={newIcon} alt="" /></p>
+              <p>2025.07.04 <span className="newicon">new</span></p>
             </div>
             <img src={rightIcon} alt="" />
             </Link>
@@ -31,7 +30,7 @@ const Notice = () => {
             <Link to='/NoticeDetail'>
             <div className="left">
               <h3 className="Notice_tit">[EVENT] 여름 플레이리스트 챌린지 🌊</h3>
-              <p>2025.07.04 <img src={newIcon} alt="" /></p>
+              <p>2025.07.04 <span className="newicon">new</span></p>
             </div>
             <img src={rightIcon} alt="" />
             </Link>
@@ -41,7 +40,7 @@ const Notice = () => {
             <div className="left">
               <h3 className="Notice_tit">[NOTICE] 챌린지 리뉴얼 완료! 덕질미션에서
 만나요 💪🏻</h3>
-              <p>2025.07.02 <img src={newIcon} alt="" /></p>
+              <p>2025.07.02 <span className="newicon">new</span></p>
             </div>
               <img src={rightIcon} alt="" />
             </Link>

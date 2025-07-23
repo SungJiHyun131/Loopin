@@ -53,7 +53,7 @@ const ArtistHome = () => {
   <img src={textbox} alt="말풍선" />
 </p>
       <p className="textbox3">
-  <span className="text">🤍🤍</span>
+  <span className="text">🤍🤍🤍</span>
   <img src={textbox} alt="말풍선" />
 </p>
 <p className="img2">
