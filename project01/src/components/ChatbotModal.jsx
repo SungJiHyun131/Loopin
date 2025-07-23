@@ -17,7 +17,7 @@ const ChatbotModal = ({ onClose }) => {
             <p className="profileImg"><img src={profile} alt="" /></p>
             <div className="rightText">
               <p className="name">LOOPIN</p>
-              <span className='time'> 운영시간 10:00 ~ 18:00</span>
+              <span className='time'> 10:00 ~ 18:00</span>
             </div>
           </div>
           <button onClick={onClose}><img src={close} alt="" /></button>

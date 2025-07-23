@@ -2,17 +2,25 @@ import React, { useState } from 'react';
 import './ChatbotView.css';
 import close from '../assets/img/header_close.png';
 import back from '../assets/img/header_back.png';
-import { useNavigate } from 'react-router-dom';
 import profile from '../../public/loopin.svg';
-import icon from '../assets/img/chatbot-icon.png';
+import notice from '../assets/img/noticeicon.png';
 
 const ChatbotView = () => {
   const [messages, setMessages] = useState([
     { type: 'bot', text: '안녕하세요 LOOPIN입니다 💙' },
-    { type: 'buttons', options: ['⭐ New ⭐', '멤버십 혜택 안내 🎉', '고객센터 운영 시간 📞', '주문 (전) 문의 🔍', '주문 (후) 문의 🔎'] }
+    {
+      type: 'buttons',
+      side: 'user',  // 버튼 처음에도 오른쪽에 띄우기
+      options: [
+        '⭐ New ⭐',
+        '멤버십 혜택 안내 🎉',
+        '고객센터 운영 시간 📞',
+        '주문 (전) 문의 🔍',
+        '주문 (후) 문의 🔎',
+      ],
+    },
   ]);
   const [isLoading, setIsLoading] = useState(false);
-  const navigate = useNavigate();
 
   const handleSelect = (type) => {
     setIsLoading(true);
@@ -29,13 +37,13 @@ const ChatbotView = () => {
             <>
               <p>LOOPIN 멤버십 회원이 되면<br />온라인 공식몰에서<br />다양한 혜택을 받을 수 있습니다</p>
               <p style={{ marginTop: '8px' }}>아래 링크를 통해<br />자세하게 확인 해보세요 👋🏻</p>
-              <button className="link-btn">멤버십 혜택 안내</button>
-              <div className="bottom-btns">
+              <button className="chatbot-body__link-btn">멤버십 혜택 안내 🎉</button>
+              <div className="chatbot-body__bottom-btns">
                 <button>채팅 상담원 연결</button>
-                <button onClick={showButtonsAgain}>이전 단계</button>
+                <button onClick={() => showButtonsAgain('user')}>이전 단계</button>
               </div>
             </>
-          )
+          ),
         };
       } else if (type === '고객센터 운영 시간 📞') {
         response = '운영시간은 평일 오전 10시 ~ 오후 5시이며, 점심시간은 12~1시입니다.';
@@ -47,67 +55,87 @@ const ChatbotView = () => {
 
       if (typeof response === 'string') {
         setMessages((prev) => [...prev, { type: 'bot', text: response }]);
-        showButtonsAgain();
-      } else if (typeof response === 'object') {
+        showButtonsAgain('user'); // 버튼 다시 띄울 때 사용자 말풍선으로
+      } else {
         setMessages((prev) => [...prev, { type: 'bot', custom: true, content: response.content }]);
       }
+
       setIsLoading(false);
     }, 1000);
   };
 
-  const showButtonsAgain = () => {
-    setMessages((prev) => [...prev, { type: 'buttons', options: ['⭐ New ⭐', '멤버십 혜택 안내 🎉', '고객센터 운영 시간 📞', '주문 (전) 문의 🔍', '주문 (후) 문의 🔎'] }]);
+  const showButtonsAgain = (side = 'bot') => {
+    setMessages((prev) => [
+      ...prev,
+      {
+        type: 'buttons',
+        side: side,
+        options: [
+          '⭐ New ⭐',
+          '멤버십 혜택 안내 🎉',
+          '고객센터 운영 시간 📞',
+          '주문 (전) 문의 🔍',
+          '주문 (후) 문의 🔎',
+        ],
+      },
+    ]);
   };
 
   return (
     <div className="chatbot-body">
-      <div className="chatbot-header">
-        <button className="back-button" onClick={() => navigate('/ChatbotModal')}><img src={back} alt="" /></button>
-        <div className="chatbot-profile">
-          <div className="rightText">
-            <p className="name">Loopin</p>
-            <span>몇분 내 답변 받으실 수 있어요</span>
-          </div>
+      <div className="chatbot-body__header">
+        <button onClick={() => window.history.back()}><img src={back} alt="back" /></button>
+        <div className="chatbot-body__profile">
+            <p className="chatbot-body__title">LOOPIN</p>
+            <span className="chatbot-body__subtitle">몇 분 내 답변 받으실 수 있어요</span>
         </div>
-        <button className="close-button" onClick={() => navigate('/MainHome')}><img src={close} alt="" /></button>
+        <button onClick={() => (window.location.href = 'fandom-app/MainHome#/MainHome')}><img src={close} alt="close" /></button>
       </div>
-
-      <div className="chatbot-guide">
-        <p>설레는 마음이 흐르는 공간,<br />LOOPIN의 그 순간을 함께합니다 ✨</p>
+      <div className="topNotice">
+        <img src={notice} alt="notice icon" style={{width:14}} />
+          <p className="topNotice-text">설레는 마음이 흐르는 공간, <br />LOOPIN이 그 순간을 함께합니다 ✨</p>
       </div>
+      <div className="chatbot-body__chatbox">
+        {messages.map((msg, idx) => (
+          <div
+            key={idx}
+            className={`chatbot-body__message ${msg.type === 'user' || msg.side === 'user' ? 'user' : 'bot'}`}
+          >
+            {msg.type !== 'user' && msg.type !== 'buttons' && (
+              <img src={profile} alt="bot" className="chatbot-body__avatar" />
+            )}
 
-      <div className="chatbox">
-        {messages.map((msg, index) => (
-          <div key={index} className={`chat-message ${msg.type === 'user' ? 'user' : 'bot'}`}>
-            {msg.type === 'bot' && <img src={profile} alt="bot" className="avatar" />}
             {msg.type === 'buttons' ? (
-              <div className="chat-bubble bot buttons">
+              <div className={`chatbot-body__buttons ${msg.side === 'user' ? 'user' : 'bot'}`}>
                 {msg.options.map((opt, i) => (
-                  <button key={i} onClick={() => handleSelect(opt)}>{opt}</button>
+                  <button key={i} onClick={() => handleSelect(opt)}>
+                    {opt}
+                  </button>
                 ))}
               </div>
             ) : (
-              <div className={`chat-bubble ${msg.type}`}>
-                {msg.custom ? msg.content : <p>{msg.text}</p>}
+              <div className="chatbot-body__bubble">
+                {msg.custom
+                  ? msg.content
+                  : msg.text.split('\n').map((line, i) => <p key={i}>{line}</p>)}
               </div>
             )}
           </div>
         ))}
-
-        {isLoading && (
-          <div className="chat-message bot">
-            <img src={profile} alt="bot" className="avatar" />
-            <div className="chat-bubble bot typing">
-              <span className="dot"></span>
-              <span className="dot"></span>
-              <span className="dot"></span>
+              {isLoading && (
+            <div className="chatbot-body__message bot">
+              <img src={profile} alt="bot" className="chatbot-body__avatar" />
+              <div className="chatbot-body__bubble typing">
+                <span className="dot"></span>
+                <span className="dot"></span>
+                <span className="dot"></span>
+              </div>
             </div>
-          </div>
-        )}
+          )}
       </div>
 
-      <div className="input-bar">
-        <input type="text" placeholder="AI 에이전트에게 질문해 주세요." />
+      <div className="chatbot-body__input-bar">
+        <input type="text" placeholder="AI 에이전트에게 질문해 주세요." disabled />
         <button disabled>전송</button>
       </div>
     </div>
