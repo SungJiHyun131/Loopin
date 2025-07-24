@@ -98,7 +98,7 @@ const products = [
     id: 2,
     name: "Image Picket",
     img: goods2,
-    bigCategory: "TOUR_MERCH",
+    bigCategory: "TOUR MERCH",
     smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
     price: "10,000",
   },
@@ -213,6 +213,7 @@ const products = [
     bigCategory: "TOUR MERCH",
     smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
     price: "8,000",
+    soldOut: true,
   },
 
 
@@ -628,10 +629,9 @@ const filteredProducts = products.filter((product) => {
               {filteredProducts.map((product) => (
                 <li key={product.id}>
                   <div className="goods">
-                    <Link to='/StoreDetail' >
-                    <div className="img-container">
+                    <Link to='/StoreDetail' ><div className="img-container">
                     <img src={product.img} alt={product.name} />
-                    
+                    {product.soldOut && <div className="soldout-overlay">SOLD<br />OUT</div>}
                     </div>
                     </Link>
                     <div className="explain">
