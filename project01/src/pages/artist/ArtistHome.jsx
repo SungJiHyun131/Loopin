@@ -9,6 +9,7 @@ import mk from '../../assets/img/IllitHomeimg/mk.png'
 import yn from '../../assets/img/IllitHomeimg/yn.png'
 import wh from '../../assets/img/IllitHomeimg/wh.png'
 import il from '../../assets/img/IllitHomeimg/il.png'
+import mouse from '../../assets/img/IllitHomeimg/mouse.png'
 import minju from '../../assets/img/IllitHomeimg/pixel_minju.png'
 import minju2 from '../../assets/img/IllitHomeimg/pixel_minju2.png'
 import textbox from '../../assets/img/IllitHomeimg/pixel_textbox.png'
@@ -52,6 +53,10 @@ const handleNextImage = () => {
      <div className="Artisttop">
      <div className="img" onClick={handleNextImage} style={{ cursor: "pointer" }}>
       <p className="photo">Our Memories</p>
+      <div className="mouse">
+        <div className="cl"><img src={mouse} alt="" /></div>
+        <p className="click">Click me</p>
+      </div>
   <img src={artistImages[artistImgIndex]} alt="아티스트 이미지" />
 </div>
       <div className="right">

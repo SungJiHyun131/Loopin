@@ -1,12 +1,17 @@
 li{list-style: none;}
 a {color: inherit; text-decoration: inherit;}
 * {margin: 0;padding: 0; box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Silkscreen:wght@400;700&display=swap');
 
 
-.container-Artist{padding: 16px;padding-bottom: 200px;position: relative;background: linear-gradient(to top,  #D6B6F5,  #D6B6F5, #fff, #fff,  #D6B6F5, #D6B6F5);z-index: 0;background-attachment: fixed;}
+.container-Artist{padding: 16px;padding-bottom: 200px;position: relative;background: linear-gradient(to top,  #D6B6F5,  #D6B6F5, #fff,  #D6B6F5, #D6B6F5);z-index: 0;background-attachment: fixed;}
 
 .Artisttop {display: flex;justify-content: center;align-items:flex-end;width: 100%;margin-top: 40px;margin-bottom: 14px;}
-.Artisttop .img {margin-right: 10px;margin-top: 40px;border-radius: 10px;box-shadow: 0 0 13px rgba(0,0,0,0.25);width: 100%;border: 1px solid #000;display: flex;justify-content: space-between;flex-direction: column;}
+.Artisttop .img {margin-right: 10px;margin-top: 40px;border-radius: 10px;box-shadow: 0 0 13px rgba(0,0,0,0.25);width: 100%;border: 1px solid #000;display: flex;justify-content: space-between;flex-direction: column;position: relative;}
+.Artisttop .img .mouse {position: absolute;display: flex;align-items: center;bottom: 0;left: 0;}
+.Artisttop .img .mouse .cl{width: 40px;}
+.Artisttop .img .mouse .cl img{width: 100%;}
+.Artisttop .img .mouse .click{font-size: 16px;padding: 3px 8px;background: #fff;border-radius: 20px;border: 1px solid #000;font-family: "Pixelify Sans", sans-serif;}
 .Artisttop .img .photo{text-align: center;padding: 8px;background: linear-gradient(to top, #FF719E,#fff);border-radius: 10px 10px 0 0;border-bottom: 1px solid #000;height: 40px;font-size: 18px;}
 .Artisttop .img img{width: 100%;border-radius: 0 0 10px 10px;}
 
