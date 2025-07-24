@@ -11,7 +11,7 @@
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: url(../../../assets/img/StoreImg/Detail/bg-StoreDetail.png) top/cover no-repeat;
+    background: url(../../../assets/img/StoreImg/Detail/bg-StoreDetail.png) center 155px /cover no-repeat;
     z-index: -1;
     pointer-events: none; /* 클릭 안 막게 처리 */
     opacity: 1; /* 투명도 조절 가능 */
