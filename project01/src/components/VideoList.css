@@ -14,11 +14,14 @@
   
   .thumbnail-wrapper {
     position: relative;
+ 
   }
   
   .thumbnail {
     width: 100%;
     display: block;
+    border-radius: 10px;
+    border: 1px solid #000;
   }
   
   .video-list .duration {

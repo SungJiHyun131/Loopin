@@ -43,7 +43,7 @@
 
   
 
-.Media-bg {position: fixed;top:150px;left: 0;z-index: -999;width: 100%;height:auto;}
+.Media-bg {position: fixed;top:180px;left: 0;z-index: -999;width: 100%;height:auto;}
 .Media-bg img {width: 100%;height: 100%;object-fit: cover;}
 .outlet {margin-top: 150px;margin-bottom: 170px;}
 
