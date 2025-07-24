@@ -424,8 +424,9 @@ const products = [
     name: "VOGUE ILLIT SPECIAL (2025.06 / A type)",
     img: goods42,
     bigCategory: "MAGAZINE",
-    smallCategory: "ALL",
+    smallCategory: "VOGUE",
     price: "10,000",
+    soldOut: true,
   },
   {
     id: 43,
@@ -434,6 +435,7 @@ const products = [
     bigCategory: "MAGAZINE",
     smallCategory: "VOGUE",
     price: "10,000",
+    soldOut: true,
   },
   {
     id: 44,
@@ -442,6 +444,7 @@ const products = [
     bigCategory: "MAGAZINE",
     smallCategory: "VOGUE",
     price: "10,000",
+    soldOut: true,
   },
   {
     id: 45,
@@ -450,6 +453,7 @@ const products = [
     bigCategory: "MAGAZINE",
     smallCategory: "VOGUE",
     price: "10,000",
+    soldOut: true,
   },
   {
     id: 46,
@@ -458,6 +462,7 @@ const products = [
     bigCategory: "MAGAZINE",
     smallCategory: "VOGUE",
     price: "10,000",
+    soldOut: true,
   },
   {
     id: 47,
@@ -466,6 +471,7 @@ const products = [
     bigCategory: "MAGAZINE",
     smallCategory: "VOGUE",
     price: "10,000",
+    soldOut: true,
   },
   {
     id: 48,
@@ -474,6 +480,7 @@ const products = [
     bigCategory: "MAGAZINE",
     smallCategory: "VOGUE",
     price: "10,000",
+    soldOut: true,
   },
 
   {
@@ -622,7 +629,10 @@ const filteredProducts = products.filter((product) => {
                 <li key={product.id}>
                   <div className="goods">
                     <Link to='/StoreDetail' >
+                    <div className="img-container">
                     <img src={product.img} alt={product.name} />
+                    
+                    </div>
                     </Link>
                     <div className="explain">
                       <p className="name">{product.name}</p>

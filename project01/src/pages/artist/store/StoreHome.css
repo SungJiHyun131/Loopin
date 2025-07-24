@@ -35,7 +35,9 @@
 
 /* 상품 아이템 */
 .container.StoreHome .Goods .goods {width: 100%;display: flex;flex-direction: column;}
-.container.StoreHome .Goods .goods:focus{border: 4px solid #7CFF71; outline: none; display: inline-block; }
+.container.StoreHome .Goods .goods img-container{position: relative;}
+.container.StoreHome .Goods .goods img-container .soldout-overlay{position: absolute;top: 0;}
+.container.StoreHome .Goods .goods:focus {border: 4px solid #7CFF71; outline: none; display: inline-block; }
 .container.StoreHome .Goods .goods img {width: 100%;}
 
 /* 상품 설명 */
