@@ -71,8 +71,8 @@ const PostCard = ({ user, text, images, likes, comments,index }) => {
 
       <div className="post-footer">
         <div className="footer-left">
-          <span><img src={heart} alt="" /> {likes}</span>
-          <span><img src={comment} alt="" /> {comments}</span>
+          <span className='like'><img src={heart} alt=""/> {likes}</span>
+          <span className='post-comment-icon'><img src={comment} alt="" /> {comments}</span>
         </div>
         <div className="footer-right"><img src={mark} alt="" /></div>
       </div>

@@ -156,7 +156,7 @@ const FanPostView = () => {
         <div className="post-footer">
           <div className="footer-left">
             <span><img src={heart} alt="" /> {post.likes}</span>
-            <span><img src={comment} alt="" /> {post.comments}</span>
+            <span className='Fanpostview-comment-icon'><img src={comment} alt="" /> {post.comments}</span>
           </div>
           <div className="footer-right"><img src={mark} alt="" /></div>
         </div>
@@ -179,7 +179,7 @@ const FanPostView = () => {
         <div className="comment-input">
           <input type="text" placeholder="댓글을 입력하세요." value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
           <button onClick={handleAddComment}>
-            <img src={send} alt="보내기" />
+            <img src={send} alt="보내기" className='comment-send-icon' />
           </button>
         </div>
       </div>
