@@ -48,3 +48,11 @@
   font-size: 18px;
   color: #888;
 }
+
+
+@media screen and (max-width:390px) {
+  .artist-img {
+    width: 160px;
+    height: 160px;
+  }
+}
