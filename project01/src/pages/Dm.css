@@ -1,5 +1,5 @@
 
-.bgdm {background:linear-gradient(to bottom, #fff, #fff, #fff,#D3E8FF,#5dabff);min-height: 100vh;}
+.bgdm {background:linear-gradient(to bottom, #fff, #fff, #fff,#D3E8FF,#5dabff);min-height: 100vh;position: relative;}
 .dmheaderbg{position: fixed;width: 100%;height: 70px;}
 .dmheaderbg img{width: 100%;height: 100%;object-fit: cover;}
 .DmHeader{margin-bottom: 30px;position: fixed;width: 100%;height: 70px;}
@@ -21,3 +21,4 @@
 .recommend ul li .img img{width: 100%;}
 .recommend ul li:first-child{padding-left: 16px;}
 .recommend ul li p{text-align: center; font-size: 14px;}
+.dmbg{position: absolute;bottom: 10%;}

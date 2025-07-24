@@ -1,4 +1,4 @@
-.container.Alarm{padding: 70px 16px 0;}
+.container.Alarm{padding: 70px 16px ;}
 .subtitle{margin-top: 30px;}
 .subtitle:first-child{margin-top: 0;padding-top: 16px;}
 .alarmhome{background: linear-gradient(#fff,#fff,#fff,#5DABFF,#5DABFF);background-attachment: fixed;}

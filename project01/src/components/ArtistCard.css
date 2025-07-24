@@ -42,3 +42,9 @@
   transition: 0.3s;
   border: 1px solid #000;
 }
+.no-result {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 18px;
+  color: #888;
+}

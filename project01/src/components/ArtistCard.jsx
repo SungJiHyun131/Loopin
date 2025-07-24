@@ -44,7 +44,7 @@ import h2hLogo from '../assets/img/h2h-logo.png';
 import { Link } from 'react-router-dom';
 import './ArtistCard.css';
 
-const artistData = [
+export const artistData  = [
   { name: 'ILLIT', img: illit, logo: illitLogo, link: '/ArtistHome', isLink: true },
   { name: 'NCT WISH', img: wish, logo: wishLogo },
   { name: 'AESPA', img: aespa, logo: aespaLogo },
@@ -67,11 +67,14 @@ const artistData = [
   { name: 'HEARTS TO HEARTS', img: h2h, logo: h2hLogo },
 ];
 
-const ArtistCard = () => {
-  const sortedData = [...artistData].sort((a, b) =>
+const ArtistCard = ({ artists }) => {
+  if (artists.length === 0) {
+    return <div className="no-result">검색 결과가 없습니다.</div>;
+  }
+
+  const sortedData = [...artists].sort((a, b) =>
     a.name.localeCompare(b.name)
   );
-
   return (
     <div className="cardlist">
       <ul>

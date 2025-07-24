@@ -12,6 +12,7 @@ import P5 from "../assets/img/DMImg/제니.png"
 import P6 from "../assets/img/DMImg/태산.png"
 import P7 from "../assets/img/DMImg/성찬.png"
 import P8 from "../assets/img/DMImg/더보기.png"
+import DM from "../assets/img/DMImg/DM.png"
 import SearchBar from '../components/SearchBar';
 import mainbg from '../assets/img/mainheaderbg.png'
 
@@ -83,6 +84,7 @@ const Dm = () => {
           </li>
         </ul>
       </div>
+      <div className="dmbg"><img src={DM} alt="" /></div>
     </div>
   )
 }
