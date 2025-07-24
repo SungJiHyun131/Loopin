@@ -3,11 +3,12 @@ a {color: inherit; text-decoration: inherit;}
 * {margin: 0;padding: 0; box-sizing: border-box;}
 
 
-.container-Artist{padding: 16px;padding-bottom: 200px;position: relative;background: linear-gradient(to top,  #D6B6F5,#fff,  #D6B6F5, #D6B6F5);z-index: 0;background-attachment: fixed;}
+.container-Artist{padding: 16px;padding-bottom: 200px;position: relative;background: linear-gradient(to top,  #D6B6F5,  #D6B6F5, #fff, #fff,  #D6B6F5, #D6B6F5);z-index: 0;background-attachment: fixed;}
 
-.Artisttop {display: flex;justify-content: center;align-items:flex-end;width: 100%;margin-top: 30px;}
-.Artisttop .img {margin-right: 20px;margin-top: 40px;}
-.Artisttop .img img{border-radius: 10px;box-shadow: 0 0 13px rgba(0,0,0,0.25);width: 100%;border: 1px solid #000;}
+.Artisttop {display: flex;justify-content: center;align-items:flex-end;width: 100%;margin-top: 40px;margin-bottom: 14px;}
+.Artisttop .img {margin-right: 10px;margin-top: 40px;border-radius: 10px;box-shadow: 0 0 13px rgba(0,0,0,0.25);width: 100%;border: 1px solid #000;display: flex;justify-content: space-between;flex-direction: column;}
+.Artisttop .img .photo{text-align: center;padding: 8px;background: linear-gradient(to top, #FF719E,#fff);border-radius: 10px 10px 0 0;border-bottom: 1px solid #000;height: 40px;font-size: 18px;}
+.Artisttop .img img{width: 100%;border-radius: 0 0 10px 10px;}
 
 .Artisttop .right {margin-top: 40px;position: relative;}
 .Artisttop .right .textbox {width: 150px;animation: up 10s infinite;animation-delay: 0s;position: absolute;bottom: 0;}
@@ -22,7 +23,7 @@ a {color: inherit; text-decoration: inherit;}
 .Artisttop .right .textbox3 {width: 80px; animation: up 10s infinite;animation-delay: 6s;position: absolute;bottom: 0;opacity: 0;}
 .Artisttop .right .textbox3 .text {position: absolute;left: 50%;top: 13%;transform: translateX(-50%);text-align: center;width: 100%;font-size: 12px;}
 .Artisttop .right .textbox3 img{width: 100%;height: 100%;object-fit: cover;}
-.Artisttop .right .img2 {width: 140px;position: relative;z-index: 10;}
+.Artisttop .right .img2 {width: 160px;position: relative;z-index: 10;}
 .Artisttop .right .img2 img{width: 100%;}
 
 .Artistbottom{position:fixed ;bottom: 0;z-index: 999;width: 100%; background: none;left: 0;}
@@ -54,12 +55,12 @@ box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 .nav-row.second {top: 60px;}
 
 
-.IllitHeader {height: 70px;position: fixed;top: 0;left: 0;width: 100%;z-index: 999;background: #D6B6F5;}
+.IllitHeader {height: 70px;position: fixed;top: 0;left: 0;width: 100%;z-index: 999;background:  #D6B6F5;}
 .ArtistHomebg {position: fixed;top:95px;left: 0;width: 100%;height:auto;z-index: -1;}
 .ArtistHomebg img {width: 100%;height: 100%;object-fit: cover;}
 
 @keyframes up {
   0%{transform: translateY(0); opacity: 0;}
   50%{opacity: 1;}
-  100%{transform: translateY(-260px); opacity: 0;}
+  100%{transform: translateY(-290px); opacity: 0;}
 }
