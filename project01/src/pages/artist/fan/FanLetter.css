@@ -36,7 +36,8 @@
     border: none;
     margin-right: 10px;
   }
-  
+  .fan-icon-btn img
+  {width: 24px;height: 24px;object-fit: cover;}
   .secret-toggle {
     display: flex;
     align-items: center;
