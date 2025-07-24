@@ -15,7 +15,9 @@
     z-index: -1;
     pointer-events: none; /* 클릭 안 막게 처리 */
     opacity: 1; /* 투명도 조절 가능 */
+    image-rendering: auto;
   }
+  .container.StoreDetail img{image-rendering: auto;}
 .StoreHeader2{padding: 16px;padding-bottom:0px;position: fixed;z-index: 100;width: 100%;padding: 0;top: 0; left: 0;}
 .storehd{position: fixed;top: 0;left: 0;width: 100%;z-index: 90;height: 70px;}
 .storehd img{width: 100%;display: block;height: 100%;object-fit: cover;}
@@ -24,7 +26,7 @@
 .container.StoreDetail .TopBox .ProductInfo{width: 100%;}
 .container.StoreDetail .TopBox .ProductInfo .top{width: 100%; display: flex; justify-content:space-between;align-items: center;margin-top:10px ;}
 .container.StoreDetail .TopBox .ProductInfo .top .name{font-size:18px;font-weight: 400}
-.container.StoreDetail .TopBox .ProductInfo .top .icon img{padding-left: 5px;}
+.container.StoreDetail .TopBox .ProductInfo .top .icon img{padding-left: 5px;width: 24px;height: 24px;object-fit: cover;vertical-align: middle;}
 
 .container.StoreDetail .TopBox .ProductInfo .tag{width: 100%; display: flex;  margin:10px 0 ;}
 .container.StoreDetail .TopBox .ProductInfo .tag .blue {color: #007BFF;border: 1px solid #007BFF;border-radius: 5px;font-size: 15px; padding: 2px 5px;display: flex;align-items: center;margin-right: 5px;}
@@ -35,7 +37,7 @@
 .container.StoreDetail .TopBox .Warnline{border-bottom: 5px dotted #fff;}
 .container.StoreDetail .TopBox .Warn1{width: 100%; background: #FFFFFF; border-radius: 10px;height: 80px; padding: 18px; margin: 30px auto 40px;}
 .container.StoreDetail .TopBox .Warn1 .tit{font-size: 14px; color: #333333; align-items: center; display: flex;}
-.container.StoreDetail .TopBox .Warn1 .tit img{width: 16px; margin-right: 7px;}
+.container.StoreDetail .TopBox .Warn1 .tit img{width: 18px; margin-right: 7px;height: 18px;object-fit: cover;}
 .container.StoreDetail .TopBox .Warn1 .txt{font-size: 14px; color: #808080; padding:10px 0;}
 
 .container.StoreDetail .MiddleBox{text-align: center; width: 100%; margin-bottom: 200px;}
@@ -62,7 +64,7 @@
 
 .BottomBox{width: 100%; background: #D6B6F5; height: 552px; color: #FFFFFF; line-height: 20px;}
 .BottomBox .tit{font-size: 16px; font-weight: 500; color: #fff; padding: 30px 20px; align-items: center; display: flex;}
-.BottomBox .tit img{padding-right: 10px;}
+.BottomBox .tit img{width: 22px;height: 22px;object-fit: cover;margin-right: 10px;}
 .BottomBox .txt{width: 95%; margin-bottom:40px; padding-left: 20px;}
 .BottomBox .txt .kor{font-size: 16px; font-weight: 500; color: #fff; padding:10px 0;}
 .BottomBox .txt .eng{font-size: 15px; font-weight: 300; color: #A163DD;}
