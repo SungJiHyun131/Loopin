@@ -15,7 +15,7 @@
 .card .idbottom .txt .nickname{display: flex;justify-content: space-between;width: 100%;padding: 5px 0;border-bottom: 1px solid #000;align-items: center;}
 .card .idbottom .txt .intro{display: flex;justify-content: space-between;width: 100%;padding: 5px 0;border-bottom: 1px solid #000;align-items: center;}
 .card .idbottom .barcode{display: flex;justify-content: space-between;align-items: flex-end;}
-.card .idbottom .barcode .hello{ font-family: "Pixelify Sans", sans-serif;color: #ff719e;font-size: 14px;}
+.card .idbottom .barcode .hello{ font-family: 'NeoDunggeunmo';color: #ff719e;font-size: 14px;}
 .card .idbottom .barcode .bar{height: 32px;}
 
 
