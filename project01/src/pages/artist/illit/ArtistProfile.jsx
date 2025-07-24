@@ -5,6 +5,8 @@ import './ArtistProfile.css';
 import profile from '../../../assets/img/IllitHomeimg/artistimg/wonhee.png';
 import official from '../../../assets/img/IllitHomeimg/artistimg/official-badge.png';
 import content from '../../../assets/img/IllitHomeimg/artistimg/bg-artistcontent.png';
+import wl from '../../../assets/img/IllitHomeimg/artistimg/wl.png';
+import wr from '../../../assets/img/IllitHomeimg/artistimg/wr.png';
 import headerbg from '../../../assets/img/IllitHomeimg/artistimg/bg-artistheader.png';
 import './ArtistProfile.css'
 
@@ -25,7 +27,10 @@ const ArtistProfile = () => {
       </div>
       <div className="Artistcontent">
       <div className="top-profile">
-        <div className="profile-img"><img src={profile} alt="" /></div>
+        <div className="wing">
+          <p className="wl">
+          <img src={wl} alt="" /></p>
+        <div className="profile-img"><img src={profile} alt="" /></div> <p className="wr"><img src={wr} alt="" /></p></div>
         <p className="birth">2007.06.26</p>
         <p className="nickname">햄보르기니 <img src={official} alt="" style={{width:16}}/></p>
         <p className="smalltext">안녕하세요 워니입니다. 잘부탁드려요</p>
