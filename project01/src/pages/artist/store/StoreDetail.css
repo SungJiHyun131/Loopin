@@ -23,7 +23,7 @@
 .container.StoreDetail .TopBox .img1{width: 100%;}
 .container.StoreDetail .TopBox .ProductInfo{width: 100%;}
 .container.StoreDetail .TopBox .ProductInfo .top{width: 100%; display: flex; justify-content:space-between;align-items: center;margin-top:10px ;}
-.container.StoreDetail .TopBox .ProductInfo .top .name{font-size:18px;font-weight: 400}
+.container.StoreDetail .TopBox .ProductInfo .top .name{font-size:20px;font-weight: 400}
 .container.StoreDetail .TopBox .ProductInfo .top .icon img{padding-left: 5px;}
 
 .container.StoreDetail .TopBox .ProductInfo .tag{width: 100%; display: flex;  margin:10px 0 ;}
