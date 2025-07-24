@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
 .calendar-container {
   width: 100%;
   margin: 0 auto;
-  border-radius: 16px;
-  background: rgba(255,255,255,0.5);
+  border-radius: 10px;
+  background: #fff;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  padding: 24px 40px 40px;
+
   font-family: 'Pretendard', sans-serif;
   position: relative;
   border: 1px solid #000;
@@ -15,6 +17,7 @@
 .react-calendar {
   border: none;
   background: transparent;
+  width: 100%;border-radius: 10px;
 }
 
 /* 네비게이션 (월 표시) */
@@ -23,27 +26,29 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1em;
+  background: linear-gradient(to top, #FF719E,#fff);border-radius: 10px 10px 0 0;border-bottom: 1px solid #000; 
+  height: 40px;line-height: 40px; 
 }
 
 /* 월 텍스트 버튼 */
 .react-calendar__navigation__label {
-  background: #8B00CC;
-  color: #fff;
   padding: 4px 12px;
   border-radius: 10px;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 18px;
+
 }
 
 /* < > 버튼 */
 .react-calendar__navigation button {
   background: transparent;
   border: none;
-  color: #8B00CC;
+  color: #000;
   font-size: 15px;
   cursor: pointer;
+
 }
 
+.react-calendar__viewContainer{padding: 0 20px 20px;}
 /* 요일 텍스트 */
 .react-calendar__month-view__weekdays {
   text-align: center;
@@ -73,12 +78,12 @@
 /* 오늘 날짜 */
 .react-calendar__tile--now {
   background: rgba(170, 0, 255, 0.1);
-  color: #8B00CC;
+  color: #FF719E;
 }
 
 /* 선택된 날짜 */
 .react-calendar__tile--active {
-  background: #8B00CC !important;
+  background: #FF719E !important;
   color: white !important;
 }
 
@@ -86,7 +91,7 @@
 .dot {
   width: 6px;
   height: 6px;
-  background-color: #8B00CC;
+  background-color: #FF719E;
   border-radius: 50%;
   margin: 4px auto 0;
 }
@@ -96,12 +101,12 @@
   margin-top: 14px;
   text-align: left;
   font-size: 14px;
-  padding-top: 16px;
+  padding: 20px;
   border-top: 1px solid #eee;
 }
 
 .dot-text {
-  color: #8B00CC;
+  color: #000;
   font-weight: 500;
   font-size: 13px;
   border-radius: 8px;
@@ -112,7 +117,7 @@
 
   
   .react-calendar__month-view__days__day--weekend {
-    color: #e91e63;
+    color: red;
   }
   
   .react-calendar__tile--now {

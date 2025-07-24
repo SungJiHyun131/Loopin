@@ -4,6 +4,11 @@ import IllitHeader from '../../components/IllitHeader'
 import './ArtistHome.css'
 import folder from '../../assets/img/IllitHomeimg/folder.png'
 import illit from '../../assets/img/IllitHomeimg/illit.png'
+import mj from '../../assets/img/IllitHomeimg/mj.png'
+import mk from '../../assets/img/IllitHomeimg/mk.png'
+import yn from '../../assets/img/IllitHomeimg/yn.png'
+import wh from '../../assets/img/IllitHomeimg/wh.png'
+import il from '../../assets/img/IllitHomeimg/il.png'
 import minju from '../../assets/img/IllitHomeimg/pixel_minju.png'
 import minju2 from '../../assets/img/IllitHomeimg/pixel_minju2.png'
 import textbox from '../../assets/img/IllitHomeimg/pixel_textbox.png'
@@ -15,6 +20,12 @@ import content from '../../assets/img/IllitHomeimg/bg-ArtistHome.png';
 const ArtistHome = () => {
   const location = useLocation()
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [artistImgIndex, setArtistImgIndex] = useState(0);
+const artistImages = [il, mj, mk, wh, yn, illit];
+
+const handleNextImage = () => {
+  setArtistImgIndex((prevIndex) => (prevIndex + 1) % artistImages.length);
+};
   
   // 자동으로 바뀔 텍스트와 이미지 목록
   const dialogues = [
@@ -39,7 +50,10 @@ const ArtistHome = () => {
         <IllitHeader />
       </div>
      <div className="Artisttop">
-      <p className="img"><img src={illit} alt="" /></p>
+     <div className="img" onClick={handleNextImage} style={{ cursor: "pointer" }}>
+      <p className="photo">Our Memories</p>
+  <img src={artistImages[artistImgIndex]} alt="아티스트 이미지" />
+</div>
       <div className="right">
       <p className="textbox">
   <span className="text">오늘 스케줄 어때?</span>
