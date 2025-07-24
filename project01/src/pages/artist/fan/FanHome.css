@@ -4,7 +4,7 @@
 .fanbg img{width: 100%;object-fit: cover;height: 100%;}
 .fantop{position: fixed;width: 100%;}
 .togglesearch{display: flex;align-items: center;width: 80%;margin: 0 auto;}
-.fansearcha{opacity: 0;width: 30px;}
+.fansearcha{opacity: 0;width: 30px;height: 30px;}
 .toggle-container{ position: relative;
   display: flex;
   width: 180px;

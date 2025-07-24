@@ -31,7 +31,7 @@ a {color: inherit; text-decoration: inherit;}
 .Artistbottom nav ul li{margin-bottom: 20px;margin-right: 80px;}
 .Artistbottom nav ul li:last-child {margin-right: 0;}
 .Artistbottom nav ul li img{display: block;}
-  
+.nav-container li img {width: 50px;object-fit: cover;height: auto;image-rendering: auto;margin-bottom: 3px;}
 .nav-container {
 position: relative;
 width: 100%;
