@@ -72,9 +72,10 @@
 }
 .post-card2 .post-footer span{display: inline-block;margin-right: 10px;align-items: center;}
 .post-card2 .post-footer span.like img {width: 100%;object-fit: cover;margin-right: 1px;}
-.post-card2 .post-footer span img {width: 100%;object-fit: cover;margin-right: 5px;}
+.post-card2 .post-footer span img {width: 18px;height: 18px;object-fit: cover;margin-right: 5px;}
 .post-card2 .post-footer .footer-left {display: flex;justify-content: space-between;}
 .post-card2 .post-footer .footer-left span {display: flex;justify-content: space-between;}
+.post-card2 .post-footer .footer-right img {width: 13px;height: 18px;object-fit: cover;}
 /* 이미지 레이아웃 */
 .post-card2 .single-img {
   width: 100%;
