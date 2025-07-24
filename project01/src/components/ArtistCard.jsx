@@ -49,7 +49,7 @@ export const artistData  = [
   { name: 'NCT WISH', img: wish, logo: wishLogo },
   { name: 'AESPA', img: aespa, logo: aespaLogo },
   { name: 'BLACKPINK', img: blackpink, logo: blackpinkLogo },
-  { name: 'SEVEN', img: seventeen, logo: seventeenLogo },
+  { name: 'SEVENTEEN', img: seventeen, logo: seventeenLogo },
   { name: 'PROMISE9', img: promise9, logo: promise9Logo },
   { name: 'BOYNEXTDOOR', img: boynextdoor, logo: boynextdoorLogo },
   { name: 'SHINEE', img:shinee, logo: shineeLogo },

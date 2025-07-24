@@ -38,8 +38,7 @@ const Notice = () => {
           <li>
             <Link to='/NoticeDetail'>
             <div className="left">
-              <h3 className="Notice_tit">[NOTICE] 챌린지 리뉴얼 완료! 덕질미션에서
-만나요 💪🏻</h3>
+              <h3 className="Notice_tit">[NOTICE] 챌린지 리뉴얼 완료! 덕질미션에서 만나요 <span className="remove-icon">💪🏻</span></h3>
               <p>2025.07.02 <span className="newicon">new</span></p>
             </div>
               <img src={rightIcon} alt="" />
