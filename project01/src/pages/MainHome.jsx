@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import ArtistCard from '../components/ArtistCard'
+import { artistData } from '../components/ArtistCard';
 import './MainHome.css'
 import SearchBar from '../components/SearchBar';
 // import filter from'../assets/img/filter_icon.png';
@@ -11,6 +12,9 @@ import wingright from '../assets/img/wingright.png'
 
 const MainHome = () => {
   const [query, setQuery] = useState('');
+  const filteredArtists = artistData.filter((artist) =>
+    artist.name.toLowerCase().includes(query.toLowerCase())
+  );
   const location = useLocation();
   const navigate = useNavigate();
   const isChatbotOpen = location.pathname === '/MainHome/chatbot';
@@ -33,7 +37,7 @@ const MainHome = () => {
        <p className="wingright"><img src={wingright} alt="" /></p>
        
        </div>
-     <ArtistCard/>
+       <ArtistCard artists={filteredArtists} />
 
      <ChatbotButton onClick={() => navigate('/MainHome/chatbot')} />
       {isChatbotOpen && (
