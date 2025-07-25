@@ -84,7 +84,6 @@ const Dm = () => {
           </li>
         </ul>
       </div>
-      <div className="dmbg"><img src={DM} alt="" /></div>
     </div>
   )
 }
