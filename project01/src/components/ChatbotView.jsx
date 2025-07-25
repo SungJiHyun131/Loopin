@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './ChatbotView.css';
 import close from '../assets/img/header_close.png';
 import back from '../assets/img/header_back.png';
-import profile from '../../public/loopin.svg';
+import profile from '../assets/img/chatbot-profile.png';
 import notice from '../assets/img/noticeicon.png';
 
 import { useLocation ,useNavigate } from 'react-router-dom';

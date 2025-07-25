@@ -18,4 +18,4 @@ header.more .more-button img {width: 30px;height: 30px;object-fit: cover;image-r
 .media-header .back-button img {width: 30px;height: 30px;object-fit: cover;}
 .media-header .more-button img {width: 30px;opacity: 0;height: 30px;object-fit: cover;opacity: 0;}
 header .back-button img {width: 30px;height: 30px;object-fit: cover;}
-header .more-button img {width: 30px;opacity: 0;height: 30px;object-fit: cover;opacity: 0;}
+header .more-button img {width: 30px;height: 30px;object-fit: cover;opacity: 1;}
