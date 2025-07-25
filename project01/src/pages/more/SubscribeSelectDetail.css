@@ -1,4 +1,5 @@
-.bgsub{background:linear-gradient(to bottom,#5dabff, #fff,#5dabff);height: 100%;}
+.bgsub{background:linear-gradient(to bottom,#5dabff, #fff,#5dabff);height:100%;width: 100%;}
+.container.SubscribeSelectDetail {padding-bottom: 80px;}
 .container.SubscribeSelectDetail .topSection {text-align: center;margin-bottom: 26px;margin-top: 40px;padding: 50px 0;border-radius: 20px;}
 .container.SubscribeSelectDetail .topSection img {margin-bottom: 22px;box-shadow: 5px 5px 5px rgba(0, 0, 0,0.2);border-radius: 15px;animation: slideSpin 0.7s ease-out forwards;}
 .container.SubscribeSelectDetail .topSection .name {font-size: 24px;margin-bottom: 10px;text-transform: uppercase;}
@@ -51,3 +52,7 @@
 
 .go-btn {padding: 10px;border: none;background: linear-gradient(to top,#e2d2f1, #D6B6F5, #F2E4FF,#fff);color: #111;font-size: 16px;border-radius: 30px;cursor: pointer;width: 170px;text-align: center;border: 1px solid #111;}
 .close {color: #fff;position: absolute;bottom: 35%;left: 50%;transform: translate(-50%);}
+
+@media screen and (max-width: 380px) {
+  .bgsub {height: auto;}
+}
