@@ -1,5 +1,5 @@
 
-.bgArchive {background:linear-gradient(to bottom,#5dabff, #fff,#5dabff);height: auto;background-attachment: fixed;padding-top: 163px;}
+.bgArchive {background:linear-gradient(to bottom, #fff,#fff,#5dabff);height: auto;background-attachment: fixed;margin-top: 163px;}
 .bgArchive .toggle-container {
     position: relative;
     display: flex;
@@ -19,7 +19,7 @@
     left: -1px;
     width: 25%;
     height: 104%;
-    background: linear-gradient(to bottom, #ffffff, #C9FFC7,#7CFF71,#fff);
+    background: linear-gradient(to bottom, #ffffff, #C9FFC7,#7CFF71);
     border-radius: 999px;
     z-index: 1;
     transition: left 0.3s ease;
@@ -41,4 +41,4 @@
   }
 
 
-  .ArchiveFixHeader {position: fixed;z-index: 999;left: 0;top: 0;height: 163px;   background: linear-gradient(to bottom, #5dabff,#9ACBFF);;width: 100%;}
+  .ArchiveFixHeader {position: fixed;z-index: 999;left: 0;top: 0;height: 163px;   background: linear-gradient(to bottom, #5dabff,#ffffff);;width: 100%;}
