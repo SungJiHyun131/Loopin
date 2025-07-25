@@ -8,8 +8,8 @@
       linear-gradient(to bottom, #5DABFF, #fff, #5DABFF);padding: 100px 20px;position: relative;
   }
 
-  .loginimg{width: 240px;margin-bottom: 50px;}
-  .loginimg img{width: 100%;}
+  .loginimg{width: 200px;margin-bottom: 50px;height: 60px;}
+  .loginimg img{width: 100%;object-fit: cover;height: 100%;}
   .login-title {
     font-size: 24px;
     margin-bottom: 55px;font-family: 'NeoDunggeunmo', sans-serif;font-weight: 300;
