@@ -20,7 +20,7 @@
 }
 .chatbot-modal .chatbot-profile {display: flex;padding: 21px 0;align-items: center;}
 .chatbot-modal .chatbot-profile .profileImg {width: 60px;height: 60px;}
-.chatbot-modal .chatbot-profile .profileImg img {width: 100%;height: 100%;object-fit: cover;}
+.chatbot-modal .chatbot-profile .profileImg img {width: 100%;height: 100%;object-fit: cover;border: 1px solid #111;border-radius: 18px;}
 .chatbot-modal .chatbot-profile .rightText {
   margin-left: 12px;
   display: flex;
