@@ -22,7 +22,6 @@ import pr3 from '../../../assets/img/IllitHomeimg/postimg/pr3.png';
 import pr4 from '../../../assets/img/IllitHomeimg/postimg/pr4.png';
 import pr from '../../../assets/img/IllitHomeimg/postimg/profile.png';
 import down from '../../../assets/img/IllitHomeimg/postimg/down.png';
-import emphe from '../../../assets/img/IllitHomeimg/postimg/emphe.png';
 
 
 import './FanPostDetail.css'

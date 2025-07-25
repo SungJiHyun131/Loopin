@@ -4,7 +4,8 @@ import { Link, useNavigate } from 'react-router-dom'; // ✅ useNavigate 추가
 import close from '../assets/img/header_close.png';
 import talk from '../assets/img/chatbot-talkicon.png';
 import ask from '../assets/img/chatbot-ask.png';
-import profile from '../../public/loopin.svg';
+import profile from '../assets/img/chat-icon.png';
+import profile2 from '../../public/loopin.svg';
 
 const ChatbotModal = ({ onClose }) => {
   const navigate = useNavigate(); // ✅ navigator 훅
@@ -33,7 +34,7 @@ const ChatbotModal = ({ onClose }) => {
         <div className="chatbot-body">
           <div className="chatbot-conBox">
             <div className="profile">
-              <p className="img"><img src={profile} alt="" /></p>
+              <p className="img"><img src={profile2} alt="" /></p>
               <div className="profile-name">
                 <p className='name'>LOOPIN</p>
                 <p className='intro'>안녕하세요 <br />LOOPIN입니다 💙</p>
