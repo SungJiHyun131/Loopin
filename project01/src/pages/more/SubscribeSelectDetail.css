@@ -1,4 +1,4 @@
-.bgsub{background:linear-gradient(to bottom,#5dabff, #fff,#5dabff);height:100vh;width: 100%;}
+.bgsub{background:linear-gradient(to bottom,#5dabff, #fff,#5dabff);width: 100%;}
 
 .container.SubscribeSelectDetail .topSection {text-align: center;margin-bottom: 26px;margin-top: 40px;padding: 50px 0;border-radius: 20px;}
 /* .container.SubscribeSelectDetail .topSection .paymentcardimg {margin-bottom: 22px;animation: slideSpin 0.7s ease-out forwards;width: 263px;height: 161px;display: inline-block;box-shadow: 2px 2px 10px rgba(0, 0, 0,5);border-radius:15px;} */
