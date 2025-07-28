@@ -1,5 +1,5 @@
-import React,{useState} from 'react';
-import {Link,Route} from 'react-router-dom';
+import React, { useState, ChangeEvent } from 'react';
+import { Link } from 'react-router-dom';
 import SubscribeHeader2 from '../../components/SubscribeHeader2';
 import SelectArtist from '../../components/SelectArtist';
 import './SubscribeSelect.css';
@@ -27,7 +27,12 @@ import TWS from '../../assets/img/SubscribeImg/TWS.png';
 import TXT from '../../assets/img/SubscribeImg/TXT.png';
 import SearchBar from '../../components/SearchBar';
 
-const idols = [
+interface Idol {
+  name: string;
+  image: string;
+}
+
+const idols: Idol[] = [
   { name: 'AESPA', image: aespa },
   { name: 'ATEEZ', image: ATEEZ },
   { name: 'BABY MONSTER', image: BABYMONSTER },
@@ -51,19 +56,22 @@ const idols = [
   { name: 'TXT', image: TXT },
 ];
 
-const SubscribeSelect = () => {
-  const [selected, setSelected] = useState([]);
-  const [query, setQuery] = useState('');
-  const toggleSelect = (name) => {
+const SubscribeSelect: React.FC = () => {
+  const [selected, setSelected] = useState<string[]>([]);
+  const [query, setQuery] = useState<string>('');
+
+  const toggleSelect = (name: string) => {
     setSelected((prev) =>
-      prev.includes(name)
-        ? prev.filter((n) => n !== name)
-        : [...prev, name]
+      prev.includes(name) ? prev.filter((n) => n !== name) : [...prev, name]
     );
   };
 
+  const handleSearchChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setQuery(e.target.value);
+  };
+
   return (
-    <div className='bgSub'>
+    <div className="bgSub">
       <div className="SubscribeHeader2">
         <SubscribeHeader2 />
       </div>
@@ -72,7 +80,7 @@ const SubscribeSelect = () => {
           <h3>관심있는 아티스트를 구독하세요</h3>
           <p>구독한 아티스트는 구독 갱신일 기준 3일 전까지 해지할 수 있어요</p>
         </div>
-        <SearchBar onChange={(e) => setQuery(e.target.value)} />
+        <SearchBar onChange={handleSearchChange} />
         <div className="SelectArtist-grid">
           {idols.map((idol, idx) => (
             <SelectArtist
@@ -95,6 +103,4 @@ const SubscribeSelect = () => {
   );
 };
 
-
-export default SubscribeSelect
-
+export default SubscribeSelect;

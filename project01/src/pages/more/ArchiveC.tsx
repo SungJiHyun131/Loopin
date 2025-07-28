@@ -1,3 +1,4 @@
+// ArchiveC.tsx
 import React from 'react';
 import './ArchiveC.css';
 import profile from '../../assets/img/archive/profileimg.png';
@@ -10,7 +11,14 @@ import feed6 from '../../assets/img/archive/feed6.png';
 import feed7 from '../../assets/img/archive/feed7.png';
 import feed8 from '../../assets/img/archive/feed8.png';
 
-const feeds = [
+interface FeedItem {
+  id: number;
+  text: string;
+  time: string;
+  img: string;
+}
+
+const feeds: FeedItem[] = [
   { id: 1, text: '로희 목소리 진짜 너무 좋아서 계속 듣게 돼... 플레이리스트에 추가 완료 🎧 !!', time: '1시간 전', img: feed1 },
   { id: 2, text: '이 무대는 그냥 소장각... 진짜 눈 뗄 수 없었다 집가서 또 봐야지', time: '2시간 전', img: feed2 },
   { id: 3, text: 'bomb 무대 봤는데 너무 멋있었어 👏 무대 장인들 인정', time: '1주 전', img: feed3 },
@@ -21,7 +29,7 @@ const feeds = [
   { id: 8, text: '요즘 아일릿 보면서 빠져들고 있음... 비주얼이랑 실력 둘 다 갖췄다', time: '3주 전', img: feed8 },
 ];
 
-const ArchiveC = () => {
+const ArchiveC: React.FC = () => {
   return (
     <div className="artist-c-wrapper">
       {feeds.map(feed => (

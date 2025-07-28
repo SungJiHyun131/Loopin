@@ -25,18 +25,24 @@ import img18 from '../../assets/img/archive/18.png';
 import icon1 from '../../assets/img/archive/icon1.png';
 import icon2 from '../../assets/img/archive/icon2.png';
 
-const ArtistA = () => {
-  const items = [
+interface ArchiveItem {
+  img: string;
+  icon?: string;
+  link?: string;
+}
+
+const ArtistA: React.FC = () => {
+  const items: ArchiveItem[] = [
     { img: img1, icon: icon1 },
     { img: img2, icon: icon2 },
     { img: img3 }, // 아이콘 없음
-    { img: img4},
-    { img: img5, icon: icon1},
+    { img: img4 },
+    { img: img5, icon: icon1 },
     { img: img6, icon: icon1 },
-    { img: img7},
+    { img: img7 },
     { img: img8, icon: icon1 },
     { img: img9, icon: icon2 },
-    { img: img10},
+    { img: img10 },
     { img: img11, icon: icon1 },
     { img: img12, icon: icon1 },
     { img: img13 },
@@ -44,7 +50,7 @@ const ArtistA = () => {
     { img: img15, icon: icon1 },
     { img: img16 },
     { img: img17, icon: icon1 },
-    { img: img18},
+    { img: img18 },
   ];
 
   return (
@@ -70,4 +76,5 @@ const ArtistA = () => {
     </div>
   );
 };
+
 export default ArtistA;

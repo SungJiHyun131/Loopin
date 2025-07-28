@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import { Link, useLocation, Outlet, useNavigate } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation, Outlet, useNavigate } from 'react-router-dom';
 import FanHeader from '../../../components/FanHeader';
-import './FanHome.css'
-import btnmore from '../../../assets/img/IllitHomeimg/postimg/btn.png'
+import './FanHome.css';
+import btnmore from '../../../assets/img/IllitHomeimg/postimg/btn.png';
 
 import fan from '../../../assets/img/IllitHomeimg/postimg/fan.png';
 import secret from '../../../assets/img/IllitHomeimg/postimg/secret.png';
@@ -11,14 +11,14 @@ import fanbg from '../../../assets/img/IllitHomeimg/mediaimg/bgheader-media.png'
 import fansearch from '../../../assets/img/Fanimg/fansearch.png';
 import fanletter from '../../../assets/img/IllitHomeimg/mediaimg/bg-media.png';
 
-const FanHome = () => {
+const FanHome: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showToast, setShowToast] = useState(false);
 
   useEffect(() => {
-    if (location.state?.showToast) {
+    if ((location.state as { showToast?: boolean })?.showToast) {
       setShowToast(true);
 
       const timer = setTimeout(() => {
@@ -31,34 +31,51 @@ const FanHome = () => {
     }
   }, [location.state, location.pathname, navigate]);
 
-  const getIndex = () => {
+  const getIndex = (): number => {
     if (location.pathname.includes('FanPostWrite')) return 1;
     return 0;
   };
 
   return (
-    <div className='fanContainer'>
-       <div className={`fan-toast ${showToast ? 'show' : ''}`}>
+    <div className="fanContainer">
+      <div className={`fan-toast ${showToast ? 'show' : ''}`}>
         📩 임시 저장 완료!
       </div>
-      <div className="fanletter"><img src={fanletter} alt="" /></div>
-      <div className="fanbg"><img src={fanbg} alt="" /></div>
-      <div className="fantop">   
+      <div className="fanletter">
+        <img src={fanletter} alt="" />
+      </div>
+      <div className="fanbg">
+        <img src={fanbg} alt="" />
+      </div>
+      <div className="fantop">
         <div className="FanHeader">
           <FanHeader />
         </div>
         <div className="togglesearch">
-          <div className="fansearcha"><img src={fansearch} alt="" /></div>
-          <div className="toggle-container">
-          <div className="toggle-bg" style={{   left: getIndex() === 1 ? `calc(50%)` : undefined,
-  right: getIndex() === 0 ? `calc(0%-1px)` : undefined,}} />
-            <Link to="FanPostDetail" className="toggle-btn">팬레터</Link>
-            <Link to="FanPostWrite" className="toggle-btn">비밀레터</Link>
+          <div className="fansearcha">
+            <img src={fansearch} alt="" />
           </div>
-          <div className="fansearch"><img src={fansearch} alt="" /></div>
+          <div className="toggle-container">
+            <div
+              className="toggle-bg"
+              style={{
+                left: getIndex() === 1 ? `calc(50%)` : undefined,
+                right: getIndex() === 0 ? `calc(0%-1px)` : undefined,
+              }}
+            />
+            <Link to="FanPostDetail" className="toggle-btn">
+              팬레터
+            </Link>
+            <Link to="FanPostWrite" className="toggle-btn">
+              비밀레터
+            </Link>
+          </div>
+          <div className="fansearch">
+            <img src={fansearch} alt="" />
+          </div>
         </div>
       </div>
-      
+
       <Outlet />
 
       <p className="btnmore" onClick={() => setIsMenuOpen(true)}>
@@ -67,7 +84,10 @@ const FanHome = () => {
 
       {isMenuOpen && (
         <div className="floating-overlay" onClick={() => setIsMenuOpen(false)}>
-          <div className="floating-content" onClick={(e) => e.stopPropagation()}>
+          <div
+            className="floating-content"
+            onClick={(e) => e.stopPropagation()}
+          >
             <Link to="/FanLetter" onClick={() => setIsMenuOpen(false)}>
               팬 레터 <img src={fan} alt="" />
             </Link>
@@ -82,7 +102,7 @@ const FanHome = () => {
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default FanHome
+export default FanHome;

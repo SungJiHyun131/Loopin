@@ -1,12 +1,21 @@
-import React from 'react'
+import React from 'react';
 import CompactVideoList from '../../../components/CompactVideoList';
-import compact1 from '../../../assets/img/IllitHomeimg/mediaimg/compact1.png'
-import compact2 from '../../../assets/img/IllitHomeimg/mediaimg/compact2.png'
-import compact3 from '../../../assets/img/IllitHomeimg/mediaimg/compact3.png'
-import compact4 from '../../../assets/img/IllitHomeimg/mediaimg/compact4.png'
-import compact5 from '../../../assets/img/IllitHomeimg/mediaimg/compact5.png'
+import compact1 from '../../../assets/img/IllitHomeimg/mediaimg/compact1.png';
+import compact2 from '../../../assets/img/IllitHomeimg/mediaimg/compact2.png';
+import compact3 from '../../../assets/img/IllitHomeimg/mediaimg/compact3.png';
+import compact4 from '../../../assets/img/IllitHomeimg/mediaimg/compact4.png';
+import compact5 from '../../../assets/img/IllitHomeimg/mediaimg/compact5.png';
 
-const updateVideos = [
+interface Video {
+  id: number;
+  title: string;
+  date: string;
+  duration: string;
+  thumbnail: string;
+  link: string;
+}
+
+const updateVideos: Video[] = [
   {
     id: 1,
     title: '빌려온 고양이 ( Do the Dance ) 녹음 비하인드 | [BEHIND-IT]',
@@ -50,7 +59,7 @@ const updateVideos = [
   // ...더 추가 가능
 ];
 
-const MediaB = () => {
+const MediaB: React.FC = () => {
   return (
     <div className="container MediaB">
       <p className="subtitle">Update</p>
@@ -59,4 +68,4 @@ const MediaB = () => {
   );
 };
 
-export default MediaB
+export default MediaB;

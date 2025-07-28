@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import MyArchiveHeader from '../../components/MyArchiveHeader';
 import './MyArchive.css';
 
 const MyArchive = () => {
   const location = useLocation();
+
+  // ✅ iOS 자동 링크 스타일 제거
+  useEffect(() => {
+    const style = document.createElement('style');
+    style.innerHTML = `
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+      }
+    `;
+    document.head.appendChild(style);
+
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
 
   const getIndex = () => {
     if (location.pathname.includes('ArchiveA')) return 0;
@@ -17,7 +34,7 @@ const MyArchive = () => {
   return (
     <div className="bgArchive">
       <div className="ArchiveFixHeader">
-      <div className="MyArchiveHeader">
+        <div className="MyArchiveHeader">
           <MyArchiveHeader />
         </div>
 

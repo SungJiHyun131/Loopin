@@ -1,9 +1,19 @@
-import React from 'react'
+import React from 'react';
 import VideoList from '../../../components/VideoList';
-import Thum1 from '../../../assets/img/IllitHomeimg/mediaimg/Thum1.png'
-import Thum2 from '../../../assets/img/IllitHomeimg/mediaimg/Thum2.png'
-import Thum3 from '../../../assets/img/IllitHomeimg/mediaimg/Thum3.png'
-const NewVideos = [
+import Thum1 from '../../../assets/img/IllitHomeimg/mediaimg/Thum1.png';
+import Thum2 from '../../../assets/img/IllitHomeimg/mediaimg/Thum2.png';
+import Thum3 from '../../../assets/img/IllitHomeimg/mediaimg/Thum3.png';
+
+interface Video {
+  id: number;
+  title: string;
+  date: string;
+  thumbnail: string;
+  duration: string;
+  link: string;
+}
+
+const NewVideos: Video[] = [
   {
     id: 1,
     title: "‘빌려온 고양이 ( Do the Dance )’ 녹음 비하인드 | [BEHIND-IT]",
@@ -14,7 +24,8 @@ const NewVideos = [
   },
   // ...더 추가
 ];
-const HistoryVideos = [
+
+const HistoryVideos: Video[] = [
   {
     id: 1,
     title: "‘빌려온 고양이 ( Do the Dance )’  Official MV",
@@ -34,7 +45,7 @@ const HistoryVideos = [
   // ...더 추가
 ];
 
-const MediaA = () => {
+const MediaA: React.FC = () => {
   return (
     <div className='container'>
       <p className="subtitle">New</p>
@@ -45,4 +56,4 @@ const MediaA = () => {
   );
 };
 
-export default MediaA
+export default MediaA;

@@ -9,7 +9,13 @@ import cats from '../assets/img/IllitHomeimg/artistimg/thum4.png';
 import Magnetic from '../assets/img/IllitHomeimg/artistimg/thum5.png';
 import Almond from '../assets/img/IllitHomeimg/artistimg/thum6.png';
 
-const albumData = [
+interface Album {
+  title: string;
+  date: string;
+  image: string;
+}
+
+const albumData: Album[] = [
   {
     title: '빌려온 고양이',
     date: '2025.06.27',
@@ -30,7 +36,6 @@ const albumData = [
     date: '2024.10.21',
     image: illyouImage,
   },
-
   {
     title: 'Magnetic',
     date: '2024.04.19',
@@ -41,13 +46,10 @@ const albumData = [
     date: '2024.03.25',
     image: superRealMeImage,
   },
-
 ];
 
-
-
-const Albums = () => {
-    return (
+const Albums: React.FC = () => {
+  return (
     <div className="album-container">
       <p className="subtitle">Albums</p>
       <div className="album-list">
@@ -61,7 +63,7 @@ const Albums = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Albums
+export default Albums;

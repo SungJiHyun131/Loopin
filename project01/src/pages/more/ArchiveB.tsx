@@ -8,7 +8,13 @@ import thum4 from '../../assets/img/archive/thum4.png';
 import thum5 from '../../assets/img/archive/thum5.png';
 import thum6 from '../../assets/img/archive/thum6.png';
 
-const archiveData = [
+interface ArchiveItem {
+  id: number;
+  image: string;
+  title: string;
+}
+
+const archiveData: ArchiveItem[] = [
   { id: 1, image: thum1, title: '전체 보기' },
   { id: 2, image: thum2, title: '최애 모먼트 💕' },
   { id: 3, image: thum4, title: '🐹 커여운 워니 모음집' },
@@ -17,10 +23,9 @@ const archiveData = [
   { id: 6, image: thum5, title: '💚 위시 애긔들 💚' }
 ];
 
-const ArtistB = () => {
+const ArtistB: React.FC = () => {
   return (
     <div className="artist-b-container">
-
       <div className="archive-grid">
         {archiveData.map((item) => (
           <div key={item.id} className="archive-card">

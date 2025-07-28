@@ -1,14 +1,14 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import React, {  useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import FanLetterHeader from '../../../components/FanLetterHeader';
 import bgtop from '../../../assets/img/IllitHomeimg/postimg/bgt.png';
 import './FanLetter.css';
-import clip from '../../../assets/img/Fanimg/clip.png'
-import photo from '../../../assets/img/Fanimg/photo.png'
+import clip from '../../../assets/img/Fanimg/clip.png';
+import photo from '../../../assets/img/Fanimg/photo.png';
 
-const FanLetter = () => {
+const SecretLetter = () => {
   const [text, setText] = useState('');
-  const [isSecret, setIsSecret] = useState(false);
+  const [isSecret, setIsSecret] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [showToast, setShowToast] = useState(false);
 
@@ -36,7 +36,7 @@ const FanLetter = () => {
 
   return (
     <div>
-      {showToast && <div className="toast">📩 임시 저장 완료!</div>}
+      {showToast && <div className="fan-toast">📩 임시 저장 완료!</div>}
 
       <div className="fanletterbg">
         <img src={bgtop} alt="" />
@@ -55,10 +55,10 @@ const FanLetter = () => {
         <div className="fanletter-toolbar">
           <div className="fanicons">
             <button className="fan-icon-btn">
-              <img src={photo} alt="" />
+              <img src={photo} alt="사진 첨부" />
             </button>
             <button className="fan-icon-btn">
-              <img src={clip} alt="" />
+              <img src={clip} alt="파일 첨부" />
             </button>
           </div>
 
@@ -96,4 +96,4 @@ const FanLetter = () => {
   );
 };
 
-export default FanLetter;
+export default SecretLetter;

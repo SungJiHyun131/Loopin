@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+
 import post1 from '../../../assets/img/IllitHomeimg/postimg/post1.png';
 import post2 from '../../../assets/img/IllitHomeimg/postimg/post2.png';
 import post3 from '../../../assets/img/IllitHomeimg/postimg/post3.png';
@@ -16,6 +17,8 @@ import postih4 from '../../../assets/img/IllitHomeimg/postimg/postih4.png';
 import postyn1 from '../../../assets/img/IllitHomeimg/postimg/postyn1.png';
 import postyn2 from '../../../assets/img/IllitHomeimg/postimg/postyn2.png';
 import postyn3 from '../../../assets/img/IllitHomeimg/postimg/postyn3.png';
+
+import pr from '../../../assets/img/IllitHomeimg/postimg/profile.png';
 import pr1 from '../../../assets/img/IllitHomeimg/postimg/pr1.png';
 import pr2 from '../../../assets/img/IllitHomeimg/postimg/pr2.png';
 import pr3 from '../../../assets/img/IllitHomeimg/postimg/pr3.png';
@@ -23,19 +26,21 @@ import pr4 from '../../../assets/img/IllitHomeimg/postimg/pr4.png';
 import pr5 from '../../../assets/img/IllitHomeimg/postimg/pr5.png';
 import pr6 from '../../../assets/img/IllitHomeimg/postimg/pr6.png';
 import pr7 from '../../../assets/img/IllitHomeimg/postimg/pr7.png';
-import pr from '../../../assets/img/IllitHomeimg/postimg/profile.png';
 import mypr from '../../../assets/img/IllitHomeimg/postimg/mypr.png';
+
 import bgtop from '../../../assets/img/bg-top.png';
+
 import FanHeader2 from '../../../components/FanHeader2';
-import './FanPostView.css';
+import Comment from '../../../components/Comment';
+
 import heart from '../../../assets/img/IllitHomeimg/postimg/heart.png';
 import comment from '../../../assets/img/IllitHomeimg/postimg/comment.png';
 import mark from '../../../assets/img/IllitHomeimg/postimg/mark.png';
 import more from '../../../assets/img/IllitHomeimg/postimg/more.png';
 import mem from '../../../assets/img/IllitHomeimg/postimg/mem.png';
 import send from '../../../assets/img/Fanimg/send.png';
-import Comment from '../../../components/Comment';
-import LikeButton from '../../../components/LikeButton'
+
+import './FanPostView.css';
 
 const dummyPosts = [
   {
@@ -88,22 +93,78 @@ const dummyPosts = [
 
 const FanPostView = () => {
   const [comments, setComments] = useState([
-    { id: 1, userImg: pr, userName: '햄보르기니', isArtist: true, text: '꺄악!! 이런 따뜻한 말 해줘서 너무 고마워 건강도 체력도 책임질게!! 우리 오래오래 함께해 🍑', time: '3분 전', likeCount: '1k', isReply: false, isMine: false },
-    { id: 2, userImg: pr6, userName: '햇살비비', isArtist: false, text: '으악 원희 댓글 실화냐고😭 진짜 이렇게 팬들 챙기는 거... 사랑받을 수밖에 없다구요💓 평생 덕질 예약입니다💗', time: '1분 전', likeCount: 2, isReply: false, isMine: false },
-    { id: 3, userImg: pr7, userName: '심장어택러', isArtist: false, text: '어머 이게 무슨 일이야… 원희가 직접 댓글을?! 대박사건 우리 애 진짜 못하는 게 뭐야? 나 오늘부터 더 열심히 응원한다... 진심으로...💥', time: '1분 전', likeCount: 2, isReply: false, isMine: false },
-    { id: 4, userImg: pr5, userName: '원희교 신도 02번', isArtist: false, text: '와 진짜 원희 이건 반칙이지 무대 위에서만 빛나는 줄 알았더니 댓글도 반짝반짝이네 우리 공주 최고야…👑💫', time: '2분 전', likeCount: 3, isReply: false, isMine: false },
-    { id: 5, userImg: pr, userName: '아일릿쫀득단지', isArtist: false, text: '으어 나 이거 캡처해서 액자에 넣을래;;원희가 내 글에 반응한 세상이라니 넘사벽😭 덕질할 맛 제대로 난다 🍒💌', time: '3분 전', likeCount: 4, isReply: false, isMine: false },
+    {
+      id: 1,
+      userImg: pr,
+      userName: '햄보르기니',
+      isArtist: true,
+      text: '꺄악!! 이런 따뜻한 말 해줘서 너무 고마워 건강도 체력도 책임질게!! 우리 오래오래 함께해 🍑',
+      time: '3분 전',
+      likeCount: '1k',
+      isReply: false,
+      isMine: false,
+    },
+    {
+      id: 2,
+      userImg: pr6,
+      userName: '햇살비비',
+      isArtist: false,
+      text: '으악 원희 댓글 실화냐고😭 진짜 이렇게 팬들 챙기는 거... 사랑받을 수밖에 없다구요💓 평생 덕질 예약입니다💗',
+      time: '1분 전',
+      likeCount: 2,
+      isReply: false,
+      isMine: false,
+    },
+    {
+      id: 3,
+      userImg: pr7,
+      userName: '심장어택러',
+      isArtist: false,
+      text: '어머 이게 무슨 일이야… 원희가 직접 댓글을?! 대박사건 우리 애 진짜 못하는 게 뭐야? 나 오늘부터 더 열심히 응원한다... 진심으로...💥',
+      time: '1분 전',
+      likeCount: 2,
+      isReply: false,
+      isMine: false,
+    },
+    {
+      id: 4,
+      userImg: pr5,
+      userName: '원희교 신도 02번',
+      isArtist: false,
+      text: '와 진짜 원희 이건 반칙이지 무대 위에서만 빛나는 줄 알았더니 댓글도 반짝반짝이네 우리 공주 최고야…👑💫',
+      time: '2분 전',
+      likeCount: 3,
+      isReply: false,
+      isMine: false,
+    },
+    {
+      id: 5,
+      userImg: pr,
+      userName: '아일릿쫀득단지',
+      isArtist: false,
+      text: '으어 나 이거 캡처해서 액자에 넣을래;;원희가 내 글에 반응한 세상이라니 넘사벽😭 덕질할 맛 제대로 난다 🍒💌',
+      time: '3분 전',
+      likeCount: 4,
+      isReply: false,
+      isMine: false,
+    },
   ]);
 
   const [inputValue, setInputValue] = useState('');
   const { id } = useParams();
-  const post = dummyPosts[id];
+
+  // id가 문자열이므로 숫자형 인덱스로 변환
+  const postIndex = Number(id);
+  const post = dummyPosts[postIndex];
+
   const [firstComment, ...otherComments] = comments;
 
   if (!post) return <p>게시글을 찾을 수 없습니다.</p>;
 
+  // 댓글 추가 함수
   const handleAddComment = () => {
     if (!inputValue.trim()) return;
+
     const newComment = {
       id: Date.now(),
       userImg: mypr,
@@ -113,12 +174,14 @@ const FanPostView = () => {
       time: '방금 전',
       likeCount: 0,
       isReply: false,
-      isMine: true,  // ✅ 내가 쓴 댓글 표시
+      isMine: true, // 내가 쓴 댓글 표시용
     };
+
     setComments([...comments, newComment]);
     setInputValue('');
   };
 
+  // 댓글 삭제 함수
   const handleDeleteComment = (id) => {
     setComments((prev) => prev.filter((c) => c.id !== id));
   };
@@ -126,21 +189,26 @@ const FanPostView = () => {
   return (
     <div className="Postcontainer">
       <div className="fanpostbg">
-        <img src={bgtop} alt="" />
+        <img src={bgtop} alt="background" />
       </div>
       <div className="FanHeader2">
         <FanHeader2 />
       </div>
+
       <div className="fan-post-view">
         <div className="post-header">
           <div className="left-group">
             <img src={post.user.profileImg} alt="profile" className="profile-img" />
             <div className="user-info">
-              <div className="username">{post.user.name} <img src={mem} alt="" className='mem' /></div>
+              <div className="username">
+                {post.user.name} <img src={mem} alt="member badge" className="mem" />
+              </div>
               <div className="time">{post.user.time}</div>
             </div>
           </div>
-          <div className="morebtn"><img src={more} alt="" /></div>
+          <div className="morebtn">
+            <img src={more} alt="more options" />
+          </div>
         </div>
 
         <div className="post-text">
@@ -149,37 +217,60 @@ const FanPostView = () => {
 
         <div className="post-images">
           {post.images.map((img, idx) => (
-            <img key={idx} src={img} alt={`image${idx}`} />
+            <img key={idx} src={img} alt={`post image ${idx + 1}`} />
           ))}
         </div>
 
         <div className="post-footer">
           <div className="footer-left">
-            <span><img src={heart} alt="" /> {post.likes}</span>
-            <span className='Fanpostview-comment-icon'><img src={comment} alt="" /> {post.comments}</span>
+            <span>
+              <img src={heart} alt="likes" /> {post.likes}
+            </span>
+            <span className="Fanpostview-comment-icon">
+              <img src={comment} alt="comments" /> {post.comments}
+            </span>
           </div>
-          <div className="footer-right"><img src={mark} alt="" /></div>
+          <div className="footer-right">
+            <img src={mark} alt="bookmark" />
+          </div>
         </div>
 
-        <span className='line a'></span>
+        <span className="line a"></span>
+
         <div className="comment-list">
           <p className="PostView-artist">아티스트 댓글</p>
-          {firstComment && <Comment key={firstComment.id} {...firstComment} onDelete={firstComment.isMine ? () => handleDeleteComment(firstComment.id) : null} />}
-          <span className='line b'></span>
+          {firstComment && (
+            <Comment
+              key={firstComment.id}
+              {...firstComment}
+              onDelete={firstComment.isMine ? () => handleDeleteComment(firstComment.id) : null}
+            />
+          )}
+          <span className="line b"></span>
+
           <p className="PostView-fan">전체 댓글</p>
           {otherComments.length > 0 && (
             <div className="other-comments">
               {otherComments.map((c) => (
-                <Comment key={c.id} {...c} onDelete={c.isMine ? () => handleDeleteComment(c.id) : null} />
+                <Comment
+                  key={c.id}
+                  {...c}
+                  onDelete={c.isMine ? () => handleDeleteComment(c.id) : null}
+                />
               ))}
             </div>
           )}
         </div>
 
         <div className="comment-input">
-          <input type="text" placeholder="댓글을 입력하세요." value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+          <input
+            type="text"
+            placeholder="댓글을 입력하세요."
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+          />
           <button onClick={handleAddComment}>
-            <img src={send} alt="보내기" className='comment-send-icon' />
+            <img src={send} alt="보내기" className="comment-send-icon" />
           </button>
         </div>
       </div>
