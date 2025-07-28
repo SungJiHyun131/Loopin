@@ -7,7 +7,7 @@ import IntroHeader from '../../components/IntroHeader'
 const slides = [
   {
     id: 1,
-    title: '타임캡슐 열기 완료 💨',
+    title: '타임캡슐 열기 완료',
     desc: '이제 너만의 팬덤 세계가 열렸어.  \n 잊지 말고 매일 찐사랑을 기록해줘',
   },
   {
