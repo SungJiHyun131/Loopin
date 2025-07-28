@@ -1,4 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import './ArtistCard.css';
+
+// 이미지들 import
 import wish from '../assets/img/nctwish.png';
 import aespa from '../assets/img/aespa.png';
 import illit from '../assets/img/illit.png';
@@ -41,10 +45,17 @@ import katLogo from '../assets/img/kat-logo.png';
 import redLogo from '../assets/img/red-logo.png';
 import h2hLogo from '../assets/img/h2h-logo.png';
 
-import { Link } from 'react-router-dom';
-import './ArtistCard.css';
+// 타입 정의
+export interface Artist {
+  name: string;
+  img: string;
+  logo: string;
+  link?: string;
+  isLink?: boolean;
+}
 
-export const artistData  = [
+// 아티스트 데이터
+export const artistData: Artist[] = [
   { name: 'ILLIT', img: illit, logo: illitLogo, link: '/ArtistHome', isLink: true },
   { name: 'NCT WISH', img: wish, logo: wishLogo },
   { name: 'AESPA', img: aespa, logo: aespaLogo },
@@ -52,7 +63,7 @@ export const artistData  = [
   { name: 'SEVENTEEN', img: seventeen, logo: seventeenLogo },
   { name: 'PROMISE9', img: promise9, logo: promise9Logo },
   { name: 'BOYNEXTDOOR', img: boynextdoor, logo: boynextdoorLogo },
-  { name: 'SHINEE', img:shinee, logo: shineeLogo },
+  { name: 'SHINEE', img: shinee, logo: shineeLogo },
   { name: 'TWICE', img: twice, logo: twiceLogo },
   { name: 'IVE', img: ive, logo: iveLogo },
   { name: 'LESSERAPIM', img: le, logo: leLogo },
@@ -62,19 +73,24 @@ export const artistData  = [
   { name: 'BABY MONSTER', img: bm, logo: bmLogo },
   { name: 'ATEEZ', img: ateez, logo: ateezLogo },
   { name: 'TWS', img: tws, logo: twsLogo },
-  { name: 'KATSEYE', img: kat, logo:katLogo },
+  { name: 'KATSEYE', img: kat, logo: katLogo },
   { name: 'RED VELVET', img: red, logo: redLogo },
   { name: 'HEARTS TO HEARTS', img: h2h, logo: h2hLogo },
 ];
 
-const ArtistCard = ({ artists }) => {
+// 컴포넌트 타입 정의
+interface ArtistCardProps {
+  artists: Artist[];
+}
+
+// 컴포넌트 구현
+const ArtistCard: React.FC<ArtistCardProps> = ({ artists }) => {
   if (artists.length === 0) {
     return <div className="no-result">검색 결과가 없습니다.</div>;
   }
 
-  const sortedData = [...artists].sort((a, b) =>
-    a.name.localeCompare(b.name)
-  );
+  const sortedData = [...artists].sort((a, b) => a.name.localeCompare(b.name));
+
   return (
     <div className="cardlist">
       <ul>
@@ -89,7 +105,7 @@ const ArtistCard = ({ artists }) => {
           return (
             <li key={index}>
               {artist.isLink ? (
-                <Link to={artist.link}>{content}</Link>
+                <Link to={artist.link ?? '#'}>{content}</Link>
               ) : (
                 <a href="#">{content}</a>
               )}
