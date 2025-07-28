@@ -3,21 +3,21 @@ import { Route} from 'react-router-dom'
 import StoreHeader2 from '../../../components/StoreHeader2';
 import './StoreDetail.css';
 
-import img1 from '../../../assets/img/Storeimg/Detail/img1.png'
-import heart from '../../../assets/img/Storeimg/Detail/icon_heart.png'
-import share from '../../../assets/img/Storeimg/Detail/icon_share.png'
-import warning from '../../../assets/img/Storeimg/Detail/icon_warning.png'
-import warning2 from '../../../assets/img/Storeimg/Detail/icon_warning2.png'
+import img1 from '../../../assets/img/StoreImg/Detail/img1.png'
+import heart from '../../../assets/img/StoreImg/Detail/icon_heart.png'
+import share from '../../../assets/img/StoreImg/Detail/icon_share.png'
+import warning from '../../../assets/img/StoreImg/Detail/icon_warning.png'
+import warning2 from '../../../assets/img/StoreImg/Detail/icon_warning2.png'
 
-import img2 from '../../../assets/img/Storeimg/Detail/img2.png'
-import title from '../../../assets/img/Storeimg/Detail/GlitterDay.png'
+import img2 from '../../../assets/img/StoreImg/Detail/img2.png'
+import title from '../../../assets/img/StoreImg/Detail/GlitterDay.png'
 
-import Detail1 from '../../../assets/img/Storeimg/Detail/Detail1.png'
-import Detail2 from '../../../assets/img/Storeimg/Detail/Detail2.png'
-import ex1 from '../../../assets/img/Storeimg/Detail/ex1.png'
-import ex2 from '../../../assets/img/Storeimg/Detail/ex2.png'
-import front from '../../../assets/img/Storeimg/Detail/front1.png'
-import back from '../../../assets/img/Storeimg/Detail/back1.png'
+import Detail1 from '../../../assets/img/StoreImg/Detail/Detail1.png'
+import Detail2 from '../../../assets/img/StoreImg/Detail/Detail2.png'
+import ex1 from '../../../assets/img/StoreImg/Detail/ex1.png'
+import ex2 from '../../../assets/img/StoreImg/Detail/ex2.png'
+import front from '../../../assets/img/StoreImg/Detail/front1.png'
+import back from '../../../assets/img/StoreImg/Detail/back1.png'
 import storehd from '../../../assets/img/StoreImg/storehd.png'
 
 const StoreDetail = () => {
