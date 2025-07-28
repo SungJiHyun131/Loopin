@@ -12,7 +12,7 @@ const livePicks = [
     id: 1,
     thumbnail: thum1,
     duration: '23:06',
-    title: '🖤🖤🖤🖤🖤 원희의 가장 짧은 러브',
+    title: '🅸🅻🅻🅸🆃 원희의 가장 짧은 라방',
     artist: '원희',
     date: '2025.03.08 (수) | PM 09:00',
     profile: wonhee,
