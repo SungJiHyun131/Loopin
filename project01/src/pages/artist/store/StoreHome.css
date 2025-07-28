@@ -24,7 +24,7 @@
 
 .container.StoreHome .Products .Small ul{width: 100%; display: flex; overflow:scroll; white-space: nowrap; margin-top: 10px; scrollbar-width: none;}
 .container.StoreHome .Products .Small ul li{border: 1px solid #000; border-radius: 50px; padding: 8px 10px; margin-right: 10px;background: #fff;color: #666;transition: all 0.3S;}
-.container.StoreHome .Products .Small ul li.active{background: linear-gradient(to top, #FF8EBF, #FFC8DF,#fff); color: #000;}
+.container.StoreHome .Products .Small ul li.active{background:linear-gradient(to top, #FF8EBF,#FFAACF, #FFC8DF,#fff); color: #000;}
 
 
 /* 상품 컨테이너 */

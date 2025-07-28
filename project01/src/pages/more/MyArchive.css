@@ -19,7 +19,7 @@
     left: -1px;
     width: 25%;
     height: 104%;
-    background: linear-gradient(to bottom, #ffffff, #C9FFC7,#7CFF71);
+    background: linear-gradient(to bottom, #ffffff, #C9FFC7,#7CFF71,#7CFF71);
     border-radius: 999px;
     z-index: 1;
     transition: left 0.3s ease;
