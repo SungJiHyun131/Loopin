@@ -33,6 +33,10 @@ a, a:link, a:visited {
 
 body {
   -webkit-touch-callout: none;
-  -webkit-user-select: none;
   -webkit-text-size-adjust: 100%;
 }
+
+input, textarea {
+    -webkit-user-select: text;
+    user-select: text;
+  }
