@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Onboarding.css';
 import letter from '../../assets/img/letter.gif'
+import IntroHeader from '../../components/IntroHeader'
 
 const slides = [
   {
@@ -29,6 +30,8 @@ const Onboarding = () => {
   };
 
   return (
+    <div>
+      <IntroHeader/>
     <div className={`onboarding-container ${current === 0 ? 'bg1' : 'bg2'}`}>
       <h2 className="onboarding-title">{slides[current].title}</h2>
       <p className="onboarding-desc">{slides[current].desc}</p>
@@ -38,6 +41,7 @@ const Onboarding = () => {
       <button className="onboarding-btn" onClick={nextSlide}>
         {current === slides.length - 1 ? '다음' : '다음'}
       </button>
+    </div>
     </div>
   );
 };
