@@ -1,9 +1,8 @@
-.archive-grid {
+.archive-gridA {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 6px;
-    margin-bottom: 80px;
-
+    padding-bottom: 80px;
   }
   
   .archive-item {

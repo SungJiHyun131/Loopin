@@ -1,5 +1,5 @@
 import React from 'react';
-import './ArtistB.css';
+import './ArchiveB.css';
 
 import thum1 from '../../assets/img/archive/thum1.png';
 import thum2 from '../../assets/img/archive/thum2.png';

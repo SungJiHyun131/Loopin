@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 12px;
     min-height: 100vh;
+    padding-bottom: 80px;
   }
   
   .feed-card {

@@ -1,13 +1,14 @@
 .artist-b-container {
-min-height: 100vh;
 font-family: 'Pretendard', sans-serif;
+padding-bottom: 80px;
 }
 
 .artist-b-container .archive-grid {
 display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 16px;
-}
+margin-bottom: 0;
+padding-bottom: 0;}
 
 .artist-b-container .archive-card {
 text-align: center;

@@ -48,7 +48,7 @@ const ArtistA = () => {
   ];
 
   return (
-    <div className="archive-grid">
+    <div className="archive-gridA">
       {items.map((item, index) => {
         const content = (
           <div className="archive-item" key={index}>
