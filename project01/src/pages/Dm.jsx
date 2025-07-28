@@ -24,7 +24,7 @@ const Dm = () => {
       <div className="DmHeader">
         <DmHeader/>
       </div>
-      <div className="container">
+      <div className="container Dm">
       <SearchBar onChange={(e) => setQuery(e.target.value)} />
       <div className="message">
         <h3>메세지</h3>
@@ -35,10 +35,9 @@ const Dm = () => {
             <div className="right">
               <div className="top">
                 <p className="name">모카</p>
-                <p className="date">2025.07.08</p>
+                <p className="date">3분 전</p>
               </div>
-              <p className="content">오늘 하루 어땠어? 난 너 생각하면서 노래 연습했어💛
-                우리 무대에서 꼭 다시 만나자!!</p>
+              <p className="content">오늘 하루 어땠어? 난 노래 연습했어💛</p>
             </div>
           </li>
           <li>
@@ -46,9 +45,9 @@ const Dm = () => {
             <div className="right">
               <div className="top">
                 <p className="name">원희</p>
-                <p className="date">2025.07.08</p>
+                <p className="date">10분 전</p>
               </div>
-              <p className="content">오늘 연습 끗~</p>
+              <p className="content">오늘 연습 끗~ 글릿은 머해용~~?</p>
             </div>
           </li>
         </ul>

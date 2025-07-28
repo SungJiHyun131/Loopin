@@ -1,4 +1,4 @@
-.container.main{min-height: 100vh;box-sizing: border-box;  padding: 20px 16px;}
+.container.main{min-height: 100vh;box-sizing: border-box;  padding: 20px 16px 40px;}
 
 .txt1{text-align: center;align-items: center;justify-content: center;display: flex;margin-bottom: 5px;font-size: 16px;font-weight: 500;}
 .txt2{text-align: center;align-items: center;justify-content: center;display: flex;margin-bottom: 30px;font-size: 16px;font-weight: 500;}

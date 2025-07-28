@@ -5,6 +5,7 @@ import {Outlet} from 'react-router-dom';
 import './Layout.css'
 import mainbg from '../assets/img/mainheaderbg.png'
 
+
 const Layout = () => {
   return (
     <div className='mainhome'>
@@ -16,6 +17,7 @@ const Layout = () => {
     </main>
 
     </div>
+    <Footer/>
     </div>
   )
 }

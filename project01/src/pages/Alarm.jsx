@@ -12,14 +12,14 @@ import mainbg from'../assets/img/mainheaderbg.png';
 
 const todayNotifications = [
   { userImg: imgMj, name: '민주', message: '민주님이 게시물을 올렸습니다.', time: '3분 전' },
-  { userImg: imgMj, name: '민주', message: '민주님이 댓글을 달았습니다.', time: '3분 전' },
-  { userImg: imgIh, name: '이로하', message: '이로하님이 게시물을 올렸습니다.', time: '3분 전' },
+  { userImg: imgMj, name: '민주', message: '민주님이 댓글을 달았습니다.', time: '25분 전' },
+  { userImg: imgIh, name: '이로하', message: '이로하님이 게시물을 올렸습니다.', time: '34분 전' },
   // 오늘 알림들...
 ];
 
 const yesterdayNotifications = [
-  { userImg: imgYn, name: '윤아', message: '윤아님이 게시물을 올렸습니다.', time: '1일' },
-  { userImg: imgWh, name: '원희', message: '햄보르기니님이 게시물을 올렸습니다.', time: '1일' },
+  { userImg: imgYn, name: '윤아', message: '윤아님이 게시물을 올렸습니다.', time: '1일 전' },
+  { userImg: imgWh, name: '원희', message: '원희님이 게시물을 올렸습니다.', time: '1일 전' },
   // 어제 알림들...
 ];
 
