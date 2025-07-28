@@ -2,12 +2,12 @@ import React from 'react';
 import './Albums.css';
 import AlbumCard from '../components/AlbumCard';
 
-import bombImage from '../assets/img/illitHomeimg/artistimg/thum1.png';
-import illyouImage from '../assets/img/illitHomeimg/artistimg/thum2.png';
-import superRealMeImage from '../assets/img/illitHomeimg/artistimg/thum3.png';
-import cats from '../assets/img/illitHomeimg/artistimg/thum4.png';
-import Magnetic from '../assets/img/illitHomeimg/artistimg/thum5.png';
-import Almond from '../assets/img/illitHomeimg/artistimg/thum6.png';
+import bombImage from '../assets/img/IllitHomeimg/artistimg/thum1.png';
+import illyouImage from '../assets/img/IllitHomeimg/artistimg/thum2.png';
+import superRealMeImage from '../assets/img/IllitHomeimg/artistimg/thum3.png';
+import cats from '../assets/img/IllitHomeimg/artistimg/thum4.png';
+import Magnetic from '../assets/img/IllitHomeimg/artistimg/thum5.png';
+import Almond from '../assets/img/IllitHomeimg/artistimg/thum6.png';
 
 const albumData = [
   {

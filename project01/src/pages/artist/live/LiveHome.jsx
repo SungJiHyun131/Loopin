@@ -2,7 +2,7 @@ import React from 'react'
 import {Link, useLocation, Route} from 'react-router-dom'
 import LiveHeader from '../../../components/LiveHeader';
 import headerbg from '../../../assets/img/IllitHomeimg/Live/bg-header.png';
-import Live from '../../../assets/img/IllitHomeimg/Live/bg-Live.png';
+import Live from '../../../assets/img/IllitHomeimg/Live/bg-live.png';
 import './LiveHome.css';
 import LiveArtistList from '../../../components/LiveArtistList';
 import OnLive from '../../../components/OnLive';

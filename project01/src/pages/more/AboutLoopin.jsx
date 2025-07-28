@@ -1,7 +1,7 @@
 import React from 'react'
 import AboutLoopinHeader from '../../components/AboutLoopinHeader'
 import './AboutLoopin.css'
-import logo from '../../assets/img/logo.png'
+import logo from '../../assets/img/logo2.png'
 import click from '../../assets/img/click.png'
 import star from '../../assets/img/star.png'
 import { Link, useLocation } from 'react-router-dom'
