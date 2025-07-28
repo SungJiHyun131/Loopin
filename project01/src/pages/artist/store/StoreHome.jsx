@@ -9,7 +9,7 @@ import storehd from '../../../assets/img/StoreImg/storehd.png'
 import StoreHeader from '../../../components/StoreHeader';
 import LikeButton from '../../../components/LikeButton';
 import Footer2 from '../../../components/Footer2';
-
+import storebg from '../../../assets/img/StoreImg/Detail/storebg.png'
 import banner1 from '../../../assets/img/StoreImg/banner1.png'
 import banner2 from '../../../assets/img/StoreImg/banner2.png'
 import banner3 from '../../../assets/img/StoreImg/banner3.png'
@@ -542,6 +542,7 @@ const filteredProducts = products.filter((product) => {
 
   return (
     <div>
+       <div className="storebg"> <img src={storebg} alt=""/></div>
       <div className="storehd"><img src={storehd} alt="" /></div>
       <div className="StoreHeader">
         <StoreHeader />

@@ -18,16 +18,20 @@ import ex1 from '../../../assets/img/StoreImg/Detail/ex1.png'
 import ex2 from '../../../assets/img/StoreImg/Detail/ex2.png'
 import front from '../../../assets/img/StoreImg/Detail/front1.png'
 import back from '../../../assets/img/StoreImg/Detail/back1.png'
+import storebg from '../../../assets/img/StoreImg/Detail/storebg.png'
 import storehd from '../../../assets/img/StoreImg/storehd.png'
 
 const StoreDetail = () => {
   return (
     <div>
+      <div className="storebg"> <img src={storebg} alt=""/></div>
         <div className="storehd"><img src={storehd} alt="" /></div>
       <div className="StoreHeader2">
         <StoreHeader2 />
       </div>
       <div className="container StoreDetail">
+        
+       
         <div className="TopBox">
           <img src={img1} alt="" className='img1'/>
           <div className="ProductInfo">
