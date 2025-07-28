@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-
+import ScrollToTop from './components/ScrollToTop';
 import Splash from './pages/intro/Splash';
 import Onboarding from './pages/intro/Onboarding';
 import Login from './pages/intro/Login';
@@ -43,6 +43,8 @@ import ChatbotView from './components/ChatbotView';
 
 const App: React.FC = () => {
   return (
+    <>
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={<Splash />} />
       <Route path="/Onboarding" element={<Onboarding />} />
@@ -106,6 +108,7 @@ const App: React.FC = () => {
       <Route path="/FanPostView/:id" element={<FanPostView />} />
       <Route path="SecretLetter" element={<SecretLetter />} />
     </Routes>
+    </>
   );
 };
 
