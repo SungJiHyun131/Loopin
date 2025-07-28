@@ -41,4 +41,4 @@
   }
 
 
-  .ArchiveFixHeader {position: fixed;z-index: 999;left: 0;top: 0;height: 163px;   background: linear-gradient(to bottom, #5dabff,#ffffff);;width: 100%;}
+  .ArchiveFixHeader {position: fixed;z-index: 999;left: 0;top: 0;height: 163px;   background: linear-gradient(to bottom, #5dabff,#ffffff);;width: 100%;box-shadow: 0 0 10px rgba(40,100,170,0.2);}

@@ -1,5 +1,5 @@
 
-.footer2{text-align: center; margin: 40px auto;height: 120px;}
+.footer2{text-align: center; margin: 0px auto;padding: 40px 0;background: #fff;}
 
 
 .footer2 ul{display: flex;justify-content: center;}

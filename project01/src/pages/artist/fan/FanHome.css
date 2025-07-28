@@ -1,6 +1,6 @@
 .fanContainer .fanletter{position: fixed;z-index: -1;width: 100%;height: 100vh;}
 .fanContainer .fanletter img{width: 100%;height: 100%;object-fit: cover;}
-.fanbg{position: fixed;;width: 100%;height: 155px;}
+.fanbg{position: fixed;;width: 100%;height: 155px;box-shadow: 0 0 10px rgba(184,142,226,0.3);}
 .fanbg img{width: 100%;object-fit: cover;height: 100%;}
 .fantop{position: fixed;width: 100%;}
 .togglesearch{display: flex;align-items: center;width: 80%;margin: 0 auto;}
