@@ -39,6 +39,8 @@ import LiveHome from './pages/artist/live/LiveHome';
 import LiveDetail from './pages/artist/live/LiveDetail';
 import ChatbotModal from './components/ChatbotModal';
 import ChatbotView from './components/ChatbotView';
+
+
 function App() {
   return (
     <Routes>
