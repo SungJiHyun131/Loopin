@@ -18,7 +18,7 @@ a {color: inherit; text-decoration: inherit;}
 .Artisttop .img .mouse .cl{width: 40px;}
 .Artisttop .img .mouse .cl img{width: 100%;}
 .Artisttop .img .mouse .click{font-size: 16px;padding: 4px 8px;background: #fff;border-radius: 20px;border: 1px solid #000;font-family: 'NeoDunggeunmo';}
-.Artisttop .img .photo{text-align: center;padding: 8px;background: linear-gradient(to top, #FF719E,#fff);border-radius: 10px 10px 0 0;border-bottom: 1px solid #000;height: 40px;font-size: 18px;}
+.Artisttop .img .photo{text-align: center;padding: 8px;background:linear-gradient(to top, #FF8EBF,#FFAACF, #FFC8DF,#fff);border-radius: 10px 10px 0 0;border-bottom: 1px solid #000;height: 40px;font-size: 18px;}
 .Artisttop .img img{width: 100%;border-radius: 0 0 10px 10px;}
 
 .Artisttop .right {margin-top: 40px;position: relative;}

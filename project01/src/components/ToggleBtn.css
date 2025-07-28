@@ -13,7 +13,7 @@
   position: absolute;
   top: 1px;
   height: calc(100% - 2px);
-  background: linear-gradient(to top, #FF8EBF, #FFC8DF, #fff);
+  background:linear-gradient(to top, #FF8EBF,#FFAACF, #FFC8DF,#fff);
   border-radius: 999px;
   z-index: 1;
   transition: left 0.3s ease;
