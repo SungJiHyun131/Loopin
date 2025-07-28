@@ -7,8 +7,8 @@
 .container.NoticeHome ul li a p{display: flex;align-items: center;}
 .container.NoticeHome ul li a p .newicon {background: #FF006F;color: #fff;font-size: 12px;border-radius: 20px;padding: 1px 5px;text-align: center;margin-left: 6px;}
 .NoticeHeader{position: fixed;width: 100%;}
-.noticemain .bg-top {position: fixed;top: 0;left: 0;width: 100%;height: 80px;}
-.noticemain .bg-top img {mask-image: linear-gradient(to top, transparent,#fff,#fff,#fff,#fff);width: 100%;height: 100%;object-fit: cover;}
+.noticemain .bg-top {position: fixed;top: 0;left: 0;width: 100%;height: 80px;box-shadow: 0 0 10px rgba(184,142,226,0.3);}
+.noticemain .bg-top img {width: 100%;height: 100%;object-fit: cover;}
 .noticemain .bg-bottom {position: fixed;bottom: 0;z-index: 1;width: 100%;height: 130px;}
 .noticemain .bg-bottom img {width: 100%;height: 100%;object-fit: cover;mask-image: linear-gradient(to bottom, transparent,#fff,#fff,#fff,#fff);}
 
