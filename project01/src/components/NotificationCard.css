@@ -25,11 +25,25 @@
   
   .notification-message {
     font-size: 14px;
-    color: #333;
+    color: #333; display: flex;
   }
-  
+  .notification-time-box {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #999999;
+    margin-left: auto;
+  }
   .notification-time {
     color: gray;
     font-size: 12px;
-margin-left: 5px;
+margin-left: 5px; margin-right: 6px;
+  }
+
+  
+  .time-dot {
+    width: 6px;           /* 원 크기 */
+    height: 6px;
+    background-color: #2F59FF;  /* 파란색 */
+    border-radius: 50%;    /* 동그라미 */
   }

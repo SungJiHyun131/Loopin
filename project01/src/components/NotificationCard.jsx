@@ -8,9 +8,10 @@ const NotificationCard = ({ userImg, name, message, time }) => {
       <div className="notification-content">
         <div className="notification-title">ILLIT</div>
         <div className="notification-message">
-          {message} <span className="notification-time">{time}</span>
+          {message}  <div className="notification-time-box"><span className="notification-time">{time}</span> <span className="time-dot"></span>
         </div>
       </div>
+    </div>
     </div>
   );
 };
