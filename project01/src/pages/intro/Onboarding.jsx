@@ -7,17 +7,13 @@ import IntroHeader from '../../components/IntroHeader'
 const slides = [
   {
     id: 1,
-<<<<<<< HEAD
     title: '타임캡슐 열기 완료',
-=======
-    title: '🌟 타임캡슐 열기 완료 🌟',
->>>>>>> 5d7a832530dde6895c3f9d70363ea40911d5e2fd
     desc: '이제 너만의 팬덤 세계가 열렸어.  \n 잊지 말고 매일 찐사랑을 기록해줘',
   },
   {
     id: 2,
-    title: ' ₊˚✧ 편지는 마음을 닮아 ✧₊˚',
-    desc: '팬레터, 비밀레터, 스탠딩보드까지\n 너만의 방식으로 마음을 전해봐!',
+    title: '편지는 마음을 닮아',
+    desc: '팬레터, 비밀레터, 스탠딩보드까지\n 너만의 방식으로 마음을 전해봐! ✧₊˚',
   }
 ];
 
