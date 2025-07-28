@@ -48,6 +48,6 @@
 .outlet {margin-top: 150px;margin-bottom: 170px;}
 
 .MediaHeader {height: 152px;position: fixed;top: 0;left: 0;width: 100%;z-index: 999;}
-.Media-headerbg  {position: fixed;top:0;left: 0;z-index: 999;width: 100%;height: 152px;}
+.Media-headerbg  {position: fixed;top:0;left: 0;z-index: 999;width: 100%;height: 152px;box-shadow: 0 0 10px rgba(184,142,226,0.3);}
 .Media-headerbg img {width: 100%;height: 100%;object-fit: cover;}
 
