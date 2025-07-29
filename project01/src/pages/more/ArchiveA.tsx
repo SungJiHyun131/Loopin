@@ -111,22 +111,27 @@ return (
   </div>
 )}
     <div className="archive-gridA">
-      {items.map((item, index) => {
-        const isSelected = selectedIndexes.includes(index);
-        return (
-          <div
-            key={index}
-            className={`archive-item ${deleteMode ? 'deletable' : ''} ${isSelected ? 'selected' : ''}`}
-            onClick={() => toggleSelect(index)}
-          >
-            <img src={item.img} alt={`archive-${index}`} className="archive-img" />
-            {item.icon && <img src={item.icon} alt="icon" className="archive-icon" />}
-            {deleteMode && (
-              <div className="checkmark-overlay">{isSelected ? '✓' : ''}</div>
-            )}
-          </div>
-        );
-      })}
+    {items.map((item, index) => {
+  const isSelected = selectedIndexes.includes(index);
+  return (
+    <div
+      key={index}
+      className={`archive-item ${deleteMode ? 'deletable' : ''} ${isSelected ? 'selected' : ''}`}
+      onClick={() => toggleSelect(index)}
+      style={{ position: 'relative' }} // 오버레이 위치를 위해 relative 필요
+    >
+      <img src={item.img} alt={`archive-${index}`} className="archive-img" />
+      {item.icon && <img src={item.icon} alt="icon" className="archive-icon" />}
+      
+      {/* 삭제모드일 때 선택된 항목에 오버레이와 체크 아이콘 */}
+      {deleteMode && isSelected && (
+        <div className="overlay-checkmark">
+          ✓
+        </div>
+      )}
+    </div>
+  );
+})}
     </div>
 
     {/* 토스트 메시지 */}

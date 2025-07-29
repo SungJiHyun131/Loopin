@@ -1,6 +1,7 @@
 .artist-b-container {
 font-family: 'Pretendard', sans-serif;
 padding-bottom: 80px;
+height: 100vh;
 }
 
 .artist-b-container .archive-grid {
@@ -42,6 +43,22 @@ margin-top: 10px;
   transform: translate(-50%, -50%);
   font-size: 35px;
   font-weight: 300;
-  color: #888;
-  pointer-events: none;
+  color: #666;
+}
+
+.archiveB-checkmark-overlay {
+  user-select: none;       /* 텍스트 드래그 방지 */
+  pointer-events: none;    /* 클릭 이벤트는 부모로 전달 */
+  color: #111;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 22px;
+  font-weight: 500;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: 1px solid #111;
 }
