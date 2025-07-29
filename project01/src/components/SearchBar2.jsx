@@ -2,7 +2,7 @@ import React from 'react';
 import './SearchBar.css';
 import { FiSearch } from 'react-icons/fi'; // 아이콘 라이브러리
 
-const SearchBar = ({ placeholder = 'Illit 검색 후 클릭', onChange }) => {
+const SearchBar2 = ({ placeholder = '나의 아티스트를 검색해주세요', onChange }) => {
   return (
     <div className="search-bar">
       <FiSearch className="search-icon" />
@@ -16,4 +16,4 @@ const SearchBar = ({ placeholder = 'Illit 검색 후 클릭', onChange }) => {
   );
 };
 
-export default SearchBar;
+export default SearchBar2;

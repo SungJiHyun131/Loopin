@@ -16,3 +16,10 @@ a {color: inherit; text-decoration: inherit;}
 .container-morehome ul li .img img{width: 100%; object-fit: cover;height: 100%;}
 
 .bgMore {background:linear-gradient(to bottom,#fff,#fff,#A0CEFF,#5dabff,#5dabff);}
+.container-morehome ul li span{  display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 10px; /* 필요 시 간격 조절 */
+    vertical-align: middle;}

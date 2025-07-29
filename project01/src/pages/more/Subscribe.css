@@ -13,7 +13,14 @@ a {color: inherit; text-decoration: inherit;}
 .container.sub .topBox .ticket .ontext .price span {font-weight: normal;font-size: 16px;}
 .container.sub .topBox .ticket .ontext .smalltext {font-size: 12px;}
 .container.sub .topBox .ticket .subs {position: absolute;right: 38px;top: 50%;  writing-mode: vertical-lr;transform: translateY(-50%) rotate(180deg);}
-.container.sub .topBox .ticket.month {margin-bottom: 20px;}
+.container.sub .topBox .ticket.month {margin-bottom: 20px;position: relative;}
+.container.sub .topBox .ticket.month .red-dot{display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 10px; /* 필요 시 간격 조절 */
+    vertical-align: middle;position: absolute;top: 25%;left: 30%;}
 
 .container.sub .infoBox {margin-top: 40px;}
 .container.sub .infoBox ul{width: 100%; margin: 0 auto;}

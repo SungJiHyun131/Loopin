@@ -39,7 +39,8 @@ a {color: inherit; text-decoration: inherit;}
 
 .Artistbottom{position:fixed ;bottom: 0;z-index: 999;width: 100%; background: none;left: 0;}
 .Artistbottom nav ul{text-align: center;display: flex;justify-content: center;}
-.Artistbottom nav ul li{margin-bottom: 20px;margin-right: 80px;}
+.Artistbottom nav ul li{margin-bottom: 20px;margin-right: 80px;position: relative;}
+.Artistbottom nav ul li .red-dot{position: absolute;top: 5px;left: 5px;}
 .Artistbottom nav ul li:last-child {margin-right: 0;}
 .Artistbottom nav ul li img{display: block;}
 .nav-container li img {width: 50px;object-fit: cover;height: auto;image-rendering: auto;margin-bottom: 3px;}
