@@ -52,6 +52,7 @@ const FanHome: React.FC = () => {
           <FanHeader />
         </div>
         <div className="togglesearch">
+<<<<<<< HEAD:project01/src/pages/artist/fan/FanHome.tsx
           <div className="fansearcha">
             <img src={fansearch} alt="" />
           </div>
@@ -72,6 +73,14 @@ const FanHome: React.FC = () => {
           </div>
           <div className="fansearch">
             <img src={fansearch} alt="" />
+=======
+          <div className="fansearcha"><img src={fansearch} alt="" /></div>
+          <div className="toggle-container">
+          <div className="toggle-bg" style={{   left: getIndex() === 1 ? `calc(50%)` : undefined,
+  right: getIndex() === 0 ? `calc(0%-1px)` : undefined,}} />
+            <Link to="FanPostDetail" className="toggle-btn A">팬레터</Link>
+            <Link to="FanPostWrite" className="toggle-btn B">비밀레터</Link>
+>>>>>>> 776234c4bc4d66d6cb619947b86c2ff1cbe86d1d:project01/src/pages/artist/fan/FanHome.jsx
           </div>
         </div>
       </div>
