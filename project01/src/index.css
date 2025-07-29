@@ -16,10 +16,7 @@ li {list-style: none;}
 html, body {height: 100vh; display: flex; flex-direction: column;margin:0;letter-spacing: -0.5px;}
 #root {flex: 1; display: flex; flex-direction: column;min-height: 100vh;width: 100%;}
 
-button {border: none;background: none;cursor: pointer;image-rendering: auto;    all: unset;
-    color: #111;
-    font: inherit;
-    cursor: pointer;}
+button {border: none;background: none;cursor: pointer;image-rendering: auto;}
 
 /* flex:1 남은 공간을 모두 차지해서 footer가 화면 맨 아래로 고정돰 */
 .container {padding: 16px;}

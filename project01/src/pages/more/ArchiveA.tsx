@@ -98,7 +98,12 @@ const ArtistA: React.FC = () => {
 return (
   <div>
 {deleteMode && (
-  <div style={{ marginBottom: 10, display: 'flex', justifyContent: 'space-between',width:"100%",color:"#111"}}>
+  <div style={{ marginBottom: 10, display: 'flex', justifyContent: 'space-between',width:"100%",    color: '#111',
+    backgroundColor: 'transparent',
+    border: 'none',
+    font: 'inherit',        // 시스템 기본 폰트 제거
+    appearance: 'none',     // iOS 기본 버튼 스타일 제거
+    WebkitAppearance: 'none'}}>
     <button onClick={deleteSelectedItems}>선택 삭제</button>
     <button
       onClick={() => {
