@@ -16,7 +16,61 @@ import banner3 from '../../../assets/img/StoreImg/banner3.png';
 import banner4 from '../../../assets/img/StoreImg/banner4.png';
 
 import goods1 from '../../../assets/img/StoreImg/product1.png';
-// ... (생략: goods2 ~ goods50까지 동일)
+import goods2 from '../../../assets/img/StoreImg/product2.png'
+import goods3 from '../../../assets/img/StoreImg/product3.png'
+import goods4 from '../../../assets/img/StoreImg/product4.png'
+import goods5 from '../../../assets/img/StoreImg/product5.png'
+import goods6 from '../../../assets/img/StoreImg/product6.png'
+import goods7 from '../../../assets/img/StoreImg/product7.png'
+import goods8 from '../../../assets/img/StoreImg/product8.png'
+import goods9 from '../../../assets/img/StoreImg/product9.png'
+import goods10 from '../../../assets/img/StoreImg/product10.png'
+import goods11 from '../../../assets/img/StoreImg/product11.png'
+import goods12 from '../../../assets/img/StoreImg/product12.png'
+import goods13 from '../../../assets/img/StoreImg/product13.png'
+import goods14 from '../../../assets/img/StoreImg/product14.png'
+import goods15 from '../../../assets/img/StoreImg/product15.png'
+import goods16 from '../../../assets/img/StoreImg/product16.png'
+
+
+import goods17 from '../../../assets/img/StoreImg/productM1.png'
+import goods18 from '../../../assets/img/StoreImg/productM2.png'
+import goods19 from '../../../assets/img/StoreImg/productM3.png'
+import goods20 from '../../../assets/img/StoreImg/productM4.png'
+import goods21 from '../../../assets/img/StoreImg/productM5.png'
+import goods22 from '../../../assets/img/StoreImg/productM6.png'
+import goods23 from '../../../assets/img/StoreImg/productM7.png'
+import goods24 from '../../../assets/img/StoreImg/productM8.png'
+import goods25 from '../../../assets/img/StoreImg/productM9.png'
+import goods26 from '../../../assets/img/StoreImg/productM10.png'
+import goods27 from '../../../assets/img/StoreImg/productM11.png'
+import goods28 from '../../../assets/img/StoreImg/productM12.png'
+import goods29 from '../../../assets/img/StoreImg/productM13.png'
+import goods30 from '../../../assets/img/StoreImg/productM14.png'
+
+import goods31 from '../../../assets/img/StoreImg/album1.png'
+import goods32 from '../../../assets/img/StoreImg/album2.png'
+import goods33 from '../../../assets/img/StoreImg/album3.png'
+import goods34 from '../../../assets/img/StoreImg/album4.png'
+import goods35 from '../../../assets/img/StoreImg/album5.png'
+import goods36 from '../../../assets/img/StoreImg/album6.png'
+import goods37 from '../../../assets/img/StoreImg/album7.png'
+import goods38 from '../../../assets/img/StoreImg/album8.png'
+import goods39 from '../../../assets/img/StoreImg/album9.png'
+import goods40 from '../../../assets/img/StoreImg/album10.png'
+import goods41 from '../../../assets/img/StoreImg/album11.png'
+
+
+import goods42 from '../../../assets/img/StoreImg/magazine1.png'
+import goods43 from '../../../assets/img/StoreImg/magazine2.png'
+import goods44 from '../../../assets/img/StoreImg/magazine3.png'
+import goods45 from '../../../assets/img/StoreImg/magazine4.png'
+import goods46 from '../../../assets/img/StoreImg/magazine5.png'
+import goods47 from '../../../assets/img/StoreImg/magazine6.png'
+import goods48 from '../../../assets/img/StoreImg/magazine7.png'
+
+import goods49 from '../../../assets/img/StoreImg/gllit.png'
+import goods50 from '../../../assets/img/StoreImg/gllit(2).png'
 
 import './StoreHome.css';
 
@@ -48,9 +102,424 @@ const products: Product[] = [
     img: goods1,
     bigCategory: "TOUR MERCH",
     smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
-    price: "14000",
+    price: "14,000",
+  }, 
+  {
+    id: 2,
+    name: "Image Picket",
+    img: goods2,
+    bigCategory: "TOUR MERCH",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
+    price: "10,000",
   },
-  // ... 생략 (모든 상품 동일하게 price는 숫자처럼 다루기 위해 문자열로 되어있으면 숫자로 변환해야 합니다)
+  {
+    id: 3,
+    name: "Lucky Draw",
+    img: goods3,
+    bigCategory: "TOUR MERCH",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
+    price: "9,000",
+  },
+  {
+    id: 4,
+    name: "ID Card Set",
+    img: goods4,
+    bigCategory: "TOUR MERCH",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
+    price: "7,000",
+  },
+  {
+    id: 5,
+    name: "Keyring",
+    img: goods5, 
+    bigCategory: "TOUR MERCH",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
+    price: "20,000",
+  },
+  {
+    id: 6,
+    name: "Mini Photo Holder",
+    img: goods6,
+    bigCategory: "TOUR MERCH",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
+    price: "13,000",
+  },
+  {
+    id: 7,
+    name: "Sticker Set",
+    img: goods7, 
+    bigCategory: "TOUR MERCH",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
+    price: "15,000",
+  },
+  {
+    id: 8,
+    name: "DIY Beads Keyring Set",
+    img: goods8,
+    bigCategory: "TOUR MERCH",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
+    price: "59,400",
+  },
+  {
+    id: 9,
+    name: "Tumbler",
+    img: goods9, 
+    bigCategory: "TOUR MERCH",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
+    price: "35,000",
+  },
+  {
+    id: 10,
+    name: "Cubic Crop T-Shirt",
+    img: goods10,
+    bigCategory: "TOUR MERCH",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
+    price: "59,000",
+  },
+  {
+    id: 11,
+    name: "S/S T-shirt",
+    img: goods11, 
+    bigCategory: "TOUR MERCH",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
+    price: "59,400",
+  },
+  {
+    id: 12,
+    name: "String Bag",
+    img: goods12,
+    bigCategory: "TOUR MERCH",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
+    price: "52,000",
+  },
+  {
+    id: 13,
+    name: "Ball Cap",
+    img: goods13, 
+    bigCategory: "TOUR MERCH",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
+    price: "42,000",
+  },
+  {
+    id: 14,
+    name: "Slogan",
+    img: goods14,
+    bigCategory: "TOUR MERCH",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
+    price: "20,000",
+  },
+  {
+    id: 15,
+    name: "Shopper Bag",
+    img: goods15, 
+    bigCategory: "TOUR MERCH",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
+    price: "6,000",
+  },
+  {
+    id: 16,
+    name: "Trading Card",
+    img: goods16,
+    bigCategory: "TOUR MERCH",
+    smallCategory: "2025 ILLIT GLITTER DAY IN SEOUL",
+    price: "8,000",
+    soldOut: true,
+  },
+
+
+  {
+    id: 17,
+    name: "Hair Scrunchie",
+    img: goods17,
+    bigCategory: "MERCH",
+    smallCategory: "bomb",
+    price: "19,000",
+  },
+  {
+    id: 18,
+    name: "S/S T-Shirt",
+    img: goods18,
+    bigCategory: "MERCH",
+    smallCategory: "bomb",
+    price: "45,000",
+  },
+    {
+    id: 19,
+    name: "Can Badge",
+    img: goods19,
+    bigCategory: "MERCH",
+    smallCategory: "bomb",
+    price: "5,000",
+  },
+  {
+    id: 20,
+    name: "Lucky Draw",
+    img: goods20,
+    bigCategory: "MERCH",
+    smallCategory: "bomb",
+    price: "10,000",
+  },
+    {
+    id: 21,
+    name: "Lenticular Photo Set",
+    img: goods21,
+    bigCategory: "MERCH",
+    smallCategory: "Official Merch",
+    price: "25,000",
+  },
+  {
+    id: 22,
+    name: "Printed Photo Set",
+    img: goods22,
+    bigCategory: "MERCH",
+    smallCategory: "SUPER REAL ME",
+    price: "10,000",
+  },
+  {
+    id: 23,
+    name: "Photo Set",
+    img: goods23,
+    bigCategory: "MERCH",
+    smallCategory: "ALL",
+    price: "24,000",
+  },
+  {
+    id: 24,
+    name: "Disposable Camera",
+    img: goods24,
+    bigCategory: "MERCH",
+    smallCategory: "SUPER REAL ME",
+    price: "45,000",
+  },
+      {
+    id: 25,
+    name: "Film Keyring",
+    img: goods25,
+    bigCategory: "MERCH",
+    smallCategory: "I'LL LIKE YOU",
+    price: "19,000",
+  },
+  {
+    id: 26,
+    name: "Keyring",
+    img: goods26,
+    bigCategory: "MERCH",
+    smallCategory: "I'LL LIKE YOU",
+    price: "18,000",
+  },
+  {
+    id: 27,
+    name: "Eco Bag",
+    img: goods27,
+    bigCategory: "MERCH",
+    smallCategory: "I'LL LIKE YOU",
+    price: "35,000",
+  },
+  {
+    id: 28,
+    name: "Photo Deco Set",
+    img: goods28,
+    bigCategory: "MERCH",
+    smallCategory: "SUPER REAL ME",
+    price: "24,000",
+  },
+    {
+    id: 29,
+    name: "Official Light Stick",
+    img: goods29,
+    bigCategory: "MERCH",
+    smallCategory: "Official Merch",
+    price: "49,000",
+  },
+  {
+    id: 30,
+    name: "CARD COVER STICKER",
+    img: goods30,
+    bigCategory: "MERCH",
+    smallCategory: "I'LL LIKE YOU",
+    price: "6,000",
+  },
+
+
+
+  {
+    id: 31,
+    name: "3rd Mini Album 'bomb'(Set)",
+    img: goods31,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "59,400",
+  },
+  {
+    id: 32,
+    name: "3rd Mini Album 'bomb'(Random)",
+    img: goods32,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "19,800",
+  },
+  {
+    id: 33,
+    name: "3rd Mini Album 'bomb' (GLLIT ver.)(Set)",
+    img: goods33,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "77,500",
+  },
+  {
+    id: 34,
+    name: "3rd Mini Album 'bomb'(Random)",
+    img: goods34,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "15,500",
+  },
+    {
+    id: 35,
+    name: "3rd Mini Album 'bomb'(Set)",
+    img: goods35,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "59,400",
+  },
+  {
+    id: 36,
+    name: "3rd Mini Album 'bomb'(Random)",
+    img: goods36,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "19,800",
+  },
+  {
+    id: 37,
+    name: "3rd Mini Album 'bomb' (GLLIT ver.)(Set)",
+    img: goods37,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "77,500",
+  },
+  {
+    id: 38,
+    name: "3rd Mini Album 'bomb'(Random)",
+    img: goods38,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "15,500",
+  },
+      {
+    id: 39,
+    name: "3rd Mini Album 'bomb'(Set)",
+    img: goods39,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "59,400",
+  },
+  {
+    id: 40,
+    name: "3rd Mini Album 'bomb'(Random)",
+    img: goods40,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "19,800",
+  },
+  {
+    id: 41,
+    name: "3rd Mini Album 'bomb' (GLLIT ver.)(Set)",
+    img: goods41,
+    bigCategory: "ALBUM",
+    smallCategory: "bomb",
+    price: "77,500",
+  },
+  {
+    id: 42,
+    name: "VOGUE ILLIT SPECIAL (2025.06 / A type)",
+    img: goods42,
+    bigCategory: "MAGAZINE",
+    smallCategory: "VOGUE",
+    price: "10,000",
+    soldOut: true,
+  },
+  {
+    id: 43,
+    name: "VOGUE ILLIT SPECIAL (2025.06 / B type)",
+    img: goods43,
+    bigCategory: "MAGAZINE",
+    smallCategory: "VOGUE",
+    price: "10,000",
+    soldOut: true,
+  },
+  {
+    id: 44,
+    name: "VOGUE ILLIT SPECIAL (2025.06 / C type)",
+    img: goods44,
+    bigCategory: "MAGAZINE",
+    smallCategory: "VOGUE",
+    price: "10,000",
+    soldOut: true,
+  },
+  {
+    id: 45,
+    name: "VOGUE ILLIT SPECIAL (2025.06 / D type)",
+    img: goods45,
+    bigCategory: "MAGAZINE",
+    smallCategory: "VOGUE",
+    price: "10,000",
+    soldOut: true,
+  },
+  {
+    id: 46,
+    name: "VOGUE ILLIT SPECIAL (2025.06 / E type)",
+    img: goods46,
+    bigCategory: "MAGAZINE",
+    smallCategory: "VOGUE",
+    price: "10,000",
+    soldOut: true,
+  },
+  {
+    id: 47,
+    name: "VOGUE ILLIT SPECIAL (2025.06 / F type)",
+    img: goods47,
+    bigCategory: "MAGAZINE",
+    smallCategory: "VOGUE",
+    price: "10,000",
+    soldOut: true,
+  },
+  {
+    id: 48,
+    name: "VOGUE ILLIT SPECIAL (2025.06 / G type)",
+    img: goods48,
+    bigCategory: "MAGAZINE",
+    smallCategory: "VOGUE",
+    price: "10,000",
+    soldOut: true,
+  },
+
+  {
+    id: 49,
+    name: "GLLIT MEMBERSHIP",
+    img: goods49,
+    bigCategory: "GLOBAL MEMBERSHIP",
+    smallCategory: "MEMBERSHIP",
+    price: "25,000",
+  },
+  {
+    id: 50,
+    name: "VOGUE ILLIT SPECIAL (2025.06 / B type)",
+    img: goods50,
+    bigCategory: "GLOBAL MEMBERSHIP",
+    smallCategory: "GIFT",
+    price: "0",
+  },
+
+    {
+    id: 51,
+    name: "GLLIT MEMBERSHIP(JP)",
+    img: goods49,
+    bigCategory: "JAPAN MEMBERSHIP",
+    smallCategory: "MEMBERSHIP",
+    price: "56,550",
+  },
+
 ];
 
 const StoreHome: React.FC = () => {
