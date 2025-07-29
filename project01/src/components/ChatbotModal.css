@@ -131,7 +131,7 @@ object-fit: cover;
 
 .chatbot-modal .askbtn {
   margin-top: 14px;
-  background: linear-gradient(to bottom, #ffffff, #C9FFC7,#7CFF71);
+  background: linear-gradient(to bottom,#fff,#c9ffc7,#7cff71,#7cff71);
   padding: 14px 0;
   border-radius: 50px;
   color: #111;
