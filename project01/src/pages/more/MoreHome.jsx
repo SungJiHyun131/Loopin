@@ -26,11 +26,11 @@ const MoreHome = () => {
       <div className="profile"><img src={icon} alt="" />루핀즈</div>
         <ul>
           <li><p className="img"><img src={icon1} alt="" /></p>내 계정</li>
-          <li><Link to='/MyArchive'><p className="img"><img src={icon2} alt="" /></p>내 아카이브</Link></li>
-          <li><Link to='/Subscribe'><p className="img"><img src={icon3} alt="" /></p>구독권 관리</Link></li>
+          <li><Link to='/MyArchive'><p className="img"><img src={icon2} alt="" /></p>내 아카이브<span></span></Link></li>
+          <li><Link to='/Subscribe'><p className="img"><img src={icon3} alt="" /></p>구독권 관리<span></span></Link></li>
           <li><p className="img"><img src={icon4} alt="" /></p>도움말</li>
           <li><p className="img"><img src={icon5} alt="" /></p>언어변경</li>
-          <li><Link to='/AboutLoopin'><p className="img"><img src={icon6} alt="" /></p>루핀에 관하여</Link></li>
+          <li><Link to='/AboutLoopin'><p className="img"><img src={icon6} alt="" /></p>루핀에 관하여<span></span></Link></li>
           <li><p className="img"><img src={icon7} alt="" /></p>로그아웃</li>
         </ul>
     </div>

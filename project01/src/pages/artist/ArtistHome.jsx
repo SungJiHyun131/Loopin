@@ -87,17 +87,17 @@ const handleNextImage = () => {
     {/* 배경 박스 */}
     <div className="nav-background first-layer" />
     <ul className="nav-row first">
-      <li className="Artist"><Link to="/IllitHome"><img src={folder} alt="" />Artist</Link></li>
-      <li className="Live"><Link to="/LiveHome"><img src={folder} alt="" />Live</Link></li>
-      <li className="Store"><Link to="/StoreHome"><img src={folder} alt="" />Store</Link></li>
+      <li className="Artist"><Link to="/IllitHome"><span className="red-dot"></span><img src={folder} alt="" />Artist</Link></li>
+      <li className="Live"><Link to="/LiveHome"><span className="red-dot"></span><img src={folder} alt="" />Live</Link></li>
+      <li className="Store"><Link to="/StoreHome"><span className="red-dot"></span><img src={folder} alt="" />Store</Link></li>
     </ul>
 
     {/* 두 번째 박스 */}
 
     <ul className="nav-row second">
-      <li className="Fan"><Link to="/FanHome"><img src={folder} alt="" />Fan</Link></li>
-      <li className="Notice"><Link to="/NoticeHome"><img src={folder} alt="" />Notice</Link></li>
-      <li className="Media"><Link to="/MediaHome"><img src={folder} alt="" />Media</Link></li>
+      <li className="Fan"><Link to="/FanHome"><span className="red-dot"></span><img src={folder} alt="" />Fan</Link></li>
+      <li className="Notice"><Link to="/NoticeHome"><span className="red-dot"></span><img src={folder} alt="" />Notice</Link></li>
+      <li className="Media"><Link to="/MediaHome"><span className="red-dot"></span><img src={folder} alt="" />Media</Link></li>
     </ul>
   </nav>
 </div>

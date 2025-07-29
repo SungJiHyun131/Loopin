@@ -70,14 +70,15 @@ const infoData = [
     <div className="container sub">
       <div className="topBox">
         <div className="ticket month">
-          <Link to='/SubscribeSelect'><img src={ticket1} alt="" /></Link>
+          <Link to='/SubscribeSelect'><img src={ticket1} alt="" />
           <div className="ontext">
             <p className="name">월간 구독권</p>
             <p className="price">₩ 9,900 <span>/ 매월</span></p>
             <p className="smalltext">· 아티스트와의 채팅/라이브</p>
             <p className="smalltext">· 아티스트와의 사진/영상/일정/팟캐스트</p>
           </div>
-          <p className="subs">subscription</p>
+          <p className="subs">subscription</p><span className="red-dot"></span>
+          </Link>
         </div>
         <div className="ticket yearly">
           <img src={ticket2} alt="" />

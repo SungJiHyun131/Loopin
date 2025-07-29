@@ -47,6 +47,7 @@ const PostCard = ({ user, text, images, likes, comments,index }) => {
 
   return (
     <div className="post-card" onClick={() => navigate(`/FanPostView/${index}`)}>
+      <span className="red-dot"></span>
       <div className="post-header">
         <div className="left-group">
         <img src={user.profileImg} alt="profile" className="profile-img" />

@@ -44,6 +44,9 @@
   .onboarding-letter{margin-top: 30px;mix-blend-mode: multiply; image-rendering: auto; /* 기본값 */
   image-rendering: crisp-edges;
   image-rendering: pixelated;}
+  .onboarding-guide{margin-top: 30px;mix-blend-mode: multiply; image-rendering: auto; /* 기본값 */
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;}
   .onboarding-btn {
     padding: 10px 40px;
     background: linear-gradient(to bottom, #fff,#C9FFC7,#7CFF71,#7CFF71);
@@ -55,4 +58,14 @@
     position: absolute;bottom: 10%;
     font-family: 'NeoDunggeunmo', sans-serif;
     width: 295px;height: 60px;box-shadow: 2px 2px 1px rgba(0,0,0,1);
+  }
+
+  .red-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 10px; /* 필요 시 간격 조절 */
+    vertical-align: middle;
   }

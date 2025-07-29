@@ -13,7 +13,7 @@ const LoginForm = () => {
       console.log('ID:', userId, 'PW:', password);
       navigate('/MainHome');
     } else {
-      alert('아이디와 비밀번호를 입력하세요!');
+      alert('아이디와 비밀번호를 입력하세요');
     }
   };
 
@@ -22,14 +22,14 @@ const LoginForm = () => {
       <p className="idtxt">이용자 ID</p>
       <input
         type="text"
-        placeholder="아이디"
+        placeholder="아무거나 입력"
         value={userId}
         onChange={(e) => setUserId(e.target.value)}
       />
       <p className="passtxt">비밀번호</p>
       <input
         type="password"
-        placeholder="비밀번호"
+        placeholder="아무거나 입력"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />

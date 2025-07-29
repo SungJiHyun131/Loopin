@@ -1,8 +1,8 @@
 .fanContainer .fanletter{position: fixed;z-index: -1;width: 100%;height: 100vh;}
 .fanContainer .fanletter img{width: 100%;height: 100%;object-fit: cover;}
-.fanbg{position: fixed;;width: 100%;height: 155px;box-shadow: 0 0 10px rgba(184,142,226,0.3);}
+.fanbg{position: fixed;;width: 100%;height: 155px;box-shadow: 0 0 10px rgba(184,142,226,0.3);z-index: 100;}
 .fanbg img{width: 100%;object-fit: cover;height: 100%;}
-.fantop{position: fixed;width: 100%;}
+.fantop{position: fixed;width: 100%;z-index: 101;}
 .togglesearch{display: flex;align-items: center;width: 80%;margin: 0 auto;}
 .fansearcha{opacity: 0;width: 30px;height: 30px;}
 .toggle-container{ position: relative;
@@ -40,7 +40,8 @@
   position: relative;
   cursor: pointer;
 }
-.btnmore{position: fixed;bottom: 20px;right: 20px;border: 1px solid #000;border-radius: 50%;background: linear-gradient(to bottom, #fff, #FFC8DF,#FF8EBF );width: 50px;height: 50px;text-align: center;line-height: 64px;}
+
+.btnmore{position: fixed;bottom: 20px;right: 20px;border: 1px solid #000;border-radius: 50%;background: linear-gradient(to bottom, #fff, #FFC8DF,#FF8EBF );width: 50px;height: 50px;text-align: center;line-height: 64px;z-index: 100;}
 .floating-overlay {
     position: fixed;
     top: 0;
@@ -48,7 +49,7 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
-    z-index: 100;
+    z-index: 200;
   }
   
   .floating-content {

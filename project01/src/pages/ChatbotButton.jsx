@@ -4,7 +4,7 @@ import botIcon from '../assets/img/chatbot-icon.png';
 const ChatbotButton = ({ onClick }) => {
     return (
       <button className="chatbot-button" onClick={onClick}>
-        <img src={botIcon} alt="Chatbot" />
+        <img src={botIcon} alt="Chatbot" /><span className="red-dot"></span>
       </button>
     );
   };

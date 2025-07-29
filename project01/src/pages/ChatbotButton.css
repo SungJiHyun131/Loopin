@@ -14,3 +14,10 @@
     height: 100%;
     object-fit: cover;
   }
+  .chatbot-button .red-dot{display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 10px; /* 필요 시 간격 조절 */
+    vertical-align: middle;position: absolute;top: 15%;left: 25%;}

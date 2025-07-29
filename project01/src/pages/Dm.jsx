@@ -13,7 +13,7 @@ import P6 from "../assets/img/DMImg/태산.png"
 import P7 from "../assets/img/DMImg/성찬.png"
 import P8 from "../assets/img/DMImg/더보기.png"
 import DM from "../assets/img/DMImg/DM.png"
-import SearchBar from '../components/SearchBar';
+import SearchBar2 from '../components/SearchBar2';
 import mainbg from '../assets/img/mainheaderbg.png'
 
 const Dm = () => {
@@ -25,7 +25,7 @@ const Dm = () => {
         <DmHeader/>
       </div>
       <div className="container Dm">
-      <SearchBar onChange={(e) => setQuery(e.target.value)} />
+      <SearchBar2 onChange={(e) => setQuery(e.target.value)} />
       <div className="message">
         <h3>메세지</h3>
     
