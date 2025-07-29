@@ -28,3 +28,30 @@
     height: 15px;
   }
   
+  .archive-item.deletable {
+  position: relative;
+  cursor: pointer;
+}
+
+.checkmark-overlay {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #666;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 18px;
+  font-weight: normal;
+  color: transparent;
+  background-color: white;
+}
+
+.archive-item.selected .checkmark-overlay {
+  color: #007bff;
+  background-color: #d0e8ff;
+  border-color: #007bff;
+  display: inline-block;
+  padding-top: 1px;
+}

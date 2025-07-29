@@ -159,9 +159,7 @@ const StoreDetail: React.FC = () => {
       </div>
 
       <div className="BTN">
-        <button type="button" onClick={handleAddToCart}>
-          장바구니에 담기
-        </button>
+        <a>장바구니에 담기</a>
       </div>
     </div>
   );

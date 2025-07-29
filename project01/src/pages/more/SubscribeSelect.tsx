@@ -55,7 +55,6 @@ const idols: Idol[] = [
   { name: 'TWS', image: TWS },
   { name: 'TXT', image: TXT },
 ];
-
 const SubscribeSelect: React.FC = () => {
   const [selected, setSelected] = useState<string[]>([]);
   const [query, setQuery] = useState<string>('');
@@ -70,6 +69,11 @@ const SubscribeSelect: React.FC = () => {
     setQuery(e.target.value);
   };
 
+  // query 기반 필터링
+  const filteredIdols = idols.filter((idol) =>
+    idol.name.toLowerCase().includes(query.toLowerCase())
+  );
+
   return (
     <div className="bgSub">
       <div className="SubscribeHeader2">
@@ -82,7 +86,7 @@ const SubscribeSelect: React.FC = () => {
         </div>
         <SearchBar onChange={handleSearchChange} />
         <div className="SelectArtist-grid">
-          {idols.map((idol, idx) => (
+          {filteredIdols.map((idol, idx) => (
             <SelectArtist
               key={idx}
               image={idol.image}

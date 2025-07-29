@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import MyArchiveHeader from '../../components/MyArchiveHeader';
 import './MyArchive.css';
@@ -6,7 +6,11 @@ import './MyArchive.css';
 const MyArchive = () => {
   const location = useLocation();
 
-  // ✅ iOS 자동 링크 스타일 제거
+  // 삭제 모드 상태, 선택된 항목 인덱스 배열 상태
+  const [deleteMode, setDeleteMode] = useState(false);
+  const [selectedIndexes, setSelectedIndexes] = useState<number[]>([]);
+
+  // iOS 자동 링크 스타일 제거
   useEffect(() => {
     const style = document.createElement('style');
     style.innerHTML = `
@@ -31,11 +35,27 @@ const MyArchive = () => {
     return 0;
   };
 
+  // 삭제 모드 진입 함수
+  const handleDeleteMode = () => {
+    setDeleteMode(true);
+    setSelectedIndexes([]); // 선택 초기화
+  };
+
+  // 수정 모드 진입 함수 (필요시 구현)
+  const handleEditMode = () => {
+    // 예: 수정 모드 토글 등 구현
+    alert('수정 모드 진입 (구현 필요)');
+  };
+
   return (
     <div className="bgArchive">
       <div className="ArchiveFixHeader">
         <div className="MyArchiveHeader">
-          <MyArchiveHeader />
+          {/* 상태 제어 함수 props로 전달 */}
+          <MyArchiveHeader 
+            onDeleteMode={handleDeleteMode} 
+            onEditMode={handleEditMode} 
+          />
         </div>
 
         <div className="toggle-container">
@@ -53,7 +73,8 @@ const MyArchive = () => {
         </div>
       </div>
       <div className="container archive">
-        <Outlet />
+        {/* Outlet에 context로 상태 전달 */}
+        <Outlet context={{ deleteMode, setDeleteMode, selectedIndexes, setSelectedIndexes }} />
       </div>
     </div>
   );

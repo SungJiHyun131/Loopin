@@ -641,7 +641,7 @@ const StoreHome: React.FC = () => {
                         <p className="KR발송">KR 발송</p>
                       </div>
                       <div className="price">
-                        <h3>₩{Number(product.price).toLocaleString()}</h3>
+                      <h3>₩{Number(product.price.replace(/,/g, '')).toLocaleString()}</h3>
                         <LikeButton />
                       </div>
                     </div>

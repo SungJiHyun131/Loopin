@@ -1,7 +1,7 @@
 /* .bgSub{background:linear-gradient(to bottom,#5dabff, #fff,#5dabff);height: auto;} */
 .SubscribeHeader2{position: fixed;height: 70px;width: 100%;z-index: 90;background: #5dabff;}
 
-.container.SubscribeSelect{margin-top: 69px;background:linear-gradient(to top ,#5dabff,#fff,#5dabff);}
+.container.SubscribeSelect{margin-top: 69px;background:linear-gradient(to top ,#5dabff,#fff,#5dabff);height: 100vh;}
 
 .container.SubscribeSelect .top {text-align: center;display: flex;justify-content: center;flex-direction: column;}
 .container.SubscribeSelect .top h3 {margin-bottom: 10px;font-size: 18px;font-weight: 500;}

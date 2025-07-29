@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './ArchiveA.css';
-import { Link } from 'react-router-dom';
+import { useOutletContext } from 'react-router-dom';
 
-// 이미지 import
 import img1 from '../../assets/img/archive/1.png';
 import img2 from '../../assets/img/archive/2.png';
 import img3 from '../../assets/img/archive/3.png';
@@ -25,17 +24,25 @@ import img18 from '../../assets/img/archive/18.png';
 import icon1 from '../../assets/img/archive/icon1.png';
 import icon2 from '../../assets/img/archive/icon2.png';
 
+interface MyArchiveContext {
+  deleteMode: boolean;
+  selectedIndexes: number[];
+  setSelectedIndexes: React.Dispatch<React.SetStateAction<number[]>>;
+  setDeleteMode: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
 interface ArchiveItem {
   img: string;
   icon?: string;
-  link?: string;
 }
 
 const ArtistA: React.FC = () => {
-  const items: ArchiveItem[] = [
+  const { deleteMode, selectedIndexes, setSelectedIndexes, setDeleteMode } = useOutletContext<MyArchiveContext>();
+
+  const [items, setItems] = useState<ArchiveItem[]>([
     { img: img1, icon: icon1 },
     { img: img2, icon: icon2 },
-    { img: img3 }, // 아이콘 없음
+    { img: img3 },
     { img: img4 },
     { img: img5, icon: icon1 },
     { img: img6, icon: icon1 },
@@ -51,30 +58,100 @@ const ArtistA: React.FC = () => {
     { img: img16 },
     { img: img17, icon: icon1 },
     { img: img18 },
-  ];
+  ]);
 
-  return (
+  const [showToast, setShowToast] = useState(false);
+
+  const toggleSelect = (index: number) => {
+    if (!deleteMode) return;
+    if (selectedIndexes.includes(index)) {
+      setSelectedIndexes(selectedIndexes.filter(i => i !== index));
+    } else {
+      setSelectedIndexes([...selectedIndexes, index]);
+    }
+  };
+
+  const deleteSelectedItems = () => {
+    if (selectedIndexes.length === 0) return; // 선택 없으면 무시
+
+    const newItems = items.filter((_, idx) => !selectedIndexes.includes(idx));
+    setItems(newItems);
+    setSelectedIndexes([]);
+    setDeleteMode(false);
+
+    // 토스트 띄우기
+    setShowToast(true);
+  };
+
+  // 2초 후에 토스트 자동 숨김
+  useEffect(() => {
+    if (showToast) {
+      const timer = setTimeout(() => {
+        setShowToast(false);
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [showToast]);
+
+// (중략)
+
+return (
+  <div>
+{deleteMode && (
+  <div style={{ marginBottom: 10, display: 'flex', justifyContent: 'space-between',width:"100%"}}>
+    <button onClick={deleteSelectedItems}>선택 삭제</button>
+    <button
+      onClick={() => {
+        setDeleteMode(false);
+        setSelectedIndexes([]);
+      }}
+    >
+      취소
+    </button>
+  </div>
+)}
     <div className="archive-gridA">
       {items.map((item, index) => {
-        const content = (
-          <div className="archive-item" key={index}>
+        const isSelected = selectedIndexes.includes(index);
+        return (
+          <div
+            key={index}
+            className={`archive-item ${deleteMode ? 'deletable' : ''} ${isSelected ? 'selected' : ''}`}
+            onClick={() => toggleSelect(index)}
+          >
             <img src={item.img} alt={`archive-${index}`} className="archive-img" />
-            {item.icon && (
-              <img src={item.icon} alt="icon" className="archive-icon" />
+            {item.icon && <img src={item.icon} alt="icon" className="archive-icon" />}
+            {deleteMode && (
+              <div className="checkmark-overlay">{isSelected ? '✓' : ''}</div>
             )}
           </div>
         );
-
-        return item.link ? (
-          <Link to={item.link} key={index}>
-            {content}
-          </Link>
-        ) : (
-          <React.Fragment key={index}>{content}</React.Fragment>
-        );
       })}
     </div>
-  );
+
+    {/* 토스트 메시지 */}
+    {showToast && (
+      <div style={{
+        position: 'fixed',
+        top:'20%',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        backgroundColor: 'rgba(253, 253, 255, 0.7)',
+        color: '#111',
+        padding: '10px 20px',
+        borderRadius: 20,
+        fontSize: 14,
+        zIndex: 9999,
+        fontWeight:500,
+        pointerEvents: 'none',
+        border:'1px solid #111'
+      }}>
+        삭제 완료!
+      </div>
+    )}
+  </div>
+);
+
 };
 
 export default ArtistA;
