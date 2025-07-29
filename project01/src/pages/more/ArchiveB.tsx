@@ -72,7 +72,7 @@ const ArchiveB: React.FC = () => {
     <div className="artist-b-container">
       {/* 삭제모드일 때 선택삭제, 취소 버튼 노출 */}
       {deleteMode && (
-        <div style={{ marginBottom: 10, display: 'flex', justifyContent: 'space-between' }}>
+       <div style={{ marginBottom: 10, display: 'flex', justifyContent: 'space-between',width:"100%",color:"#111"}}>
           <button onClick={deleteSelectedItems}>선택 삭제</button>
           <button onClick={() => { setDeleteMode(false); setSelectedIndexes([]); }}>취소</button>
         </div>
