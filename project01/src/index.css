@@ -23,14 +23,3 @@ button {border: none;background: none;cursor: pointer;image-rendering: auto;}
 
 
 
-
-
-body {
-  -webkit-touch-callout: none;
-  -webkit-text-size-adjust: 100%;
-}
-
-input, textarea {
-    -webkit-user-select: text;
-    user-select: text;
-  }
